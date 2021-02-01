@@ -11,6 +11,7 @@
     "bootstrap-react": "^0.5.0-alpha.14",
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^6.0.0",
+    "firebase": "^8.2.5",
     "react": "^17.0.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^1.4.3",
