@@ -7,13 +7,14 @@ import {Button} from '@material-ui/core';
 import Footer from '../footer/Footer';
 import GaleriaDialog from './GaleriaDialog'
 import ProjectData from './ProjectData'
-
-import app from "firebase/app";
-
-
+import firebase from "firebase";
+import "firebase/storage";
 
 
 import './Galeria.css'
+
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -32,6 +33,8 @@ const useStyles = makeStyles((theme) => ({
 const myVar = process.env.REACT_APP_DB_URL;
 
 function Galeria() {
+
+
   const classes = useStyles();
   const [openDialog, setOpenDialog] = useState(false)
   const [Project, setProject] = useState(1);
@@ -40,7 +43,7 @@ function Galeria() {
   const handleClickOpen = (project) => {
     setOpenDialog(true)
     setProject(project)
-   // console.log('clickBtn', id)
+  
   }
 
   const useStylesBootstrap = makeStyles((theme) => ({
@@ -57,18 +60,8 @@ function Galeria() {
     const classes = useStylesBootstrap();
     return <Tooltip arrow classes={classes} {...props} />;
   }
- 
-  
-  const firebaseConfig = {
 
-    // apiKey: "AIzaSyBtzQnv3BCDOk-WCZ6uTSUiowCKwisJidk",
-    // authDomain: "brogan-c0f45.firebaseapp.com",
-    // databaseURL: "https://brogan-c0f45-default-rtdb.europe-west1.firebasedatabase.app",
-    // projectId: "brogan-c0f45",
-    // storageBucket: "brogan-c0f45.appspot.com",
-    // messagingSenderId: "502624265935",
-    // appId: "1:502624265935:web:c7afdeb28cd63a3458f9ba",
-    // measurementId: "G-JEWZCWBJMW"
+  const firebaseConfig = {
 
     appName: "brogan-c0f45",
     apiKey: process.env.REACT_APP_FIRBASE_API_KEY,
@@ -80,13 +73,15 @@ function Galeria() {
     measurementId: process.env.REACT_APP_FIRBASE_MEAS_ID 
   };
 
-  //let myApp=null;
+  firebase.initializeApp(firebaseConfig);
 
-    //const myApp = app.initializeApp(firebaseConfig);
+ 
+  const book = firebase.app().storage("gs://brogan-c0f45.appspot.com");
  
 
   function handleFirebaseConnect ( ) {
-     //console.log(myApp);
+     console.log(book);
+    
   }
     
   
