@@ -1,0 +1,32 @@
+.Firma {
+  color: white;
+  background-color: black;
+}
+
+.Firma a {
+  color: white;
+}
+
+.Firma a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+.titleFirma {
+  font-size: 2em;
+  margin-top: 4rem;
+}
+
+.textFirma {
+  margin-top: 2rem;
+  font-size: '1.2';
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.cardFirma{
+  
+ 
+  
+}

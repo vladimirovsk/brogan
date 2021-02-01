@@ -1,0 +1,22 @@
+* {
+  outline: 0 !important;
+} 
+
+.imageGalerey {
+  opacity: 0.5;
+  /* filter: blur(2px); */
+}
+
+.imageGalerey:hover {
+  opacity: 1;
+  /* filter: blur(0px); */
+}
+
+.MuiIconButton-label:hover{
+  box-shadow: 2 2 10px #FFFFFF
+}
+
+.dialogGalery{
+  opacity: 0.9;
+  background-color: #545454
+}
