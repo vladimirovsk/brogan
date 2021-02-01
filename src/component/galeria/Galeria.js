@@ -80,15 +80,13 @@ function Galeria() {
     measurementId: process.env.REACT_APP_FIRBASE_MEAS_ID 
   };
 
-  let myApp;
-  React.useEffect(()=>{
-    myApp = app.initializeApp(firebaseConfig);
+  //let myApp=null;
 
-  }, [])
-  async function handleFirebaseConnect ( ) {
+    //const myApp = app.initializeApp(firebaseConfig);
+ 
 
-
-     console.log(myApp);
+  function handleFirebaseConnect ( ) {
+     //console.log(myApp);
   }
     
   
