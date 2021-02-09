@@ -9,14 +9,16 @@ import partner5 from '../../img/home/partner/budimex-dromex-logo.jpg'
 import partner6 from '../../img/home/partner/zasada-logo.jpg'
 
 import ScrollAnimation from 'react-animate-on-scroll';
+//import crane from '../../img/background-crane-1.jpg';
 
 
 import './Home.css'
 function ComponentPartners() {
   return (
-    <Container fluid={'md'}>
+    <Container fluid={true}>
+      <Container fluid={'md'}>
       <Row>
-        <Col sm={12} className={'text-center'} style={{ fontSize:'2rem'}}>
+        <Col sm={12} className={'text-center'} style={{ fontSize:'2rem', backgroundColor:'transparent', color:'black'}}>
           Współpracujemy z najlepszymi
         </Col>  
         
@@ -45,6 +47,7 @@ function ComponentPartners() {
          
         </Col>
       </Row>
+      </Container>  
      </Container>
   )
 }

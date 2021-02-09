@@ -13,6 +13,21 @@ import image12 from '../../img/galery/12-1m.jpg';
 import image13 from '../../img/galery/13-1m.jpg';
 import image14 from '../../img/galery/14-1m.jpg';
 
+// import  image1 from '../../img/brogan-logo.png';
+// import image2  from '../../img/brogan-logo.png';
+// const image3 ='';
+// const image4 ='';
+// const image5 ='';
+// const image6 ='';
+// const image7 ='';
+// const image8 ='';
+// const image9 ='';
+// const image10 ='';
+// const image11 ='';
+// const image12 ='';
+// const image13 ='';
+// const image14 ='';
+
 const projectData = [
   {img: image1,
     title: 'Os. „ART CITY” bud. P2,P3',
@@ -156,6 +171,5 @@ const projectData = [
     id: 14,
   },
 ] 
-
 
 export default projectData;

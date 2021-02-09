@@ -7,7 +7,7 @@ import './Footer.css';
 function Footer() {
 
   return (
-    <Container fluid={true} className='Footer'>
+    <Container fluid={true} className='Footer' style={{opacity: 0.7}}>
     <Row style={{paddingTop: '1em', paddingBottom: '5em'}}>
       <Col sm={6} md={2}><img src={logo} height='140px'  alt='logo' /></Col>
       <Col sm={6} md={5}>

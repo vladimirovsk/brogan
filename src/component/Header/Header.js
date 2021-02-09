@@ -11,7 +11,7 @@ function Header(){
 
   return(
     <React.Fragment>
-      <Navbar collapseOnSelect sticky="top"  expand="lg" fixed='top' variant='dark'>
+      <Navbar collapseOnSelect position="top"  expand="lg" fixed='top' variant='dark'>
       <Navbar.Brand href="#home" style={{
           fontFamily: "'Fredoka One', cursive",
           fontSize: '50',

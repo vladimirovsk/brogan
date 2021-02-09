@@ -12,6 +12,7 @@ import Header from './component/Header/Header'
 import Oferta from './component/Oferta/Oferta';
 import Firma from './component/Firma/Firma';
 import Home from './component/Home/Home'
+// import crane from './img/background-crane-1.jpg'
 
 function App() {
   let myRoute = (
@@ -32,7 +33,10 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div style={{
+      }}>
       {myRoute}
+      </div>
     
     </div>
   );

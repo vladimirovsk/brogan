@@ -73,7 +73,7 @@ a:hover{
 } 
 
 .navbar {
-  /* opacity: 0.8;       */
+  opacity: 0.6;       
   background-color: #000000;
   color: white;
   font-family: 'Roboto Condensed', sans-serif;

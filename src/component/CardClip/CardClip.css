@@ -1,0 +1,109 @@
+.prof1{
+    text-align: center;
+    background: white;
+    font-size: 16px;
+}
+
+.prof2{
+    text-align: center;
+    background: white;
+    font-size: 15px;
+}
+
+.body{
+    background: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.name{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    background: white;
+}
+
+
+.backTitle{
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    background: white;
+}
+
+.backText{
+
+    text-align: justify;
+    background: white;
+    line-height: 1.5;
+}
+.flip-card {
+    cursor: pointer;
+
+    /*border: 1px solid #f1f1f1;*/
+
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner:hover{
+    box-shadow: 0px 0px 15px 1px #525252;
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.1s;
+    box-shadow: 0px 0px 5px 1px #525252;
+    transform-style: preserve-3d;
+}
+
+ /*Do an horizontal flip when you move the mouse over the flip box container */
+/*.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}*/
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    background: transparent;
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    text-align: center;
+    color: black;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+/* Style the back side
+    position:relative;
+    */
+.flip-card-back {
+    padding: 14px;
+    color: black;
+    transform: rotateY(180deg);
+    overflow: auto;
+    background: white;
+}
+/*
+background:darkgoldenrod;
+  position:absolute;
+      border:none;
+    vertical-align:bottom;
+    display:inline-block;
+ */
+.flip-card-link{
+    bottom: 0;
+    text-align: center;
+    color:blue;
+    vertical-align: text-bottom;
+
+}

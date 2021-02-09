@@ -7,8 +7,8 @@ import {Button} from '@material-ui/core';
 import Footer from '../footer/Footer';
 import GaleriaDialog from './GaleriaDialog'
 import ProjectData from './ProjectData'
-import firebase from "firebase";
-import "firebase/storage";
+
+import { useFirebase } from "react-redux-firebase";
 
 
 import './Galeria.css'
@@ -29,21 +29,20 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-
-const myVar = process.env.REACT_APP_DB_URL;
-
 function Galeria() {
-
 
   const classes = useStyles();
   const [openDialog, setOpenDialog] = useState(false)
   const [Project, setProject] = useState(1);
+  const [myImage, setMyImage] = useState('');
+  const [itemList, setItemList] = useState([])
 
+  const firebase = useFirebase();
+  const storage = firebase.storage();
   
   const handleClickOpen = (project) => {
     setOpenDialog(true)
     setProject(project)
-  
   }
 
   const useStylesBootstrap = makeStyles((theme) => ({
@@ -60,43 +59,116 @@ function Galeria() {
     const classes = useStylesBootstrap();
     return <Tooltip arrow classes={classes} {...props} />;
   }
-
-  const firebaseConfig = {
-
-    appName: "brogan-c0f45",
-    apiKey: process.env.REACT_APP_FIRBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIRBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIRBASE_ID,
-    storageBucket: process.env.REACT_APP_FIRBASE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIRBASE_SENDER_ID ,
-    appId: process.env.REACT_APP_FIRBASE_API_APP_ID,
-    measurementId: process.env.REACT_APP_FIRBASE_MEAS_ID 
-  };
-
-  firebase.initializeApp(firebaseConfig);
-
- 
-  const book = firebase.app().storage("gs://brogan-c0f45.appspot.com");
- 
-
-  function handleFirebaseConnect ( ) {
-     console.log(book);
-    
-  }
-    
   
+  
+  //var gsReference = storage.refFromURL('gs://brogan-c0f45.appspot.com/galery/project1/1-10.jpg');
+  //const book = firebase.app().storage("gs://brogan-c0f45.appspot.com/");
+  //let pathReference = null;
+  //let listRef = storage.child('galery/project1'); // storageRef.child('galery/project1'); 
+
+    //pathReference = storage.refFromURL('gs://brogan-c0f45.appspot.com/galery/project1/1-10.jpg');
+    //console.log(st);
+    // React.useEffect(()=>{
+    //   const storage = firebase.storage();
+    //   const storageRef = storage.ref('galery/project1/1-12.jpg');
+    //   setMyImage(storageRef.getDownloadURL());
+    // }, [])
+    // //console.log(storageRef);
+   
+function getImageFirebase(myPatch){
+  setItemList( itemList.splice(0, itemList.length));
+  const storageRef = storage.ref(myPatch);
+  storageRef.listAll()
+  .then((res) => {
+      res.items.forEach((itemRef) => {
+          setItemList(itemList.push(itemRef.fullPath));
+      });
+  }).catch((error) => {
+    console.log('error', error)
+  });
+}
+   
+    
+  function handleFirebaseConnect(){
+    getImageFirebase('galery/glavn')
+    console.log('itemList', itemList)   
+  }
+  
+
+      
+
+        //   Promise.all(promises).then((downloadURLs) => {
+        //     itemList.push(res.items)
+        // });  
+        //console.log('res',res)
+          //console.log('item',item);
+     //  res.items.forEach( item => {
+        //setItemList(itemList.push(url)); 
+
+     // console.log(itemList);
+    
+
+          // .then((res) => {
+          //   res.prefixes.forEach((folderRef) => {
+          //     console.log('folderRef', folderRef)
+          //     // All the prefixes under listRef.
+          //     // You may call listAll() recursively on them.
+          //   });
+          //   res.items.forEach((itemRef) => {
+          //     console.log('itemRef', itemRef)
+          //     // All the items under listRef.
+          //   });
+          // }).catch((error) => {
+          //   // Uh-oh, an error occurred!
+          // });
+    //console.log(listRef.listAll());
+  //}
+
+  // function getPicture (pathImage) {
+    //storage.refFromURL('gs://brogan-c0f45.appspot.com/galery/project1/1-10.jpg').getDownloadURL()
+    //storage.ref(pathImage).getDownloadURL()
+    // Get the download URL
+    //.then((url) => {
+      // eslint-disable-next-line
+      //setMyImage(url);
+      //return url;
+    //})
+    //.catch((error) => {
+     // console.log(error)
+      // eslint-disable-next-line
+      //setMyImage(null)
+      //return null
+    //})
+        // console.log(listRef);
+  // }
+    
+  React.useEffect(() => {
+   // setMyImage(getPicture('/galery/project1/1-12.jpg'))
+   //console.log(getPicture('/galery/project1/1-12.jpg'));
+    // getPicture('/galery/project1/1-12.jpg');
+    getImageFirebase('galery/glavn')
+    console.log('ProjectData', ProjectData[1].img)   
+    console.log('itemList', itemList) 
+  }, []);
+
+  // React.useEffect((){
+  //   //getPicture('/galery/project1/1-10.jpg'){
+  // },[])
+
   return (
     <div className={classes.root}>
-     
+
       <GridList cellHeight={220} className={classes.gridList} cols={3}>
         <GridListTile key="Subheader" cols={3} style={{ height: 'auto',  }}>
           <ListSubheader component="div" style={{color: 'white', fontSize: '2em', fontFamily:"'Fredoka One', cursive" }}>GALERIA
-          <h1 style={{color:'green'}}>{myVar}</h1>
-          <Button variant="contained" color="primary" onClick={handleFirebaseConnect}>TEST FIREBASE</Button>
+            <Button variant="contained" color="primary" onClick={handleFirebaseConnect}>TEST FIREBASE</Button>
           </ListSubheader>
         </GridListTile>
+        <GridListTile key={0} cols={3}>
+            <img className={'imageGalerey'} src={myImage} alt={""}/>
+        </GridListTile>   
         {ProjectData.map((project) => (
-          <GridListTile key={project.img} cols={project.cols || 1} onClick={(e)=>handleClickOpen(project)}>
+          <GridListTile key={project.id} cols={project.cols || 1} onClick={(e)=>handleClickOpen(project)}>
             <img className={'imageGalerey'} src={project.img} alt={project.title}/>
             <GridListTileBar
               title={project.title}

@@ -8,21 +8,46 @@ import Componet1 from './ComponetFirst'
 import ComponentCard from './ComponentCard'
 import ComponentCheck from './ComponentCheck'
 import ComponentPartners from './ComponentPartners'
+import {Parallax, Background} from "react-parallax";
 
 import image1 from '../../img/home/slide1.jpg'
 import image2 from '../../img/home/slide2.jpg'
 import image3 from '../../img/home/slide3.jpg'
+import crane from '../../img/background-crane-1.jpg';
 
-
+const insideStyles = {
+  background: "white",
+  padding: 20,
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%,-50%)"
+};
 
 function Home() {
+  
+  
+  
   return (
-  <Container fluid={true} className='Home'>
-      
-      <Carousel fade={true} controls={false} indicators={false} pause={false} wrap={true} interval={6000}>
+   
+  <Container fluid={true} className='Home' style={{
+   
+        // backgroundImage: `url(${crane})`,
+        // backgroundPosition: 'center',
+        // backgroundSize: 'cover',
+        // backgroundRepeat: 'no-repeat',
+        // backgroundAttachment: "fixed",
+
+        // backgroundOrigin: "initial",
+        // backgroundClip: "initial",
+        // backgroundColor: "initial",
+
+    }}>
+    
+       <Carousel  fade={true} controls={false} indicators={false} pause={false} wrap={true} interval={6000}>
         <Carousel.Item >
           <img
-            className="d-block w-100"
+            className="d-block"
             src={image1}
             alt="First slide"
           />
@@ -33,7 +58,7 @@ function Home() {
 
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block"
             src={image2}
             alt="Third slide"
           />
@@ -44,7 +69,7 @@ function Home() {
 
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block"
             src={image3}
             alt="Third slide"
           />
@@ -52,16 +77,23 @@ function Home() {
             <div>Usługi ogólnobudowlane</div>
           </Carousel.Caption>
         </Carousel.Item>
-
       </Carousel>
-
-      <Componet1 />
-      <ComponentCard />
-      <ComponentCheck />
-      <ComponentPartners />
-
-      <Footer />      
+      <Parallax strength={500} bgImage={crane}>
+      
+      {/* <Background className="custom-bg" style={{widows: '100vh'}}>
+        <img src = {crane} alt='' />
+      </Background>  */}
+   
+     
+          <Componet1 />
+          <ComponentCard />
+          <ComponentCheck />
+          <ComponentPartners />
+          <Footer /> 
+      </Parallax>
   </Container>
+
+
   )
 }
 

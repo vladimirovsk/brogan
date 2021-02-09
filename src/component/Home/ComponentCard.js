@@ -1,55 +1,80 @@
-import {Container, Card, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
+import CardClip from '../CardClip/CardClip'
 
 import bud1 from '../../img/home/bud1.jpg'
 import bud2 from '../../img/home/bud2.jpg'
 import bud3 from '../../img/home/bud3.jpg'
+import bud4 from '../../img/home/bud1.jpg'
 
-import ScrollAnimation from 'react-animate-on-scroll';
+//import ScrollAnimation from 'react-animate-on-scroll';
 
 function ComponentCard(){
+
+  const wz='230px';
+  const hr='400px';
 return(
-<Container fluid='sm'>
-  <Row>
-      <Col className='p-3' sm={12} md={4}>
-      <ScrollAnimation animateIn='animate__slideInLeft' animateOut='animate__slideOutLeft' animatePreScroll={false} initiallyVisible={true} >
-        <Card className='bg-transparent text-white'  >
-        <Card.Body>
-        <Card.Title style={{fontSize: '1.2rem'}}>
-            Budownictwo <br/>mieszkaniowe
-        </Card.Title>
-        </Card.Body>
-        <Card.Img variant="bottom" src={bud1} />
-        </Card>
-      </ScrollAnimation>  
+<Container fluid={true} style={{backgroundImage:{}, backgroundColor:'transparent', color:'black', fontFamily:'Roboto Condensed'}}>
+<Container fluid={'md'} style={{backgroundColor:'transparent', color:'black', fontFamily:'Roboto Condensed', marginBottom: '3em'}}>
+  <Row className="justify-content-center mx-auto" style={{backgroundColor:'transparent'}}>
+  <Col className='p-3 d-flex justify-content-center ' xs={12} sm={6} md={6} lg={3}>
+
+          <CardClip img={bud1}
+              width={wz}
+              height={hr}
+              name={"Budownictwo mieszkaniowe"}
+              prof1={""}
+              prof2={""}
+              body='(inne zdjęcie)'
+              backTitle={""}
+              fontBackText={"14px"}
+              backText=" inne zdjęcie) z tyłu opis :opis i zdjęcie doślę w późniejszym terminie"
+            />
       </Col>
 
-      <Col className='p-3' sm={12} md={4}>
-        <Card className='bg-transparent text-white'>
-        <Card.Body>
-        <Card.Title style={{fontSize: '1.2rem'}}>
-          Budownictwo <br/>przemysłowe
-        </Card.Title>
-        </Card.Body>
-        <ScrollAnimation animateIn='animate__rotateIn' animatePreScroll={true} initiallyVisible={false} delay={100}>  
-        <Card.Img variant="bottom" src={bud2} />
-        </ScrollAnimation>  
-        </Card>
+      <Col className='p-3 d-flex justify-content-center' xs={12} sm={6} md={6} lg={3}>
+      <CardClip img={bud2}
+          width={wz}
+          height={hr}
+          name={"Budownictwo handlowo- usługowe i użyteczności publicznej"}
+          prof1={""}
+          prof2={""}
+          body='( zdjęcie jakieś galerii lub biurowca)'
+          backTitle={""}
+          fontBackText={"14px"}
+          backText="opis doślę w późniejszym terminie"
+       />
       </Col>
 
-      <Col className='p-3' sm={12} md={4}>
-      <ScrollAnimation animateIn='animate__slideInRight' animateOut='animate__slideOutRight' animatePreScroll={false} initiallyVisible={true} >
-        <Card className='bg-transparent text-white'>
-        <Card.Body>
-        <Card.Title style={{fontSize: '1.2rem'}}>
-          Obiekty użyteczności <br/>publicznej
-        </Card.Title>
-        </Card.Body>
-        <Card.Img variant="bottom" src={bud3} />
-      </Card>
-      </ScrollAnimation>   
-    </Col>
-  </Row> 
-</Container>
+      <Col className='p-3 d-flex justify-content-center' xs={12} sm={6} md={6} lg={3}>
+      <CardClip img={bud3}
+                width={wz}
+                height={hr}
+                name={"Budownictwo mieszkaniowe"}
+                prof1={""}
+                prof2={""}
+                body='Z nami łatwo poprowadzisz swój&nbsp;biznes.'
+                backTitle={""}
+                fontBackText={"14px"}
+                backText=""
+            />
+      </Col>
+
+      <Col className='p-3 d-flex justify-content-center' xs={12} sm={6} md={6} lg={3}>
+      <CardClip img={bud4}
+                width={wz}
+                height={hr}
+                name={"Budownictwo mieszkaniowe"}
+                prof1={""}
+                prof2={""}
+                body='Z nami łatwo poprowadzisz swój&nbsp;biznes.'
+                backTitle={""}
+                fontBackText={"14px"}
+                backText=""
+            />
+      </Col>
+    </Row>      
+  </Container>
+  </Container>  
 )
 
 }
