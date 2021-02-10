@@ -10,7 +10,7 @@ import ComponentCheck from './ComponentCheck'
 import ComponentPartners from './ComponentPartners'
 //import {Parallax, Background} from "react-parallax";
 
-import image1 from '../../img/home/slide1.jpg'
+import image1 from '../../img/home/slide6.jpg'
 import image2 from '../../img/home/slide2.jpg'
 import image3 from '../../img/home/slide3.jpg'
 import crane from '../../img/background-crane-1.jpg';
@@ -18,11 +18,7 @@ import crane from '../../img/background-crane-1.jpg';
 
 
 function Home() {
-  
-  
-  
   return (
-   
   <Container fluid={true} className='Home' style={{
         backgroundImage: `url(${crane})`,
         backgroundPosition: 'center',

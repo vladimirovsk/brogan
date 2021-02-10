@@ -1,13 +1,28 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import logo from '../../img/brogan-logo.png'
+import backgr from '../../img/footer-bg-1.jpg'
 
 import './Footer.css';
 
 function Footer() {
 
   return (
-    <Container fluid={true} className='Footer' style={{opacity: 0.8, backgroundColor:'white'}}>
+    <Container fluid={true} className='Footer' style={{
+      opacity: 0.8, 
+      // backgroundColor:'transparent',
+      backgroundImage: `url(${backgr})`, 
+      backgroundPosition: "center",
+      backgroundSize: "initial",
+      backgroundRepeat:"no-repeat",
+      backgroundAttachment: "fixed",
+      backgroundOrigin: "initial",
+      backgroundClip: "initial",
+      backgroundColor: "initial",
+      color: 'black',
+      paddingTop: '5em',
+      paddingBottom: '5em'
+      }}>
     <Row style={{paddingTop: '1em', paddingBottom: '5em'}}>
       <Col sm={6} md={2}><img src={logo} height='140px'  alt='logo' /></Col>
       <Col sm={6} md={5}>

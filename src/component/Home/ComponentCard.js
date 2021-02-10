@@ -4,14 +4,14 @@ import CardClip from '../CardClip/CardClip'
 import bud1 from '../../img/home/bud1.jpg'
 import bud2 from '../../img/home/bud2.jpg'
 import bud3 from '../../img/home/bud3.jpg'
-import bud4 from '../../img/home/bud1.jpg'
+import bud4 from '../../img/home/bud4.jpg'
 
 //import ScrollAnimation from 'react-animate-on-scroll';
 
 function ComponentCard(){
 
   const wz='230px';
-  const hr='400px';
+  const hr='300px';
 return(
 <Container fluid={true} style={{backgroundImage:{}, backgroundColor:'transparent', color:'black', fontFamily:'Roboto Condensed'}}>
 <Container fluid={'md'} style={{backgroundColor:'transparent', color:'black', fontFamily:'Roboto Condensed', marginBottom: '3em'}}>
@@ -49,13 +49,13 @@ return(
       <CardClip img={bud3}
                 width={wz}
                 height={hr}
-                name={"Budownictwo mieszkaniowe"}
+                name={"Hale przemysłowe"}
                 prof1={""}
                 prof2={""}
-                body='Z nami łatwo poprowadzisz swój&nbsp;biznes.'
+                body='zdjęcie hali'
                 backTitle={""}
                 fontBackText={"14px"}
-                backText=""
+                backText="opis doślę w późniejszym terminie"
             />
       </Col>
 
@@ -63,13 +63,13 @@ return(
       <CardClip img={bud4}
                 width={wz}
                 height={hr}
-                name={"Budownictwo mieszkaniowe"}
+                name={"Inwestycje deweloperskie"}
                 prof1={""}
                 prof2={""}
-                body='Z nami łatwo poprowadzisz swój&nbsp;biznes.'
+                body='zdjęcie Strumyka -uj_02c '
                 backTitle={""}
                 fontBackText={"14px"}
-                backText=""
+                backText="opis doślę w późniejszym terminie."
             />
       </Col>
     </Row>      
