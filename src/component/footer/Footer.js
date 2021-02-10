@@ -29,7 +29,6 @@ function Footer() {
         <Row className='RowTitle'>Brogan Group Sp. z o.o.</Row>
         <Row><Col className='RowText'>adres biura: ul. Kobierzyńska 211 lok. nr 3, 30-383 Kraków</Col></Row>
         <Row><Col className='RowText'>adres siedziby: ul. Adama Doboszyńskiego 9, 32-031 Chorowice gm. Mogilany</Col></Row>
-        
       </Col>
       <Col sm={12} md={5}>
         <Row className='RowTitle'>Kontact:</Row>
@@ -38,10 +37,10 @@ function Footer() {
         <Row><Col className='RowText'>
           <a href="mailto:jakub.smulski@brogan.pl" style={{color:'black'}}>jakub.smulski@brogan.pl, </a>
           <a href="mailto:biuro@brogan.pl" style={{color:'black'}}> biuro@brogan.pl</a>
-          </Col></Row>  
+          </Col></Row>
       </Col>
 
-    </Row>  
+    </Row>
     </Container>
   )
 }
