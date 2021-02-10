@@ -7,7 +7,7 @@ import './Footer.css';
 function Footer() {
 
   return (
-    <Container fluid={true} className='Footer' style={{opacity: 0.7}}>
+    <Container fluid={true} className='Footer' style={{opacity: 0.8, backgroundColor:'white'}}>
     <Row style={{paddingTop: '1em', paddingBottom: '5em'}}>
       <Col sm={6} md={2}><img src={logo} height='140px'  alt='logo' /></Col>
       <Col sm={6} md={5}>
@@ -19,10 +19,10 @@ function Footer() {
       <Col sm={12} md={5}>
         <Row className='RowTitle'>Kontact:</Row>
         <Row><Col className='RowText'>
-        tel.<a href="tel:+48600347050">+48 600 347 050</a></Col></Row>
+        tel.<a href="tel:+48600347050" style={{color:'black'}}>+48 600 347 050</a></Col></Row>
         <Row><Col className='RowText'>
-          <a href="mailto:jakub.smulski@brogan.pl">jakub.smulski@brogan.pl, </a>
-          <a href="mailto:biuro@brogan.pl"> biuro@brogan.pl</a>
+          <a href="mailto:jakub.smulski@brogan.pl" style={{color:'black'}}>jakub.smulski@brogan.pl, </a>
+          <a href="mailto:biuro@brogan.pl" style={{color:'black'}}> biuro@brogan.pl</a>
           </Col></Row>  
       </Col>
 

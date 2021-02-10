@@ -8,21 +8,14 @@ import Componet1 from './ComponetFirst'
 import ComponentCard from './ComponentCard'
 import ComponentCheck from './ComponentCheck'
 import ComponentPartners from './ComponentPartners'
-import {Parallax, Background} from "react-parallax";
+//import {Parallax, Background} from "react-parallax";
 
 import image1 from '../../img/home/slide1.jpg'
 import image2 from '../../img/home/slide2.jpg'
 import image3 from '../../img/home/slide3.jpg'
 import crane from '../../img/background-crane-1.jpg';
 
-const insideStyles = {
-  background: "white",
-  padding: 20,
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%,-50%)"
-};
+
 
 function Home() {
   
@@ -31,17 +24,30 @@ function Home() {
   return (
    
   <Container fluid={true} className='Home' style={{
-   
+        backgroundImage: `url(${crane})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: "fixed",
+        backgroundOrigin: "initial",
+        backgroundClip: "initial",
+        backgroundColor: "initial",
+
+        // position: 'fixed',
+        // display: 'block',
+        // top: '0',
+        // left: '0',
+        //  width: '100%',
+        //  height: '100%',
+        // backgroundSize: "cover",
+        // backgroundPosition: 'center center',
         // backgroundImage: `url(${crane})`,
-        // backgroundPosition: 'center',
-        // backgroundSize: 'cover',
+        // transform: 'translateZ(0)',
+        // willChange: 'transform',
         // backgroundRepeat: 'no-repeat',
-        // backgroundAttachment: "fixed",
 
         // backgroundOrigin: "initial",
         // backgroundClip: "initial",
-        // backgroundColor: "initial",
-
     }}>
     
        <Carousel  fade={true} controls={false} indicators={false} pause={false} wrap={true} interval={6000}>
@@ -78,7 +84,7 @@ function Home() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <Parallax strength={500} bgImage={crane}>
+      {/* <Parallax strength={500} bgImage={crane}> */}
       
       {/* <Background className="custom-bg" style={{widows: '100vh'}}>
         <img src = {crane} alt='' />
@@ -90,7 +96,7 @@ function Home() {
           <ComponentCheck />
           <ComponentPartners />
           <Footer /> 
-      </Parallax>
+      {/* </Parallax> */}
   </Container>
 
 

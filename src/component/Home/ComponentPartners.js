@@ -15,7 +15,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import './Home.css'
 function ComponentPartners() {
   return (
-    <Container fluid={true}>
+    <Container fluid={true} className={"mt-5"}>
       <Container fluid={'md'}>
       <Row>
         <Col sm={12} className={'text-center'} style={{ fontSize:'2rem', backgroundColor:'transparent', color:'black'}}>
