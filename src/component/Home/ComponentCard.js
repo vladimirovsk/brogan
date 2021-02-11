@@ -3,17 +3,17 @@ import CardClip from '../CardClip/CardClip'
 
 import bud1 from '../../img/home/bud1.jpg'
 import bud2 from '../../img/home/bud2.jpg'
-import bud3 from '../../img/home/bud3.jpg'
-import bud4 from '../../img/home/bud4.jpg'
+import bud3 from '../../img/home/slide5.jpg'  //paste crane
+import bud4 from '../../img/home/bud_4.jpg'
 
 //import ScrollAnimation from 'react-animate-on-scroll';
 
 function ComponentCard(){
 
   const wz='230px';
-  const hr='300px';
+  const hr='350px';
 return(
-<Container fluid={true} style={{backgroundImage:{}, backgroundColor:'transparent', color:'black', fontFamily:'Roboto Condensed'}}>
+<Container fluid={true} style={{backgroundColor:'transparent', color:'black', fontFamily:'Roboto Condensed'}}>
 <Container fluid={'md'} style={{backgroundColor:'transparent', color:'black', fontFamily:'Roboto Condensed', marginBottom: '3em'}}>
   <Row className="justify-content-center mx-auto" style={{backgroundColor:'transparent'}}>
   <Col className='p-3 d-flex justify-content-center ' xs={12} sm={6} md={6} lg={3}>

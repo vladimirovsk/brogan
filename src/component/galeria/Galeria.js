@@ -7,13 +7,12 @@ import {Button} from '@material-ui/core';
 import Footer from '../footer/Footer';
 import GaleriaDialog from './GaleriaDialog'
 import ProjectData from './ProjectData'
-
+import {Row, Container} from 'react-bootstrap';
 import { useFirebase } from "react-redux-firebase";
 
+import crane from '../../img/banner-crane.jpg';
 
 import './Galeria.css'
-
-
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -106,8 +105,6 @@ function getImageFirebase(myPatch){
         //setItemList(itemList.push(url)); 
 
      // console.log(itemList);
-    
-
           // .then((res) => {
           //   res.prefixes.forEach((folderRef) => {
           //     console.log('folderRef', folderRef)
@@ -156,17 +153,26 @@ function getImageFirebase(myPatch){
   // },[])
 
   return (
-    <div className={classes.root}>
-
+    <div className={classes.root} style={{backgroundColor:'white'}}>
+    <Container fluid={true} className='Contact' style={{backgroundColor:'white'}}>
+    <Row style={{
+        height:'30vh',  
+        backgroundImage: `url(${crane})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+        }}>
+       
+      </Row>  
+      <Row className="justify-content-center mx-auto">
       <GridList cellHeight={220} className={classes.gridList} cols={3}>
         <GridListTile key="Subheader" cols={3} style={{ height: 'auto',  }}>
-          <ListSubheader component="div" style={{color: 'white', fontSize: '2em', fontFamily:"'Fredoka One', cursive" }}>GALERIA
-            <Button variant="contained" color="primary" onClick={handleFirebaseConnect}>TEST FIREBASE</Button>
+          <ListSubheader component="div" style={{color: 'black', fontSize: '2em', fontFamily:"'Fredoka One', cursive" }}>
+            GALERIA
+            {/* <Button variant="contained" color="primary" onClick={handleFirebaseConnect}>TEST FIREBASE</Button> */}
           </ListSubheader>
         </GridListTile>
-        <GridListTile key={0} cols={3}>
-            <img className={'imageGalerey'} src={myImage} alt={""}/>
-        </GridListTile>   
+  
         {ProjectData.map((project) => (
           <GridListTile key={project.id} cols={project.cols || 1} onClick={(e)=>handleClickOpen(project)}>
             <img className={'imageGalerey'} src={project.img} alt={project.title}/>
@@ -186,8 +192,10 @@ function getImageFirebase(myPatch){
           </GridListTile >
            ))}
       </GridList>   
+      </Row>
       <Footer /> 
       <GaleriaDialog  openDialog={openDialog} setOpenDialog={setOpenDialog} Project={Project}/>
+      </Container>
       </div>
   )
 }

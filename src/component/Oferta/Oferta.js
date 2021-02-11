@@ -16,7 +16,7 @@ function Oferta() {
 
   return(
     <React.Fragment>
-      <Container fluid={true} className='Contact'>
+      <Container fluid={true} className='Contact' style={{backgroundColor:'white'}}>
       <Row style={{
         height:'30vh',  
         backgroundImage: `url(${crane})`,

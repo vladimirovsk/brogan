@@ -3,17 +3,18 @@
 } 
 
 .imageGalerey {
-  opacity: 0.5;
+  opacity: 1;
   /* filter: blur(2px); */
 }
 
 .imageGalerey:hover {
   opacity: 1;
+  box-shadow: 2 2 10px #343434
   /* filter: blur(0px); */
 }
 
 .MuiIconButton-label:hover{
-  box-shadow: 2 2 10px #FFFFFF
+  box-shadow: 2 2 10px #343434
 }
 
 .dialogGalery{

@@ -9,7 +9,7 @@ function Footer() {
 
   return (
     <Container fluid={true} className='Footer' style={{
-      opacity: 0.8, 
+      opacity: 1, 
       // backgroundColor:'transparent',
       backgroundImage: `url(${backgr})`, 
       backgroundPosition: "center",
@@ -41,6 +41,13 @@ function Footer() {
       </Col>
 
     </Row>
+    <Row>
+      <Col className='RowText text-center'>
+      <p>Copyright © {(new Date().getFullYear())} by Brogan Group Sp. z o.o. Wszelkie prawa zastrzeżone.</p>
+      <p>Nasza strona wykorzystuje pliki cookie.</p>
+
+      </Col>
+    </Row>  
     </Container>
   )
 }

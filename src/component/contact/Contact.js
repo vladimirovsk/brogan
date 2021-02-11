@@ -45,7 +45,7 @@ function Contact() {
        
         </Col>
         <Col sm={12} md={6}>
-        <Card bg='dark' className='addressCard'>
+        <Card bg='white' className='addressCard'>
           <Card.Header>Brogan Group Sp. z o.o.</Card.Header>
           <Card.Body>
             <Card.Title>Adres biura:</Card.Title>

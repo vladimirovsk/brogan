@@ -12,6 +12,14 @@ import Header from './component/Header/Header'
 import Oferta from './component/Oferta/Oferta';
 import Firma from './component/Firma/Firma';
 import Home from './component/Home/Home'
+
+import {setDefaultLanguage, setLanguageCookie, setTranslations, translate} from "react-switch-lang";
+import en from './i18/en.json';
+import pl from './i18/pl.json';
+
+setTranslations({ en, pl });
+setDefaultLanguage('pl');
+setLanguageCookie();
 // import crane from './img/background-crane-1.jpg'
 
 function App() {
@@ -42,4 +50,4 @@ function App() {
   );
 }
 
-export default (App);
+export default translate(App);

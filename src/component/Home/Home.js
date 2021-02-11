@@ -27,7 +27,8 @@ function Home() {
         backgroundAttachment: "fixed",
         backgroundOrigin: "initial",
         backgroundClip: "initial",
-        backgroundColor: "initial",
+        backgroundColor: "white",
+        
 
         // position: 'fixed',
         // display: 'block',
@@ -45,9 +46,9 @@ function Home() {
         // backgroundOrigin: "initial",
         // backgroundClip: "initial",
     }}>
-    
-       <Carousel  fade={true} controls={false} indicators={false} pause={false} wrap={true} interval={6000}>
-        <Carousel.Item >
+       <div style={{backgroundColor:'white'}}> 
+       <Carousel  fade={true} controls={false} indicators={false} pause={false} wrap={true} interval={6000} >
+        <Carousel.Item style={{transition: 'transform 2s ease, opacity 3s ease-out'}} >
           <img
             className="d-block"
             src={image1}
@@ -58,7 +59,7 @@ function Home() {
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item style={{transition: 'transform 2s ease, opacity 3s ease-out'}}> 
           <img
             className="d-block"
             src={image2}
@@ -69,7 +70,7 @@ function Home() {
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item style={{transition: 'transform 2s ease, opacity 3s ease-out'}}>
           <img
             className="d-block"
             src={image3}
@@ -80,6 +81,7 @@ function Home() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      </div>
       {/* <Parallax strength={500} bgImage={crane}> */}
       
       {/* <Background className="custom-bg" style={{widows: '100vh'}}>

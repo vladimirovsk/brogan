@@ -46,7 +46,8 @@
 }
 
 .flip-card-inner:hover{
-    box-shadow: 0px 0px 15px 1px #525252;
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 20px 0px #525252;
 }
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -54,8 +55,9 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    transition: transform 1.1s;
-    box-shadow: 0px 0px 5px 1px #525252;
+    /* transition: transform 1.1s; */
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 5px 0px #525252;
     transform-style: preserve-3d;
 }
 

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.navbar-toggler {
+  background-color: red;
+}
+
 /*drop-down override*/
 .dropdown-menu {
   font-family: 'Roboto Condensed', sans-serif;
@@ -80,7 +84,7 @@ a:hover{
 } 
 
 .navbar {
-  opacity: 0.8;       
+  opacity: 1;       
   background-color: white;
   color: black;
   font-family: 'Roboto Condensed', sans-serif;
