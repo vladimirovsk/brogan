@@ -17,7 +17,10 @@ import crane from '../../img/background-crane-1.jpg';
 
 
 
+
 function Home() {
+
+
   return (
   <Container fluid={true} className='Home' style={{
         backgroundImage: `url(${crane})`,
@@ -77,7 +80,7 @@ function Home() {
             alt="Third slide"
           />
           <Carousel.Caption className='captionCarusel'>
-            <div>Usługi ogólnobudowlane</div>
+            <div>Budownictwo handlowo-usługowe</div>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
@@ -87,8 +90,7 @@ function Home() {
       {/* <Background className="custom-bg" style={{widows: '100vh'}}>
         <img src = {crane} alt='' />
       </Background>  */}
-   
-     
+
           <Componet1 />
           <ComponentCard />
           <ComponentCheck />

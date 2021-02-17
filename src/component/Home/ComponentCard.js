@@ -1,9 +1,9 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import CardClip from '../CardClip/CardClip'
 
-import bud1 from '../../img/home/bud1.jpg'
-import bud2 from '../../img/home/bud2.jpg'
-import bud3 from '../../img/home/slide5.jpg'  //paste crane
+import bud1 from '../../img/home/bud1_new.jpg'
+import bud2 from '../../img/home/slide5.jpg'
+import bud3 from '../../img/home/bud2.jpg'  //paste crane
 import bud4 from '../../img/home/bud_4.jpg'
 
 //import ScrollAnimation from 'react-animate-on-scroll';
@@ -11,7 +11,8 @@ import bud4 from '../../img/home/bud_4.jpg'
 function ComponentCard(){
 
   const wz='230px';
-  const hr='350px';
+  const hr='400px';
+
 return(
 <Container fluid={true} style={{backgroundColor:'transparent', color:'black', fontFamily:'Roboto Condensed'}}>
 <Container fluid={'md'} style={{backgroundColor:'transparent', color:'black', fontFamily:'Roboto Condensed', marginBottom: '3em'}}>
@@ -27,7 +28,7 @@ return(
               body='(inne zdjęcie)'
               backTitle={""}
               fontBackText={"14px"}
-              backText=" inne zdjęcie) z tyłu opis :opis i zdjęcie doślę w późniejszym terminie"
+              backText=" inne zdjęcie z tyłu opis :opis i zdjęcie doślę w późniejszym terminie"
             />
       </Col>
 

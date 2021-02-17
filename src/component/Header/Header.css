@@ -52,6 +52,7 @@ a:hover{
 
 .nav-link{
   margin-right: 20px;
+  border-bottom:2px solid transparent;
 }
 
 .nav-link:hover{
@@ -81,6 +82,7 @@ a:hover{
 } */
 .navbar-nav { 
   margin-left: auto; 
+  margin-right: 0;
 } 
 
 .navbar {

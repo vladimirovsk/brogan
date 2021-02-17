@@ -3,12 +3,11 @@ import {GridList, GridListTile, GridListTileBar, ListSubheader, IconButton} from
 import ApartmentIcon from '@material-ui/icons/Apartment';
 import { makeStyles } from '@material-ui/core/styles';
 import Tooltip from '@material-ui/core/Tooltip';
-import {Button} from '@material-ui/core';
 import Footer from '../footer/Footer';
 import GaleriaDialog from './GaleriaDialog'
 import ProjectData from './ProjectData'
 import {Row, Container} from 'react-bootstrap';
-import { useFirebase } from "react-redux-firebase";
+//import { useFirebase } from "react-redux-firebase";
 
 import crane from '../../img/banner-crane.jpg';
 
@@ -33,11 +32,11 @@ function Galeria() {
   const classes = useStyles();
   const [openDialog, setOpenDialog] = useState(false)
   const [Project, setProject] = useState(1);
-  const [myImage, setMyImage] = useState('');
-  const [itemList, setItemList] = useState([])
+  //const [myImage, setMyImage] = useState('');
+  //const [itemList, setItemList] = useState([])
 
-  const firebase = useFirebase();
-  const storage = firebase.storage();
+  //const firebase = useFirebase();
+  //const storage = firebase.storage();
   
   const handleClickOpen = (project) => {
     setOpenDialog(true)
@@ -74,24 +73,24 @@ function Galeria() {
     // }, [])
     // //console.log(storageRef);
    
-function getImageFirebase(myPatch){
-  setItemList( itemList.splice(0, itemList.length));
-  const storageRef = storage.ref(myPatch);
-  storageRef.listAll()
-  .then((res) => {
-      res.items.forEach((itemRef) => {
-          setItemList(itemList.push(itemRef.fullPath));
-      });
-  }).catch((error) => {
-    console.log('error', error)
-  });
-}
+// function getImageFirebase(myPatch){
+//   setItemList( itemList.splice(0, itemList.length));
+//   const storageRef = storage.ref(myPatch);
+//   storageRef.listAll()
+//   .then((res) => {
+//       res.items.forEach((itemRef) => {
+//           setItemList(itemList.push(itemRef.fullPath));
+//       });
+//   }).catch((error) => {
+//     console.log('error', error)
+//   });
+// }
    
     
-  function handleFirebaseConnect(){
-    getImageFirebase('galery/glavn')
-    console.log('itemList', itemList)   
-  }
+  // function handleFirebaseConnect(){
+  //   getImageFirebase('galery/glavn')
+  //   console.log('itemList', itemList)   
+  // }
   
 
       
@@ -139,14 +138,14 @@ function getImageFirebase(myPatch){
         // console.log(listRef);
   // }
     
-  React.useEffect(() => {
-   // setMyImage(getPicture('/galery/project1/1-12.jpg'))
-   //console.log(getPicture('/galery/project1/1-12.jpg'));
-    // getPicture('/galery/project1/1-12.jpg');
-    getImageFirebase('galery/glavn')
-    console.log('ProjectData', ProjectData[1].img)   
-    console.log('itemList', itemList) 
-  }, []);
+  // React.useEffect(() => {
+  //  // setMyImage(getPicture('/galery/project1/1-12.jpg'))
+  //  //console.log(getPicture('/galery/project1/1-12.jpg'));
+  //   // getPicture('/galery/project1/1-12.jpg');
+  //   getImageFirebase('galery/glavn')
+  //   console.log('ProjectData', ProjectData[1].img)   
+  //   console.log('itemList', itemList) 
+  // }, []);
 
   // React.useEffect((){
   //   //getPicture('/galery/project1/1-10.jpg'){
