@@ -6,67 +6,67 @@
     "title":"BROGAN",
     "menu":{
       "Home":"HOME",
-      "About": "O NAS",
+      "About": "ABOUT",
       "DropMenu1":{
-        "Title":"REALIZACJE",
-        "Menu1":"REALIZACJE W TRAKCIE",
-        "Menu2":"INWESTYCJE ZREALIZOWANE",
-        "Menu3":"INWESTYCJE DEWELOPERSKIE"
+        "Title":"REALIZATIONS",
+        "Menu1":"PROJECTS IN PROGRESS",
+        "Menu2":"COMPLETED INVESTMENTS",
+        "Menu3":"DEVELOPMENT INVESTMENTS"
       },
-      "Contact":"KONTACT"
+      "Contact":"CONTACT"
     }
   },
 
   "home":{
     "slider":{
-      "text1":"Budownictwo mieszkaniowe",
-      "text2":"Budownictwo przemysłowe",
-      "text3":"Budownictwo handlowo-usługowe"
+      "text1":"Housing",
+      "text2":"Industrial building",
+      "text3":"Commercial and service construction"
     },
 
     "ComponentFirst":{
-      "title":"Brogan Group Sp. z o.o. - Generalny wykonawcja inwestycji budowlanych",
-      "text1":"Jesteśmy prężnie rozwijającą się firmą z polskim kapitałem, która specjalizuje się w kompleksowym wykonywaniu inwestycji budowlanych. Naszym celem jest świadczenie najwyższej jakości usług dla naszych inwestorów.",
-      "text2":"Posiadamy zaplecze technologiczne. Zatrudniamy wykwalifikowanych pracowników i kierowników budów. Możesz mieć pewność, że z nami każda inwestycja jest prowadzona profesjonalnie na każdym etapie budowy.",
-      "textPhone":"Zadzwoń i zapytaj o szczegóły."
+      "title":"Brogan Group Sp. z o.o. - General contracting of construction investments",
+      "text1":"Our goal is to provide the highest quality services to investors. As a general contractor, we have a qualified management team as well as close-knit, permanent brigades of carpenters, fixers, bricklayers and plasterers.",
+      "text2":"We have our own equipment, including tower cranes. Guided by experience and knowledge at every stage of the investment, we provide professional services and reliably approach the entrusted tasks.",
+      "textPhone":"Call and ask for details."
     },
 
     "ComponentCard":{
 
       "Card1":{
-        "title":"Budownictwo mieszkaniowe",
+        "title":"Housing",
         "prof1":" ",
         "prof2":" ",
-        "body":"(inne zdjęcie)",
-        "backTitle":" ",
-        "backText":"Brogan Group Sp. z o.o. w profilu swojej działalności posiada zrealizowane inwestycje w zakresie budownictwa mieszkaniowego. Spółka świadczy usługi w zakresie budownictwa budynków mieszkalnych. W szczególności specjalizujemy się w budownictwie wielorodzinnym. Doświadczenie i kwalifikacje naszych pracowników pozwala wykonać powierzone prace profesjonalnie i w ustalonym terminie."
+        "body":"",
+        "backTitle":"Brogan Group Sp. z o.o.",
+        "backText":"It is profile of activity includes completed investments in the field of housing construction. The company provides services in the field of construction of residential buildings. In particular, we specialize in multi-family housing. The experience and qualifications of our employees allow us to perform the entrusted work professionally and on time."
       },
 
       "Card2":{
-        "title":"Budownictwo handlowo- usługowe i użyteczności publicznej",
+        "title":"Commercial and service and public utility construction",
         "prof1":" ",
         "prof2":" ",
-        "body":"zdjęcie jakieś galerii lub biurowca",
-        "backTitle":"title",
-        "backText":" opis doślę w późniejszym terminie"
+        "body":"",
+        "backTitle":"Firma Brogan Sp. o.o.",
+        "backText":"He specializes in comprehensive execution of Construction Investments. Our competences allow us to implement Investments of various complexity of technical issues. We have established ourselves as a reliable company that can meet the expectations of each client. "
       },
 
       "Card3":{
-        "title":"Hale przemysłowe",
+        "title":"Industrial halls",
         "prof1":" ",
         "prof2":" ",
-        "body":"zdjęcie hali",
-        "backTitle":"title",
-        "backText":"Opis doślę w późniejszym terminie"
+        "body":" ",
+        "backTitle":"Industrial halls",
+        "backText":"We offer comprehensive services for the general contracting of warehouse halls. We implement both low and high storage facilities"
       },
 
       "Card4":{
         "title":"Inwestycje deweloperskie",
-        "prof1":" ",
+        "prof1":"Our ambition is to create exceptional development investments in the best locations.",
         "prof2":" ",
-        "body":"zdjęcie Strumyka -uj_02c ",
-        "backTitle":"title",
-        "backText":"opis doślę w późniejszym terminie."
+        "body":" ",
+        "backTitle":" ",
+        "backText":"We specialize in modern construction of intimate residential properties. The experience gained is based on successfully completed housing investments for large developers. The fact that we work only with proven specialists and use high-quality materials ensures a high standard of our projects. The use of innovative solutions, care for safety and every detail of the project each time bring us closer to success."
       }
     },
 
