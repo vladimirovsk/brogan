@@ -37,7 +37,7 @@
         "title":"Housing",
         "prof1":" ",
         "prof2":" ",
-        "body":"",
+        "body":" ",
         "backTitle":"Brogan Group Sp. z o.o.",
         "backText":"It is profile of activity includes completed investments in the field of housing construction. The company provides services in the field of construction of residential buildings. In particular, we specialize in multi-family housing. The experience and qualifications of our employees allow us to perform the entrusted work professionally and on time."
       },
@@ -46,7 +46,7 @@
         "title":"Commercial and service and public utility construction",
         "prof1":" ",
         "prof2":" ",
-        "body":"",
+        "body":" ",
         "backTitle":"Firma Brogan Sp. o.o.",
         "backText":"He specializes in comprehensive execution of Construction Investments. Our competences allow us to implement Investments of various complexity of technical issues. We have established ourselves as a reliable company that can meet the expectations of each client. "
       },
@@ -79,6 +79,7 @@
       "check5":"obsługa formalna inwestycji",
       "check6":"doradztwo budowlane"
     },
+    
     "ComponentPartners":{
       "title":"Współpracujemy z najlepszymi"
     }
