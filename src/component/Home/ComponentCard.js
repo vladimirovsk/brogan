@@ -1,3 +1,4 @@
+import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap';
 import CardClip from '../CardClip/CardClip'
 
@@ -6,12 +7,15 @@ import bud2 from '../../img/home/slide5.jpg'
 import bud3 from '../../img/home/bud2.jpg'  //paste crane
 import bud4 from '../../img/home/bud_4.jpg'
 
+
+import {translate} from 'react-switch-lang';
 //import ScrollAnimation from 'react-animate-on-scroll';
 
-function ComponentCard(){
+function ComponentCard(props){
 
+  const [{t}] = React.useState(props)
   const wz='230px';
-  const hr='400px';
+  const hr='350px';
 
 return(
 <Container fluid={true} style={{backgroundColor:'transparent', color:'black', fontFamily:'Roboto Condensed'}}>
@@ -22,62 +26,62 @@ return(
           <CardClip img={bud1}
               width={wz}
               height={hr}
-              name={"Budownictwo mieszkaniowe"}
-              prof1={""}
-              prof2={""}
-              body='(inne zdjęcie)'
-              backTitle={""}
+              name={t("home.ComponentCard.Card1.title")}
+              prof1={t("home.ComponentCard.Card1.prof1")}
+              prof2={t("home.ComponentCard.Card1.prof2")}
+              body={t("home.ComponentCard.Card1.body")}
+              backTitle={t("home.ComponentCard.Card1.backTitle")}
               fontBackText={"14px"}
-              backText=" inne zdjęcie z tyłu opis :opis i zdjęcie doślę w późniejszym terminie"
+              backText={t("home.ComponentCard.Card1.backText")}
             />
       </Col>
 
       <Col className='p-3 d-flex justify-content-center' xs={12} sm={6} md={6} lg={3}>
       <CardClip img={bud2}
-          width={wz}
-          height={hr}
-          name={"Budownictwo handlowo- usługowe i użyteczności publicznej"}
-          prof1={""}
-          prof2={""}
-          body='( zdjęcie jakieś galerii lub biurowca)'
-          backTitle={""}
-          fontBackText={"14px"}
-          backText="opis doślę w późniejszym terminie"
+              width={wz}
+              height={hr}
+              name={t("home.ComponentCard.Card2.title")}
+              prof1={t("home.ComponentCard.Card2.prof1")}
+              prof2={t("home.ComponentCard.Card2.prof2")}
+              body={t("home.ComponentCard.Card2.body")}
+              backTitle={t("home.ComponentCard.Card2.backTitle")}
+              fontBackText={"14px"}
+              backText={t("home.ComponentCard.Card2.backText")}
        />
       </Col>
 
       <Col className='p-3 d-flex justify-content-center' xs={12} sm={6} md={6} lg={3}>
       <CardClip img={bud3}
-                width={wz}
-                height={hr}
-                name={"Hale przemysłowe"}
-                prof1={""}
-                prof2={""}
-                body='zdjęcie hali'
-                backTitle={""}
-                fontBackText={"14px"}
-                backText="opis doślę w późniejszym terminie"
+              width={wz}
+              height={hr}
+              name={t("home.ComponentCard.Card3.title")}
+              prof1={t("home.ComponentCard.Card3.prof1")}
+              prof2={t("home.ComponentCard.Card3.prof2")}
+              body={t("home.ComponentCard.Card3.body")}
+              backTitle={t("home.ComponentCard.Card3.backTitle")}
+              fontBackText={"14px"}
+              backText={t("home.ComponentCard.Card3.backText")}
             />
       </Col>
 
       <Col className='p-3 d-flex justify-content-center' xs={12} sm={6} md={6} lg={3}>
       <CardClip img={bud4}
-                width={wz}
-                height={hr}
-                name={"Inwestycje deweloperskie"}
-                prof1={""}
-                prof2={""}
-                body='zdjęcie Strumyka -uj_02c '
-                backTitle={""}
-                fontBackText={"14px"}
-                backText="opis doślę w późniejszym terminie."
+              width={wz}
+              height={hr}
+              name={t("home.ComponentCard.Card4.title")}
+              prof1={t("home.ComponentCard.Card4.prof1")}
+              prof2={t("home.ComponentCard.Card4.prof2")}
+              body={t("home.ComponentCard.Card4.body")}
+              backTitle={t("home.ComponentCard.Card4.backTitle")}
+              fontBackText={"13px"}
+              backText={t("home.ComponentCard.Card4.backText")}
             />
       </Col>
-    </Row>      
+    </Row>
   </Container>
   </Container>  
 )
 
 }
 
-export default ComponentCard;
+export default translate(ComponentCard);

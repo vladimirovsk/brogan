@@ -1,5 +1,6 @@
+import React from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap';
-
+import {translate} from 'react-switch-lang';
 
 import partner1 from '../../img/home/partner/budimex-logo.jpg'
 import partner2 from '../../img/home/partner/acar-developer-logo.jpg'
@@ -13,13 +14,15 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 
 import './Home.css'
-function ComponentPartners() {
+function ComponentPartners(props) {
+  const [{t}] = React.useState(props);
+
   return (
     <Container fluid={true} className={"mt-5"}>
       <Container fluid={'md'}>
       <Row>
         <Col sm={12} className={'text-center'} style={{ fontSize:'2rem', backgroundColor:'transparent', color:'black'}}>
-          Współpracujemy z najlepszymi
+          {t("home.ComponentPartners.title")}
         </Col>  
         
         <Col sm={12} md={6}>
@@ -52,4 +55,4 @@ function ComponentPartners() {
   )
 }
 
-export default ComponentPartners;
+export default translate(ComponentPartners);

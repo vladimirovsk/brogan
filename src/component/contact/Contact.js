@@ -1,5 +1,6 @@
 import React from 'react';
 import {Row, Col, Container, Card} from 'react-bootstrap';
+import {translate} from 'react-switch-lang';
 
 import Footer from '../footer/Footer';
 import './Contact.css';
@@ -11,7 +12,8 @@ import crane from '../../img/banner-crane.jpg';
 
 
 
-function Contact() {
+function Contact(props) {
+  const [{t}] = React.useState(props);
 
   const building = (
     <svg style={{marginRight: '0.5em', color: 'red'}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
@@ -44,12 +46,6 @@ function Contact() {
        
       </Row>  
       <Row>  
-      {/* <Row style={{
-                backgroundImage: `url(${plan})`,
-                backgroundPosition: 'center',
-               backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat'
-      }}> */}
         <Col sm={6} md={4} style={{
             display: 'flex',
             alignItems: 'center',
@@ -63,7 +59,7 @@ function Contact() {
           fontFamily: "'Fredoka One', cursive",
           fontSize: '3em',
           color: 'red'
-        }}> BROGAN
+        }}> {t("header.title")}
 
           </div>
           </Col>
@@ -72,14 +68,14 @@ function Contact() {
         </Col>
         <Col sm={12} md={6}>
         <Card bg='white' className='addressCard'>
-          <Card.Header>Brogan Group Sp. z o.o.</Card.Header>
+          <Card.Header>{t("contact.title")}</Card.Header>
           <Card.Body>
-            <Card.Title>Adres biura:</Card.Title>
+            <Card.Title>{t("contact.card.title")}</Card.Title>
             <Card.Text style={{
               textAlign: 'left'
               }}>
-              {building}ul. Kobierzyńska 211 lok. nr 3  30-383 kraków<br />
-             {telephone}<a href="tel: +48600347050">+48 600 347 050</a><br />
+              {building}{t("contact.card.addres")}<br />
+              {telephone}<a href="tel: +48600347050">+48 600 347 050</a><br />
               {mail}<a href="mailto: jakub.smulski@brogan.pl">jakub.smulski@brogan.pl,</a><br />
               {mail}<a href="mailto: biuro@brogan.pl">biuro@brogan.pl</a>
             </Card.Text>
@@ -89,7 +85,6 @@ function Contact() {
         </Row>
         <Row>
           <Col sm={12} md={12}>
-          
               <iframe title="BROGAN" src="https://www.google.pl/maps/embed?pb=!1m18!1m12!1m3!1d1282.0354722990157!2d19.895862063477338!3d50.010025471376494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165cfa81a3ffff%3A0x3f80456edafdcba!2sKobierzynska%20211!5e0!3m2!1sru!2spl!4v1611910526186!5m2!1sru!2spl" 
               width="100%" height="300" style={{border:0}}
               aria-hidden="false"></iframe>
@@ -104,4 +99,4 @@ function Contact() {
 }
 
 
-export default Contact;
+export default translate(Contact);

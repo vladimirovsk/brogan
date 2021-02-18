@@ -11,7 +11,10 @@ import oferta1 from './oferta-1.jpg';
 import oferta2 from './oferta-2.jpg';
 import oferta3 from './oferta-3.jpg';
 
-function Oferta() {
+import {translate} from 'react-switch-lang';
+
+function Oferta(props) {
+  const [{t}] = React.useState(props);
 
 
   return(
@@ -29,7 +32,7 @@ function Oferta() {
       <Container fluid={'md'}>
       <Row>  
         <Col sm={12}>
-        <h3>Brogan Group Sp. z o.o. - Generalny wykonawca inwestycji budowalnych Oferta</h3>
+        <h3>{t("oferta.title")}</h3>
         </Col>
       </Row>
       <ScrollAnimation animateIn='animate__slideInUp' animatePreScroll={true} initiallyVisible={false} >
@@ -37,14 +40,12 @@ function Oferta() {
       <Row>
       
         <Col sm={12} md={4}>
-        <img src={oferta1} alt='oferta1'  className='ofertaImage'/>
+        <img src={oferta1} alt='oferta1' className='ofertaImage'/>
         </Col >
         <Col sm={12} md={8}>
-        <h3>Generalne wykonawstwo inwestycji budowlanych</h3>
+        <h3>{t("oferta.card1.title")}</h3>
         <div className='ofertaText' >
-          Firma Brogan Sp. o.o. specjalizuje się kompleksowym wykonawstwem Inwestycji Budowlanych. 
-          Nasze kompetencje pozwalają Nam realizować Inwestycje o różnorodnej złożoności zagadnień technicznych oraz technologicznych. 
-          Daliśmy się poznać jako Firma rzetelna, która potrafi spełniać oczekiwania każdego Klienta.
+          {t("oferta.card1.text")}
         </div>
         </Col>
       </Row> 
@@ -58,11 +59,9 @@ function Oferta() {
         <img src={oferta2} alt='oferta2' className='ofertaImage'/>
         </Col>
         <Col sm={12} md={8}>
-        <h3>Budownictwo mieszkaniowe</h3>
+        <h3>{t("oferta.card2.title")}</h3>
         <div className='ofertaText'>
-          Firma Brogan Sp. o.o. specjalizuje się kompleksowym wykonawstwem Inwestycji Budowlanych. 
-          Nasze kompetencje pozwalają Nam realizować Inwestycje o różnorodnej złożoności zagadnień technicznych oraz technologicznych. 
-          Daliśmy się poznać jako Firma rzetelna, która potrafi spełniać oczekiwania każdego Klienta.
+        {t("oferta.card2.text")}
         </div>
         </Col>
       </Row> 
@@ -76,11 +75,9 @@ function Oferta() {
         <img src={oferta3} alt='oferta3' className='ofertaImage' />
         </Col>
         <Col sm={12} md={8}>
-        <h3>Budowa obiektów przemysłowych</h3>
+        <h3>{t("oferta.card3.title")}</h3>
         <div className='ofertaText'>
-          Firma Brogan Sp. o.o. specjalizuje się kompleksowym wykonawstwem Inwestycji Budowlanych. 
-          Nasze kompetencje pozwalają Nam realizować Inwestycje o różnorodnej złożoności zagadnień technicznych oraz technologicznych. 
-          Daliśmy się poznać jako Firma rzetelna, która potrafi spełniać oczekiwania każdego Klienta.
+        {t("oferta.card3.text")}
         </div>
         </Col>
       </Row> 
@@ -95,4 +92,4 @@ function Oferta() {
 }
 
 
-export default Oferta;
+export default translate(Oferta);

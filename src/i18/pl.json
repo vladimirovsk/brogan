@@ -1,5 +1,122 @@
 {
   "pl":{
     "text":"PL"
-  }
+  },
+
+  "header":{
+    "title":"BROGAN",
+    "menu":{
+      "Home":"HOME",
+      "About": "O NAS",
+      "DropMenu1":{
+        "Title":"REALIZACJE",
+        "Menu1":"REALIZACJE W TRAKCIE",
+        "Menu2":"INWESTYCJE ZREALIZOWANE",
+        "Menu3":"INWESTYCJE DEWELOPERSKIE"
+      },
+      "Contact":"KONTACT"
+    }
+  },
+
+  "home":{
+    "slider":{
+      "text1":"Budownictwo mieszkaniowe",
+      "text2":"Budownictwo przemysłowe",
+      "text3":"Budownictwo handlowo-usługowe"
+    },
+
+    "ComponentFirst":{
+      "title":"Brogan Group Sp. z o.o. - Generalny wykonawcja inwestycji budowlanych",
+      "text1":"Naszym celem jest świadczenie najwyższej jakości usług dla inwestorów. Jako Generalny wykonawca posiadamy wykfalifikowaną kadrę kierowniczą oraz zgrane, stałe brygady cieśli, zbrojarzy, murarzy i tynkarzy.",
+      "text2":"Dysponujemy własnym sprzętem między innymi żurawiami wieżowymi. Kierując się doświadczeniem i wiedzą na każdym etapie inwestycji dostarczamy profesjonalne usługi oraz rzetelnie podchodzimy do powierzonych zadań.",
+      "textPhone":"Zadzwoń i zapytaj o szczegóły."
+    },
+
+    "ComponentCard":{
+
+      "Card1":{
+        "title":"Budownictwo mieszkaniowe",
+        "prof1":" ",
+        "prof2":" ",
+        "body":" ",
+        "backTitle":"Brogan Group Sp. z o.o.",
+        "backText":"W profilu swojej działalności posiada zrealizowane inwestycje w zakresie budownictwa mieszkaniowego. Spółka świadczy usługi w zakresie budownictwa budynków mieszkalnych. W szczególności specjalizujemy się w budownictwie wielorodzinnym. Doświadczenie i kwalifikacje naszych pracowników pozwala wykonać powierzone prace profesjonalnie i w ustalonym terminie."
+      },
+
+      "Card2":{
+        "title":"Budownictwo handlowo- usługowe i użyteczności publicznej",
+        "prof1":" ",
+        "prof2":" ",
+        "body":" ",
+        "backTitle":"Firma Brogan Sp. o.o. ",
+        "backText":"Specjalizuje się kompleksowym wykonawstwem Inwestycji Budowlanych. Nasze kompetencje pozwalają Nam realizować Inwestycje o różnorodnej złożoności zagadnień technicznych. Daliśmy się poznać jako Firma rzetelna, która potrafi spełniać oczekiwania każdego Klienta."
+      },
+
+      "Card3":{
+        "title":"Hale przemysłowe",
+        "prof1":" ",
+        "prof2":" ",
+        "body":" ",
+        "backTitle":"Hale przemysłowe",
+        "backText":"Oferujemy kompleksowe usługi dotyczące generalnego wykonawstwa hal magazynowych. Realizujemy zarówno obiekty niskiego, jak i wysokiego składowania"
+      },
+
+      "Card4":{
+        "title":"Inwestycje deweloperskie",
+        "prof1":"Naszą ambicją jest tworzenie wyjątkowych inwestycji deweloperskich w najlepszych lokalizacjach.",
+        "prof2":" ",
+        "body":" ",
+        "backTitle":" ",
+        "backText":"Specjalizujemy się w nowoczesnym budownictwie kameralnych nieruchomości mieszkaniowych. Zdobyte doświadczenie oparte jest na zrealizowanych z sukcesem inwestycjach mieszkaniowych dla dużych deweloperów. Fakt, że współpracujemy tylko ze sprawdzonymi specjalistami i wykorzystujemy wysokiej jakości materiały, zapewnia wysoki standard realizowanych projektów. Stosowanie innowacyjnych rozwiązań, dbałość o bezpieczeństwo i o każdy szczegół wykonania projektu każdorazowo zbliżają nas do sukcesu."
+      }
+    },
+
+    "ComponentCheck":{
+      "title":"Zakres usług",
+      "check1":"generalne wykonawstwo inwestycji budowlanych",
+      "check2":"budowa obiektów mieszkaniowych",
+      "check3":"wynajem żurawi wieżowych dolno i górno obrotowych",
+      "check4":"budowa obiektów przemysłowych",
+      "check5":"obsługa formalna inwestycji",
+      "check6":"doradztwo budowlane"
+    },
+    "ComponentPartners":{
+      "title":"Współpracujemy z najlepszymi"
+    }
+  },
+
+  "footer":{
+    "titleFirm":"Brogan Group Sp. z o.o.",
+    "addres1":"biura: ul. Kobierzyńska 211 lok. nr 3, 30-383 Kraków",
+    "addres2":"siedziby: ul. Adama Doboszyńskiego 9, 32-031 Chorowice gm. Mogilany",
+    "titleKontact":"Kontact:",
+    "copyright1":"by Brogan Group Sp. z o.o. Wszelkie prawa zastrzeżone.",
+    "copyright2":"Nasza strona wykorzystuje pliki cookie."
+
+  },
+
+  "oferta":{
+    "title":"Brogan Group Sp. z o.o. - Generalny wykonawca inwestycji budowalnych Oferta",
+    "card1":{
+      "title":"Generalne wykonawstwo inwestycji budowlanych",
+      "text":"Firma Brogan Sp. o.o. specjalizuje się kompleksowym wykonawstwem Inwestycji Budowlanych. Nasze kompetencje pozwalają Nam realizować Inwestycje o różnorodnej złożoności zagadnień technicznych oraz technologicznych. Daliśmy się poznać jako Firma rzetelna, która potrafi spełniać oczekiwania każdego Klienta."
+    },
+    "card2":{
+      "title":"Budownictwo mieszkaniowe",
+      "text":"Brogan Group Sp. z o.o. w profilu swojej działalności posiada zrealizowane inwestycje w zakresie budownictwa mieszkaniowego. Spółka świadczy usługi w zakresie budownictwa budynków mieszkalnych. W szczególności specjalizujemy się w budownictwie wielorodzinnym. Doświadczenie i kwalifikacje naszych pracowników pozwala wykonać powierzone prace profesjonalnie i w ustalonym terminie."
+    },
+    "card3":{
+      "title":"Budowa obiektów przemysłowych",
+      "text":"Obiekty przeznaczone do celów wytwórczych. Często budowane sposobami przemysłowymi. Dąży do modernizacji i usprawnienia procesów twórczych na placu budowy. Dzięki zastosowaniu nowoczesnych i bardzo konkurencyjnych produktów na rynku materiałów budowlanych, wznoszenie takich obiektów staje się coraz szybsze. Są to budynki o konstrukcji szkieletowej, wykonanej z elementów monolitycznych i prefabrykowanych."
+    }
+  },
+
+  "contact":{
+    "title":"Brogan Group Sp. z o.o.",
+    "card":{
+      "title":"Adres biura:",
+      "addres":"ul. Kobierzyńska 211 lok. nr 3  30-383 Kraków"  
+    }
+  }  
+
 }

@@ -3,11 +3,13 @@ import {Container, Row, Col} from 'react-bootstrap';
 import logo from '../../img/brogan-logo.png'
 import backgr from '../../img/footer-bg-1.jpg'
 import FloatButton from '../FloatButton/FloatButton'
+import {translate} from 'react-switch-lang';
 
 
 import './Footer.css';
 
-function Footer() {
+function Footer(props) {
+  const [{t}] = React.useState(props);
   const building = (
     <svg style={{marginRight: '0.5em', color: 'red'}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
@@ -46,12 +48,12 @@ function Footer() {
     <Row style={{paddingTop: '1em', paddingBottom: '5em'}}>
       <Col sm={6} md={2}><img src={logo} height='140px'  alt='logo' /></Col>
       <Col sm={6} md={5}>
-        <Row className='RowTitle'>Brogan Group Sp. z o.o.</Row>
-        <Row><Col className='RowText'>{building} biura: ul. Kobierzyńska 211 lok. nr 3, 30-383 Kraków</Col></Row>
-        <Row><Col className='RowText'>{building} siedziby: ul. Adama Doboszyńskiego 9, 32-031 Chorowice gm. Mogilany</Col></Row>
+        <Row className='RowTitle'>{t("footer.titleFirm")}</Row>
+        <Row><Col className='RowText'>{building} {t("footer.addres1")}</Col></Row>
+        <Row><Col className='RowText'>{building} {t("footer.addres2")}</Col></Row>
       </Col>
       <Col sm={12} md={5}>
-        <Row className='RowTitle'>Kontact:</Row>
+        <Row className='RowTitle'>{t("footer.titleKontact")}</Row>
         <Row><Col className='RowText'>
         {telephone}<a href="tel:+48600347050" style={{color:'black'}}>+48 600 347 050</a></Col></Row>
         <Row><Col className='RowText'>
@@ -70,8 +72,8 @@ function Footer() {
     </Row>
     <Row>
       <Col className='RowText text-center'>
-      <p>Copyright © {(new Date().getFullYear())} by Brogan Group Sp. z o.o. Wszelkie prawa zastrzeżone.</p>
-      <p>Nasza strona wykorzystuje pliki cookie.</p>
+      <p>Copyright © {(new Date().getFullYear())} {t("footer.copyright1")}</p>
+      <p>{t("footer.copyright2")}</p>
 
       </Col>
     </Row>  
@@ -80,4 +82,4 @@ function Footer() {
   )
 }
 
-export default Footer;
+export default translate(Footer);

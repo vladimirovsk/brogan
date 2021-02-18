@@ -1,18 +1,11 @@
+import React from 'react';
 import {Row, Col, Container} from 'react-bootstrap';
-import backgr from '../../img/footer-bg-1.jpg'
+import backgr from '../../img/footer-bg-1.jpg';
+import {translate} from 'react-switch-lang';
 
-//     background: url(../images/footer-bg-1.jpg) no-repeat fixed center;
-//     background-image: url(../images/footer-bg-1.jpg);
-//     background-position-x: center;
-//     background-position-y: center;
-//     background-size: initial;
-//     background-repeat-x: no-repeat;
-//     background-repeat-y: no-repeat;
-//     background-attachment: fixed;
-//     background-origin: initial;
-//     background-clip: initial;
-//     background-color: initial;
-function ComponentCheck(){
+function ComponentCheck(props){
+  const [{t}] = React.useState(props);
+
   return(
   <Container fluid = {true} style={{
     backgroundImage: `url(${backgr})`, 
@@ -33,22 +26,22 @@ function ComponentCheck(){
         fontSize:'2rem',
         color: 'black'
       }}>
-      Zakres usług
+      {t("home.ComponentCheck.title")}
     </Col>
 
     <Col sm={12} md={6} style={{color: 'black'}}>
       <ul className='text-left homeCheckBox'>
-        <li>generalne wykonawstwo inwestycji budowlanych</li>
-        <li>budowa obiektów mieszkaniowych</li>
-        <li>wynajem żurawi wieżowych dolno i górno obrotowych</li>
+        <li>{t("home.ComponentCheck.check1")}</li>
+        <li>{t("home.ComponentCheck.check2")}</li>
+        <li>{t("home.ComponentCheck.check3")}</li>
       </ul>
     </Col>
 
     <Col sm={12} md={6}>
     <ul className='text-left homeCheckBox'>
-        <li>budowa obiektów przemysłowych</li>
-        <li>obsługa formalna inwestycji</li>
-        <li>doradztwo budowlane</li>
+        <li>{t("home.ComponentCheck.check4")}</li>
+        <li>{t("home.ComponentCheck.check5")}</li>
+        <li>{t("home.ComponentCheck.check6")}</li>
       </ul>
     </Col>
   </Row> 
@@ -57,4 +50,4 @@ function ComponentCheck(){
   )
 }
 
-export default ComponentCheck;
+export default translate(ComponentCheck);
