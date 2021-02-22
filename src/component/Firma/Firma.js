@@ -33,6 +33,9 @@ function Firma() {
               świadectwami certyfikacji. Cechuje nas indywidualne podejście do realizowanych projektów, 
               a każde zlecenie traktujemy jako nowe wyzwanie.
             </div>  
+            <div className="textFirma">
+              Fakt, że współpracujemy tylko ze sprawdzonymi specjalistami i wykorzystujemy materiały o wysokiej jakości, zapewnia najwyższy standard realizowanych projektów. Stosowanie innowacyjnych rozwiązań, dbałość o bezpieczeństwo i o każdy szczegół wykonania projektu każdorazowo gwarantują nam sukces.
+            </div>  
             <div style={{height: '10vh'}}>
               
             </div>

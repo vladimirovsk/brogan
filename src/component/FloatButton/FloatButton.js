@@ -8,7 +8,7 @@ return (
   <React.Fragment>
      <a  href="tel: +48600347050">
       <button className="floatButton floatButtonCall" style={{margin: '5px'}}>
-        <span class="icon">
+        <span className="icon">
            <CallIcon style={{fontSize: '2.2em'}} />
         </span>        
       </button> 
