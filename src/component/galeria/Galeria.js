@@ -5,11 +5,15 @@ import { makeStyles } from '@material-ui/core/styles';
 import Tooltip from '@material-ui/core/Tooltip';
 import Footer from '../footer/Footer';
 import GaleriaDialog from './GaleriaDialog'
-import ProjectData from './ProjectData'
+
+import ZrealizovaneData from './ZrealizovaneData'
+import RealizaciaData from './RealizaciaData'
+
 import {Row, Container} from 'react-bootstrap';
-//import { useFirebase } from "react-redux-firebase";
+import {useParams} from 'react-router-dom';
 
 import crane from '../../img/banner-crane.jpg';
+import {translate} from 'react-switch-lang';
 
 import './Galeria.css'
 
@@ -27,17 +31,15 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function Galeria() {
-
+function Galeria(props) {
+  const [{t}] = React.useState(props);
+  let   {tipe} = useParams()
   const classes = useStyles();
   const [openDialog, setOpenDialog] = useState(false)
-  const [Project, setProject] = useState(1);
-  //const [myImage, setMyImage] = useState('');
-  //const [itemList, setItemList] = useState([])
+  const [project, setProject] = useState(1);
+  const [selectGaleria, setSelectGaleria] = useState(tipe);
+  const [title, setTitle] = useState('');
 
-  //const firebase = useFirebase();
-  //const storage = firebase.storage();
-  
   const handleClickOpen = (project) => {
     setOpenDialog(true)
     setProject(project)
@@ -53,103 +55,91 @@ function Galeria() {
     },
   }));
 
+  //relizaziya
+  const Relizaziya = () => {
+    return(
+      <GridList cellHeight={220} className={classes.gridList} cols={3}>
+        <GridListTile key="Subheader" cols={3} style={{ height: 'auto',  }}>
+        <ListSubheader component="div" style={{color: 'black', fontSize: '2em', fontFamily:"'Fredoka One', cursive" }}>
+      </ListSubheader>
+      </GridListTile>
+      {RealizaciaData.map((project) => (
+        <GridListTile key={project.id} cols={1} onClick={(e)=>handleClickOpen(project)}>
+          <img className={'imageGalerey'} src={project.img} alt={project.title}/>
+          <GridListTileBar
+            title={project.title}
+            subtitle={<span>{project.investor}</span>}
+            actionIcon={
+              <BootstrapTooltip title={project.hint}>  
+              <IconButton aria-label={`info about ${project.title}`} style={{color: `${project.color}`}}
+                onClick={(e)=>handleClickOpen(project)}>
+                <ApartmentIcon />
+              </IconButton>
+              </BootstrapTooltip>
+            }
+          />
+        </GridListTile >
+      ))}
+      </GridList>
+    ) 
+  }
+
+  //menu zrealizovane
+  const Zrealizovane = () => {
+    return(
+      <GridList cellHeight={220} className={classes.gridList} cols={2}>
+        <GridListTile key="Subheader" cols={3} style={{ height: 'auto',  }}>
+        <ListSubheader component="div" style={{color: 'black', fontSize: '2em', fontFamily:"'Fredoka One', cursive" }}>
+      </ListSubheader>
+      </GridListTile>
+      {ZrealizovaneData.map((project) => (
+        <GridListTile key={project.id} cols={1} onClick={(e)=>handleClickOpen(project)}>
+          <img className={'imageGalerey'} src={project.img} alt={project.title}/>
+          <GridListTileBar
+            title={project.title}
+            subtitle={<span>{project.investor}</span>}
+            actionIcon={
+              <BootstrapTooltip title={project.hint}>  
+              <IconButton aria-label={`info about ${project.title}`} style={{color: `${project.color}`}}
+                onClick={(e)=>handleClickOpen(project)}>
+                <ApartmentIcon />
+              </IconButton>
+              </BootstrapTooltip>
+            }
+          />
+        </GridListTile >
+      ))}
+      </GridList>
+    ) 
+  } 
+
+  //menu developers
+  const Developers = () => {
+    return(
+    <h1>Developers</h1>
+    )
+  } 
+
+
+  React.useEffect(()=>{
+    switch(tipe){
+      case 'relizaziya'  : {
+        setSelectGaleria(Relizaziya); 
+        setTitle(t("header.menu.DropMenu1.Menu1")); 
+        break;
+      }
+      case 'zrealizovane' :{setSelectGaleria(Zrealizovane); setTitle(t("header.menu.DropMenu1.Menu2")); break;}
+      case 'developers' :  {setSelectGaleria(Developers); setTitle(t("header.menu.DropMenu1.Menu3")); break;}
+      default: {setSelectGaleria(Relizaziya); setTitle(t("header.menu.DropMenu1.Menu1"));}
+    }  
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tipe])
+
   function  BootstrapTooltip(props) {
     const classes = useStylesBootstrap();
     return <Tooltip arrow classes={classes} {...props} />;
   }
-  
-  
-  //var gsReference = storage.refFromURL('gs://brogan-c0f45.appspot.com/galery/project1/1-10.jpg');
-  //const book = firebase.app().storage("gs://brogan-c0f45.appspot.com/");
-  //let pathReference = null;
-  //let listRef = storage.child('galery/project1'); // storageRef.child('galery/project1'); 
 
-    //pathReference = storage.refFromURL('gs://brogan-c0f45.appspot.com/galery/project1/1-10.jpg');
-    //console.log(st);
-    // React.useEffect(()=>{
-    //   const storage = firebase.storage();
-    //   const storageRef = storage.ref('galery/project1/1-12.jpg');
-    //   setMyImage(storageRef.getDownloadURL());
-    // }, [])
-    // //console.log(storageRef);
-   
-// function getImageFirebase(myPatch){
-//   setItemList( itemList.splice(0, itemList.length));
-//   const storageRef = storage.ref(myPatch);
-//   storageRef.listAll()
-//   .then((res) => {
-//       res.items.forEach((itemRef) => {
-//           setItemList(itemList.push(itemRef.fullPath));
-//       });
-//   }).catch((error) => {
-//     console.log('error', error)
-//   });
-// }
-   
-    
-  // function handleFirebaseConnect(){
-  //   getImageFirebase('galery/glavn')
-  //   console.log('itemList', itemList)   
-  // }
-  
-
-      
-
-        //   Promise.all(promises).then((downloadURLs) => {
-        //     itemList.push(res.items)
-        // });  
-        //console.log('res',res)
-          //console.log('item',item);
-     //  res.items.forEach( item => {
-        //setItemList(itemList.push(url)); 
-
-     // console.log(itemList);
-          // .then((res) => {
-          //   res.prefixes.forEach((folderRef) => {
-          //     console.log('folderRef', folderRef)
-          //     // All the prefixes under listRef.
-          //     // You may call listAll() recursively on them.
-          //   });
-          //   res.items.forEach((itemRef) => {
-          //     console.log('itemRef', itemRef)
-          //     // All the items under listRef.
-          //   });
-          // }).catch((error) => {
-          //   // Uh-oh, an error occurred!
-          // });
-    //console.log(listRef.listAll());
-  //}
-
-  // function getPicture (pathImage) {
-    //storage.refFromURL('gs://brogan-c0f45.appspot.com/galery/project1/1-10.jpg').getDownloadURL()
-    //storage.ref(pathImage).getDownloadURL()
-    // Get the download URL
-    //.then((url) => {
-      // eslint-disable-next-line
-      //setMyImage(url);
-      //return url;
-    //})
-    //.catch((error) => {
-     // console.log(error)
-      // eslint-disable-next-line
-      //setMyImage(null)
-      //return null
-    //})
-        // console.log(listRef);
-  // }
-    
-  // React.useEffect(() => {
-  //  // setMyImage(getPicture('/galery/project1/1-12.jpg'))
-  //  //console.log(getPicture('/galery/project1/1-12.jpg'));
-  //   // getPicture('/galery/project1/1-12.jpg');
-  //   getImageFirebase('galery/glavn')
-  //   console.log('ProjectData', ProjectData[1].img)   
-  //   console.log('itemList', itemList) 
-  // }, []);
-
-  // React.useEffect((){
-  //   //getPicture('/galery/project1/1-10.jpg'){
-  // },[])
 
   return (
     <div className={classes.root} style={{backgroundColor:'white'}}>
@@ -161,42 +151,19 @@ function Galeria() {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
         }}>
-       
-      </Row>  
-      <Row className="justify-content-center mx-auto">
-      <GridList cellHeight={220} className={classes.gridList} cols={3}>
-        <GridListTile key="Subheader" cols={3} style={{ height: 'auto',  }}>
-          <ListSubheader component="div" style={{color: 'black', fontSize: '2em', fontFamily:"'Fredoka One', cursive" }}>
-            GALERIA
-            {/* <Button variant="contained" color="primary" onClick={handleFirebaseConnect}>TEST FIREBASE</Button> */}
-          </ListSubheader>
-        </GridListTile>
-  
-        {ProjectData.map((project) => (
-          <GridListTile key={project.id} cols={project.cols || 1} onClick={(e)=>handleClickOpen(project)}>
-            <img className={'imageGalerey'} src={project.img} alt={project.title}/>
-            <GridListTileBar
-              title={project.title}
-              subtitle={<span>{project.investor}</span>}
-              actionIcon={
+    </Row>
+      <div style={{textAlign: 'center', fontFamily:'Roboto Condensed', fontSize:'2em'}}>{title}</div>
 
-                <BootstrapTooltip title={project.hint}>  
-                <IconButton aria-label={`info about ${project.title}`} style={{color: `${project.color}`}}
-                   onClick={(e)=>handleClickOpen(project)}>
-                  <ApartmentIcon />
-                </IconButton>
-                </BootstrapTooltip>
-              }
-            />
-          </GridListTile >
-           ))}
-      </GridList>   
+      <Row className="justify-content-center mx-auto">
+      
+      {selectGaleria} 
+
       </Row>
       <Footer /> 
-      <GaleriaDialog  openDialog={openDialog} setOpenDialog={setOpenDialog} Project={Project}/>
+        <GaleriaDialog openDialog={openDialog} setOpenDialog={setOpenDialog} project={project}/>
       </Container>
       </div>
   )
 }
 
-export default Galeria;
+export default translate(Galeria);

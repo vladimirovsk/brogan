@@ -5,8 +5,10 @@ import Footer from '../footer/Footer';
 import './Firma.css';
 //import logo from '../../img/brogan-logo.png';
 import crane from '../../img/banner-crane.jpg';
-function Firma() {
+import {translate} from 'react-switch-lang';
 
+function Firma(props) {
+  const [{t}] = React.useState(props);
 
   return(
     <React.Fragment>
@@ -18,32 +20,23 @@ function Firma() {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
         }}>
-       
       </Row>  
         <Container fluid={'md'}>
         <Row className='cardFirma'>  
           <Col sm={12}>
             <div className='titleFirma'>Brogan Group Sp. z o.o. jest prężnie rowijącą się firmą sektora budowlanego. </div>
             <div className='textFirma'>
-              Profil działalności spółki obejmuje generalne wykonawstwo inwestycji budowlanych oraz 
-              kompleksową realizację projektów. Firma powstała w odpowiedzi na potrzeby rynku, 
-              aby świadczyć usługi na najwyższym poziomie. Dużą wagę przywiązujemy do stałego 
-              rozwoju przedsiębiorstwa. Nasze usługi realizujemy z najwyższą starannością, zgodnie z 
-              technologią i sztuką budowlaną, wykorzystując materiały, których jakość potwierdzona jest 
-              świadectwami certyfikacji. Cechuje nas indywidualne podejście do realizowanych projektów, 
-              a każde zlecenie traktujemy jako nowe wyzwanie.
+              {t("about.text1")}
             </div>  
             <div className="textFirma">
-              Fakt, że współpracujemy tylko ze sprawdzonymi specjalistami i wykorzystujemy materiały o wysokiej jakości, zapewnia najwyższy standard realizowanych projektów. Stosowanie innowacyjnych rozwiązań, dbałość o bezpieczeństwo i o każdy szczegół wykonania projektu każdorazowo gwarantują nam sukces.
+              {t("about.text2")}
             </div>  
             <div style={{height: '10vh'}}>
-              
             </div>
           </Col>
         </Row>
         </Container>
       </Container>
-      
       <Footer />
 
     </React.Fragment>  
@@ -51,4 +44,4 @@ function Firma() {
 }
 
 
-export default Firma;
+export default translate(Firma);

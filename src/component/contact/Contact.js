@@ -72,12 +72,19 @@ function Contact(props) {
           <Card.Body>
             <Card.Title>{t("contact.card.title")}</Card.Title>
             <Card.Text style={{
-              textAlign: 'left'
+              textAlign: 'left', fontFamily:'Roboto Condensed', fontSize:'1em'
               }}>
-              {building}{t("contact.card.addres")}<br />
-              {telephone}<a href="tel: +48600347050">+48 600 347 050</a><br />
+
+              {building}{t("footer.addres1")}<br />
+              {building}{t("footer.addres2")}<br />
+              {telephone}<a href="tel: +48600347050">+48 600 347 050, </a><a href="tel:666182182" style={{color:'black'}}>666 182 182</a><br />
               {mail}<a href="mailto: jakub.smulski@brogan.pl">jakub.smulski@brogan.pl,</a><br />
               {mail}<a href="mailto: biuro@brogan.pl">biuro@brogan.pl</a>
+              
+              <br />NIP: 9442248440
+              <br />REGON: 36147140600000
+              
+
             </Card.Text>
             </Card.Body>
           </Card>
@@ -88,7 +95,6 @@ function Contact(props) {
               <iframe title="BROGAN" src="https://www.google.pl/maps/embed?pb=!1m18!1m12!1m3!1d1282.0354722990157!2d19.895862063477338!3d50.010025471376494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165cfa81a3ffff%3A0x3f80456edafdcba!2sKobierzynska%20211!5e0!3m2!1sru!2spl!4v1611910526186!5m2!1sru!2spl" 
               width="100%" height="300" style={{border:0}}
               aria-hidden="false"></iframe>
-
           </Col>
         </Row>  
         <Footer />

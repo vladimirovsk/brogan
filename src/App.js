@@ -31,7 +31,7 @@ function App() {
           <Route exact={true} path="/project" render={() =><div>project</div>}/>
           <Route exact={true} path="/oferta"  render={() => <Oferta />}/>
           <Route exact={true} path="/contact" render={() => <Contact />}/>
-          <Route exact={true} path="/galeria" render={() => <Galeria />}/>
+          <Route exact={true} path="/galeria/:tipe" render={() => <Galeria />}/>
           <Redirect to={'/'}/>
       </Switch>
     )

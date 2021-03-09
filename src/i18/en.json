@@ -9,7 +9,7 @@
       "About": "ABOUT",
       "DropMenu1":{
         "Title":"REALIZATIONS",
-        "Menu1":"PROJECTS IN PROGRESS",
+        "Menu1":"INVESTMENTS IN IMPLEMENTATION",
         "Menu2":"COMPLETED INVESTMENTS",
         "Menu3":"DEVELOPMENT INVESTMENTS"
       },
@@ -26,48 +26,48 @@
 
     "ComponentFirst":{
       "title":"Brogan Group Sp. z o.o. - General contracting of construction investments",
-      "text1":"The company Brogan Group Sp. z o.o. I specialize in comprehensive construction investments.",
-      "text2":"Our goal is to provide the highest quality services to investors. As a general contractor, we have a qualified management team as well as close-knit, permanent brigades of carpenters, fixers, bricklayers and plasterers.",
-      "text3":"We have our own equipment, including tower cranes. Guided by experience and knowledge at every stage of the investment, we provide professional services and reliably approach the entrusted tasks.",
+      "text1":"Brogan Group sp. z o. o. is a general contractor for construction projects specializing in complex construction projects.",
+      "text2":"Our main purpose is to deliver consistently excellent service to an investor. As a general contractor, we have a highly qualified management staff and well-knit, permanent brigades of carpenters, armourers, bricklayers and plasterers. ",
+      "text3":"We also have our own equipment including tower cranes. Based on it’s experience and knowledge, Brogan Group sp. z o. o. provides professional service at every stage of the investment and is responsible for the tasks entrusted to it",
       "textPhone":"Call and ask for details."
     },
 
     "ComponentCard":{
 
       "Card1":{
-        "title":"Housing",
+        "title":"Housing Construction. ",
         "prof1":" ",
         "prof2":" ",
         "body":" ",
         "backTitle":"Brogan Group Sp. z o.o.",
-        "backText":"It is profile of activity includes completed investments in the field of housing construction. The company provides services in the field of construction of residential buildings. In particular, we specialize in multi-family housing. The experience and qualifications of our employees allow us to perform the entrusted work professionally and on time."
+        "backText":"Brogan group sp. z o. o. in the profile of its activity has realized investments in the field of housing construction. The company provides the service in the field of construction of residential buildings. In particular, we specialize in multi-family construction. The experience and qualification of our employees allows you to perform the assigned work professionally and on time."
       },
 
       "Card2":{
-        "title":"Commercial and service and public utility construction",
+        "title":"Commercial and service construction and public utilities",
         "prof1":" ",
         "prof2":" ",
         "body":" ",
         "backTitle":"Firma Brogan Sp. o.o.",
-        "backText":"He specializes in comprehensive execution of Construction Investments. Our competences allow us to implement Investments of various complexity of technical issues. We have established ourselves as a reliable company that can meet the expectations of each client. "
+        "backText":"Specializes in complex construction projects. Our competence allows us to carry out investments of various technical complexity. We are known as a reliable company that can meet the expectations of every customer."
       },
 
       "Card3":{
-        "title":"Industrial halls",
+        "title":"Industrial hall.",
         "prof1":" ",
         "prof2":" ",
         "body":" ",
-        "backTitle":"Industrial halls",
-        "backText":"We offer comprehensive services for the general contracting of warehouse halls. We implement both low and high storage facilities"
+        "backTitle":"Industrial hall.",
+        "backText":"We offer comprehensive services related to the general construction of warehouse halls. We construct both low and high storage facilities."
       },
 
       "Card4":{
-        "title":"Inwestycje deweloperskie",
-        "prof1":"Our ambition is to create exceptional development investments in the best locations.",
+        "title":"Development investments.",
+        "prof1":"Our goal is to create unique development investments in the best locations.",
         "prof2":" ",
         "body":" ",
         "backTitle":" ",
-        "backText":"We specialize in modern construction of intimate residential properties. The experience gained is based on successfully completed housing investments for large developers. The fact that we work only with proven specialists and use high-quality materials ensures a high standard of our projects. The use of innovative solutions, care for safety and every detail of the project each time bring us closer to success."
+        "backText":"We specialize in the modern construction of intimate residential properties. The experience gained is based on successful residential investments for large developers. The fact that we cooperate only with certified specialists and use high-quality materials ensures a high standard of the projects carried out. The use of innovative solutions, care about safety and every detail of the project every time bring us closer to success"
       }
     },
 
@@ -118,5 +118,9 @@
       "title":"Adres biura:",
       "addres":"ul. Kobierzyńska 211 lok. nr 3  30-383 Kraków"  
     }
-  }  
+  },
+  "about": {
+    "text1": "The company's business profile includes general contracting of construction investments and comprehensive project implementation. The company was founded in response to market needs, to provide services at the highest level. We attach great importance to solid enterprise development. We provide our services with the utmost care, in accordance with technology and construction art, using materials whose quality is confirmed certification certificates. We are characterized by an individual approach to implemented projects, and we treat each order as a new challenge",
+    "text2": "The fact that we cooperate only with certified specialists and use high-quality materials ensures the highest standard of our projects. The use of innovative solutions, attention to safety and every detail of the project every time guarantee us success."
+  } 
 }

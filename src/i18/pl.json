@@ -10,11 +10,11 @@
       "About": "O NAS",
       "DropMenu1":{
         "Title":"REALIZACJE",
-        "Menu1":"REALIZACJE W TRAKCIE",
+        "Menu1":"INWESTYCJE W REALIZACJI",
         "Menu2":"INWESTYCJE ZREALIZOWANE",
         "Menu3":"INWESTYCJE DEWELOPERSKIE"
       },
-      "Contact":"KONTACT"
+      "Contact":"KONTAKT"
     }
   },
 
@@ -40,8 +40,8 @@
         "prof1":" ",
         "prof2":" ",
         "body":" ",
-        "backTitle":"Brogan Group Sp. z o.o.",
-        "backText":"W profilu swojej działalności posiada zrealizowane inwestycje w zakresie budownictwa mieszkaniowego. Spółka świadczy usługi w zakresie budownictwa budynków mieszkalnych. W szczególności specjalizujemy się w budownictwie wielorodzinnym. Doświadczenie i kwalifikacje naszych pracowników pozwala wykonać powierzone prace profesjonalnie i w ustalonym terminie."
+        "backTitle":" ",
+        "backText":"Brogan Group Sp. z o.o. w profilu swojej działalności posiada zrealizowane inwestycje w zakresie budownictwa mieszkaniowego. Spółka świadczy usługi w zakresie budownictwa budynków mieszkalnych. W szczególności specjalizujemy się w budownictwie wielorodzinnym. Doświadczenie i kwalifikacje naszych pracowników pozwala wykonać powierzone prace profesjonalnie i w ustalonym terminie."
       },
 
       "Card2":{
@@ -49,8 +49,8 @@
         "prof1":" ",
         "prof2":" ",
         "body":" ",
-        "backTitle":"Firma Brogan Sp. o.o.",
-        "backText":"Specjalizuje się kompleksowym wykonawstwem Inwestycji Budowlanych. Nasze kompetencje pozwalają Nam realizować Inwestycje o różnorodnej złożoności zagadnień technicznych. Daliśmy się poznać jako Firma rzetelna, która potrafi spełniać oczekiwania każdego Klienta."
+        "backTitle":" ",
+        "backText":"Firma Brogan Sp. o.o. specjalizuje się kompleksowym wykonawstwem Inwestycji Budowlanych. Nasze kompetencje pozwalają Nam realizować Inwestycje o różnorodnej złożoności zagadnień technicznych. Daliśmy się poznać jako Firma rzetelna, która potrafi spełniać oczekiwania każdego Klienta."
       },
 
       "Card3":{
@@ -58,7 +58,7 @@
         "prof1":" ",
         "prof2":" ",
         "body":" ",
-        "backTitle":"Hale przemysłowe",
+        "backTitle":" ",
         "backText":"Oferujemy kompleksowe usługi dotyczące generalnego wykonawstwa hal magazynowych. Realizujemy zarówno obiekty niskiego, jak i wysokiego składowania"
       },
 
@@ -119,6 +119,11 @@
       "title":"Adres biura:",
       "addres":"ul. Kobierzyńska 211 lok. nr 3  30-383 Kraków"  
     }
-  }  
+  },
+
+  "about": {
+    "text1": "Profil działalności spółki obejmuje generalne wykonawstwo inwestycji budowlanych oraz kompleksową realizację projektów. Firma powstała w odpowiedzi na potrzeby rynku, aby świadczyć usługi na najwyższym poziomie. Dużą wagę przywiązujemy do stałego rozwoju przedsiębiorstwa. Nasze usługi realizujemy z najwyższą starannością, zgodnie z technologią i sztuką budowlaną, wykorzystując materiały, których jakość potwierdzona jest świadectwami certyfikacji. Cechuje nas indywidualne podejście do realizowanych projektów, a każde zlecenie traktujemy jako nowe wyzwanie.",
+    "text2": "Fakt, że współpracujemy tylko ze sprawdzonymi specjalistami i wykorzystujemy materiały o wysokiej jakości, zapewnia najwyższy standard realizowanych projektów. Stosowanie innowacyjnych rozwiązań, dbałość o bezpieczeństwo i o każdy szczegół wykonania projektu każdorazowo gwarantują nam sukces"
+  }   
 
 }

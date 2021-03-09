@@ -112,12 +112,10 @@ const lngButton = (
             <Nav.Link as='div' href='/'><NavLink exact to="/firma"  className='linkMenu' activeClassName="selected">{t("header.menu.About")}</NavLink></Nav.Link>
             {/*<Nav.Link as='div' href='/'><NavLink exact to="/oferta" className='linkMenu' activeClassName="selected">REALIZACIE W TRAKCIE</NavLink></Nav.Link>
             <Nav.Link as='div' href='/'><NavLink exact to="/" className='linkMenu' activeClassName="selected">INWESTYCJE ZREALIZOWANE</NavLink></Nav.Link> */}
-            
-
             <NavDropdown title={t("header.menu.DropMenu1.Title")} id="basic-nav-dropdown" >
-                <NavDropdown.Item as='div' href='/'><Nav.Link as='div' href='/'><NavLink exact to='/oferta' className='linkMenu' activeClassName="selected">{t("header.menu.DropMenu1.Menu1")}</NavLink></Nav.Link></NavDropdown.Item>
-                <NavDropdown.Item disabled as='div' href='/'><Nav.Link as='div' href='/'><NavLink exact to='/project2' className='linkMenu' activeClassName="selected">{t("header.menu.DropMenu1.Menu2")}</NavLink></Nav.Link></NavDropdown.Item>
-                <NavDropdown.Item as='div' href='/'><Nav.Link as='div' href='/'><NavLink exact to='/galeria' className='linkMenu' activeClassName="selected">{t("header.menu.DropMenu1.Menu3")}</NavLink></Nav.Link></NavDropdown.Item>
+                <NavDropdown.Item as='div' href='/'><Nav.Link as='div' href='/'><NavLink exact to='/galeria/relizaziya' className='linkMenu' activeClassName="selected">{t("header.menu.DropMenu1.Menu1")}</NavLink></Nav.Link></NavDropdown.Item>
+                <NavDropdown.Item as='div' href='/'><Nav.Link as='div' href='/'><NavLink exact to='/galeria/zrealizovane' className='linkMenu' activeClassName="selected">{t("header.menu.DropMenu1.Menu2")}</NavLink></Nav.Link></NavDropdown.Item>
+                <NavDropdown.Item as='div' href='/'><Nav.Link as='div' href='/'><NavLink exact to='/galeria/developers' className='linkMenu' activeClassName="selected">{t("header.menu.DropMenu1.Menu3")}</NavLink></Nav.Link></NavDropdown.Item>
                 {/* <NavDropdown.Divider />
                 <NavDropdown.Item as='div' href='/'><Nav.Link as='div'><NavLink exact to='/project3' className='linkMenu' activeClassName="selected">PLANING PROJECT</NavLink></Nav.Link></NavDropdown.Item> */}
             </NavDropdown>

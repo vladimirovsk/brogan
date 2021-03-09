@@ -55,7 +55,7 @@ function Footer(props) {
       <Col sm={12} md={5}>
         <Row className='RowTitle'>{t("footer.titleKontact")}</Row>
         <Row><Col className='RowText'>
-        {telephone}<a href="tel:+48600347050" style={{color:'black'}}>+48 600 347 050</a></Col></Row>
+        {telephone}<a href="tel:+48600347050" style={{color:'black'}}>+48 600 347 050, </a><a href="tel:666182182" style={{color:'black'}}>666 182 182</a> </Col></Row>
         <Row><Col className='RowText'>
           <div>
             {mail}
