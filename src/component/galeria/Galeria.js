@@ -8,6 +8,7 @@ import GaleriaDialog from './GaleriaDialog'
 
 import ZrealizovaneData from './ZrealizovaneData'
 import RealizaciaData from './RealizaciaData'
+import DevelopersData from './DevelopersData'
 
 import {Row, Container} from 'react-bootstrap';
 import {useParams} from 'react-router-dom';
@@ -116,8 +117,30 @@ function Galeria(props) {
   //menu developers
   const Developers = () => {
     return(
-    <h1>Developers</h1>
-    )
+      <GridList cellHeight={220} className={classes.gridList} cols={2}>
+        <GridListTile key="Subheader" cols={3} style={{ height: 'auto',  }}>
+        <ListSubheader component="div" style={{color: 'black', fontSize: '2em', fontFamily:"'Fredoka One', cursive" }}>
+      </ListSubheader>
+      </GridListTile>
+      {DevelopersData.map((project) => (
+        <GridListTile key={project.id} cols={1} onClick={(e)=>handleClickOpen(project)}>
+          <img className={'imageGalerey'} src={project.img} alt={project.title}/>
+          <GridListTileBar
+            title={project.title}
+            subtitle={<span>{project.investor}</span>}
+            actionIcon={
+              <BootstrapTooltip title={project.hint}>  
+              <IconButton aria-label={`info about ${project.title}`} style={{color: `${project.color}`}}
+                onClick={(e)=>handleClickOpen(project)}>
+                <ApartmentIcon />
+              </IconButton>
+              </BootstrapTooltip>
+            }
+          />
+        </GridListTile >
+      ))}
+      </GridList>
+    ) 
   } 
 
 

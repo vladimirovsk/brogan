@@ -6,7 +6,7 @@ import {translate} from 'react-switch-lang';
 
 
 function GaleriaDialog(props) {
-  const [{t}] = React.useState(props);
+  //const [{t}] = React.useState(props);
   const {openDialog, setOpenDialog, project} = props
 
   let images = [];
@@ -32,7 +32,7 @@ function GaleriaDialog(props) {
           <hr />
           <h6 >{Boolean(item.name) ? `${item.name}`:null}</h6>
           <div>{Boolean(item.PUM) ? `PUM: ${item.PUM}`:null}</div>
-          <div>{Boolean(item.PC) ? `PLO: ${item.PC}`:null}</div>
+          <div>{Boolean(item.PC) ? `PC: ${item.PC}`:null}</div>
           <div>{Boolean(item.KUB) ? `KUB: ${item.KUB}`:null}</div>
         </div>  
        

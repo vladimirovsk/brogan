@@ -72,6 +72,29 @@ import Project6image9 from './img/Zrealizovane/Project6/image9.jpg';
 import Project7image1 from './img/Zrealizovane/Project7/image1.jpg';
 import Project7image2 from './img/Zrealizovane/Project7/image2.jpg';
 
+import Project8image1 from './img/Zrealizovane/Project8/image1.jpg';
+import Project8image2 from './img/Zrealizovane/Project8/image2.jpg';
+import Project8image3 from './img/Zrealizovane/Project8/image3.jpg';
+
+import Project9image1 from './img/Zrealizovane/Project9/image1.jpeg';
+import Project9image2 from './img/Zrealizovane/Project9/image2.jpeg';
+import Project9image3 from './img/Zrealizovane/Project9/image3.jpeg';
+
+import Project10image1 from './img/Zrealizovane/Project10/image1.jpg';
+import Project10image2 from './img/Zrealizovane/Project10/image2.jpg';
+import Project10image3 from './img/Zrealizovane/Project10/image3.jpg';
+import Project10image4 from './img/Zrealizovane/Project10/image4.jpg';
+import Project10image5 from './img/Zrealizovane/Project10/image5.jpg';
+import Project10image6 from './img/Zrealizovane/Project10/image6.jpg';
+import Project10image7 from './img/Zrealizovane/Project10/image7.jpg';
+import Project10image8 from './img/Zrealizovane/Project10/image8.jpg';
+import Project10image9 from './img/Zrealizovane/Project10/image9.jpg';
+import Project10image10 from './img/Zrealizovane/Project10/image10.jpg';
+import Project10image11 from './img/Zrealizovane/Project10/image11.jpg';
+import Project10image12 from './img/Zrealizovane/Project10/image12.jpg';
+import Project10image13 from './img/Zrealizovane/Project10/image13.jpg';
+import Project10image14 from './img/Zrealizovane/Project10/image14.jpg';
+
 const project1 = [
   Project1image1, Project1image2, Project1image3, 
   Project1image4, Project1image5, Project1image6, 
@@ -116,6 +139,22 @@ const project6 = [
 
 const project7 = [
   Project7image1, Project7image2
+]
+
+const project8 = [
+  Project8image1, Project8image2, Project8image3
+]
+
+const project9 = [
+  Project9image1, Project9image2, Project9image3
+]
+
+const project10 = [
+  Project10image1, Project10image2, Project10image3, 
+  Project10image4, Project10image5, Project10image6, 
+  Project10image7, Project10image8, Project10image9,
+  Project10image10, Project10image11, Project10image12,
+  Project10image13, Project10image14
 ]
 
 const ZrealizovaneData = [
@@ -292,8 +331,8 @@ const ZrealizovaneData = [
       PC: '3.957 m2',
       KUB: '18.269 m3'
     }
-    ]
-   },
+    ]},
+
    { 
     id:7,
     img: Project7image1,
@@ -324,10 +363,79 @@ const ZrealizovaneData = [
       PUM: '2010.79 m2',
       PC: '4295.58 m2',
       KUB: ''
-    }
-
+    },
     ]
-   }
-] 
+  },
+
+    { 
+      id:8,
+      img: Project8image1,
+      images: project8,
+      title: 'ul. Kątowa 10',
+      color: 'orange',
+      cols: 2,
+      hint: 'Status: building',
+  
+      investor: 'Apartamenty inwestycyjne IRON STREET',
+      localization: 'ul. Kątowa 10',
+      firma: 'Brogan Group Sp. z o.o.',   
+       
+      notename :[{
+        name: 'liczba kondygnacji podziemnych: 1',
+        PUM: '1018.27 m2',
+        PC: '2453.86 m2',
+        KUB: ''
+        },
+        {
+         name: 'liczba kondygnacji nadziemnych: 5',
+         PUM: '',
+         PC: '',
+         KUB: ''
+        }
+      ]
+    },
+    { 
+      id:9,
+      img: Project9image1,
+      images: project9,
+      title: 'Apartamenty Tetmajera 65B',
+      color: 'orange',
+      cols: 2,
+      hint: 'Status: building',
+  
+      investor: 'Apartamenty Tetmajera 65B',
+      localization: 'Apartamenty Tetmajera 65B',
+      firma: 'Brogan Group Sp. z o.o.',   
+       
+      notename :[{
+        name: 'Tetmajera, budynki I, II, III, IV:',
+        PUM: '628.88 m2',
+        PC: '1080.52 m2',
+        KUB: ''
+        }
+      ]
+    },
+    { 
+      id:10,
+      img: Project10image1,
+      images: project10,
+      title: 'ul. Tyniecka, Kraków',
+      color: 'orange',
+      cols: 2,
+      hint: 'Status: building',
+  
+      investor: 'Kościół ',
+      localization: 'ul. Tyniecka, Kraków',
+      firma: 'Brogan Group Sp. z o.o.',   
+       
+      notename :[{
+        name: '',
+        PUM: '',
+        PC: '',
+        KUB: ''
+        }
+      ]
+    },
+]
 
 export default ZrealizovaneData;
