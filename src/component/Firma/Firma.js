@@ -21,10 +21,10 @@ function Firma(props) {
         backgroundRepeat: 'no-repeat'
         }}>
       </Row>  
-        <Container fluid={'md'}>
+        <Container fluid={'md'} style={{borderWidth: '1px', borderRadius: '10px', boxShadow: '2px 2px 5px #545454', marginTop: '2em', marginBottom: '2em'}}>
         <Row className='cardFirma'>  
           <Col sm={12}>
-            <div className='titleFirma'>Brogan Group Sp. z o.o. jest prężnie rowijącą się firmą sektora budowlanego. </div>
+            <div className='titleFirma'>Brogan Group Sp. z o.o. jest intensywnie rozwijającą się firmą sektora budowlanego.</div>
             <div className='textFirma'>
               {t("about.text1")}
             </div>  

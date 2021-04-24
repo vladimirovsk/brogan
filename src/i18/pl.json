@@ -28,15 +28,16 @@
     "ComponentFirst":{
       "title":"Brogan Group Sp. z o.o. - Generalny wykonawcja inwestycji budowlanych",
       "text1":"Firma Brogan Group Sp. z o.o specjalizuję się w kompleksowym wykonaniu inwestycji budowlanych.",
-      "text2":"Naszym celem jest świadczenie najwyższej jakości usług dla inwestorów. Jako Generalny wykonawca posiadamy wykfalifikowaną kadrę kierowniczą oraz zgrane, stałe brygady cieśli, zbrojarzy, murarzy i tynkarzy.",
-      "text3":"Dysponujemy własnym sprzętem między innymi żurawiami wieżowymi. Kierując się doświadczeniem i wiedzą na każdym etapie inwestycji dostarczamy profesjonalne usługi oraz rzetelnie podchodzimy do powierzonych zadań.",
+      "text2":"Naszym celem jest świadczenie najwyższej jakości usług dla inwestorów. Jako generalny wykonawca inwestycji posiadamy wykwalifikowany nadzór kierujący procesem budowy, zgrane, stałe brygady budowlane oraz wykończeniowe.",
+      "text3":"Dysponujemy własnym sprzętem między innymi żurawiami wieżowymi.",
+      "text4":"Kierując się doświadczeniem i wiedzą na każdym etapie inwestycji dostarczamy profesjonalne usługi oraz rzetelnie podchodzimy do powierzonych zadań.",
       "textPhone":"Zadzwoń i zapytaj o szczegóły."
     },
 
     "ComponentCard":{
 
       "Card1":{
-        "title":"Budownictwo mieszkaniowe",
+        "title":"Budownictwo mieszkaniowe wielorodzinne.",
         "prof1":" ",
         "prof2":" ",
         "body":" ",
@@ -90,7 +91,7 @@
   "footer":{
     "titleFirm":"Brogan Group Sp. z o.o.",
     "addres1":"biura: ul. Kobierzyńska 211 lok. nr 3, 30-383 Kraków",
-    "addres2":"siedziby: ul. Adama Doboszyńskiego 9, 32-031 Chorowice gm. Mogilany",
+    "addres2":"siedziba: ul. Adama Doboszyńskiego 9, 32-031 Chorowice gm. Mogilany",
     "titleKontact":"Kontact:",
     "copyright1":"by Brogan Group Sp. z o.o. Wszelkie prawa zastrzeżone.",
     "copyright2":"Nasza strona wykorzystuje pliki cookie."
@@ -122,8 +123,8 @@
   },
 
   "about": {
-    "text1": "Profil działalności spółki obejmuje generalne wykonawstwo inwestycji budowlanych oraz kompleksową realizację projektów. Firma powstała w odpowiedzi na potrzeby rynku, aby świadczyć usługi na najwyższym poziomie. Dużą wagę przywiązujemy do stałego rozwoju przedsiębiorstwa. Nasze usługi realizujemy z najwyższą starannością, zgodnie z technologią i sztuką budowlaną, wykorzystując materiały, których jakość potwierdzona jest świadectwami certyfikacji. Cechuje nas indywidualne podejście do realizowanych projektów, a każde zlecenie traktujemy jako nowe wyzwanie.",
-    "text2": "Fakt, że współpracujemy tylko ze sprawdzonymi specjalistami i wykorzystujemy materiały o wysokiej jakości, zapewnia najwyższy standard realizowanych projektów. Stosowanie innowacyjnych rozwiązań, dbałość o bezpieczeństwo i o każdy szczegół wykonania projektu każdorazowo gwarantują nam sukces"
+    "text1": "Brogan Group Sp. z o.o. jest intensywnie rozwijającą się firmą sektora budowlanego. Profil działalności spółki obejmuje generalne wykonawstwo inwestycji budowlanych oraz kompleksową realizację projektów. Firma powstała w odpowiedzi na potrzeby rynku, aby świadczyć usługi na najwyższym poziomie. Dużą wagę przywiązujemy do stałego rozwoju przedsiębiorstwa.",
+    "text2": "Fakt, że współpracujemy tylko ze sprawdzonymi specjalistami i wykorzystujemy materiały o wysokiej jakości, zapewnia najwyższy standard realizowanych projektów. Stosowanie innowacyjnych rozwiązań, dbałość o bezpieczeństwo i o każdy szczegół wykonania projektu każdorazowo gwarantują nam sukces."
   }   
 
 }

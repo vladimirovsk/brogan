@@ -23,6 +23,7 @@ function ComponentFirst(props){
     <p>{t("home.ComponentFirst.text1")}</p>
     <p>{t("home.ComponentFirst.text2")}</p>
     <p>{t("home.ComponentFirst.text3")}</p>
+    <p>{t("home.ComponentFirst.text4")}</p>
     </div>
    
     <div className='ml-4 pb-5 text-left' style={{fontWeight:'700', color:'black'}}>

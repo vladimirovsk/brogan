@@ -3,8 +3,10 @@ import Project1image2 from './img/Zrealizovane/Project1/image2.jpg';
 import Project1image3 from './img/Zrealizovane/Project1/image3.jpg';
 import Project1image4 from './img/Zrealizovane/Project1/image4.jpg';
 import Project1image5 from './img/Zrealizovane/Project1/image5.jpg';
-import Project1image6 from './img/Zrealizovane/Project1/image6.jpg';
-import Project1image7 from './img/Zrealizovane/Project1/image7.jpg';
+import Project1image8 from './img/Zrealizovane/Project1/image8.jpg';
+import Project1image9 from './img/Zrealizovane/Project1/image9.jpg';
+import Project1image10 from './img/Zrealizovane/Project1/image10.jpg';
+import Project1image11 from './img/Zrealizovane/Project1/image11.jpg';
 
 import Project2image1 from './img/Zrealizovane/Project2/image1.jpg';
 import Project2image2 from './img/Zrealizovane/Project2/image2.jpg';
@@ -68,9 +70,12 @@ import Project6image6 from './img/Zrealizovane/Project6/image6.jpg';
 import Project6image7 from './img/Zrealizovane/Project6/image7.jpg';
 import Project6image8 from './img/Zrealizovane/Project6/image8.jpg';
 import Project6image9 from './img/Zrealizovane/Project6/image9.jpg';
+import Project6image10 from './img/Zrealizovane/Project6/image10.jpg';
 
 import Project7image1 from './img/Zrealizovane/Project7/image1.jpg';
 import Project7image2 from './img/Zrealizovane/Project7/image2.jpg';
+import Project7image3 from './img/Zrealizovane/Project7/image3.jpg';
+import Project7image4 from './img/Zrealizovane/Project7/image4.jpg';
 
 import Project8image1 from './img/Zrealizovane/Project8/image1.jpg';
 import Project8image2 from './img/Zrealizovane/Project8/image2.jpg';
@@ -95,10 +100,16 @@ import Project10image12 from './img/Zrealizovane/Project10/image12.jpg';
 import Project10image13 from './img/Zrealizovane/Project10/image13.jpg';
 import Project10image14 from './img/Zrealizovane/Project10/image14.jpg';
 
+import Project11image1 from './img/Zrealizovane/Project11/image1.jpg';
+import Project11image2 from './img/Zrealizovane/Project11/image2.jpg';
+import Project11image3 from './img/Zrealizovane/Project11/image3.jpg';
+
 const project1 = [
   Project1image1, Project1image2, Project1image3, 
-  Project1image4, Project1image5, Project1image6, 
-  Project1image7
+  Project1image4, Project1image5, 
+  //Project1image6, Project1image7,  
+  Project1image8,  Project1image9,
+  Project1image10, Project1image11
 ]
 
 const project2 = [
@@ -134,11 +145,13 @@ const project5 = [
 const project6 = [
   Project6image1, Project6image2, Project6image3, 
   Project6image4, Project6image5, Project6image6, 
-  Project6image7, Project6image8, Project6image9
+  Project6image7, Project6image8, Project6image9,
+  Project6image10
 ]
 
 const project7 = [
-  Project7image1, Project7image2
+  Project7image1, Project7image2,
+  Project7image3, Project7image4
 ]
 
 const project8 = [
@@ -157,49 +170,58 @@ const project10 = [
   Project10image13, Project10image14
 ]
 
+const project11 = [
+  Project11image1, Project11image2, Project11image3
+]
+
 const ZrealizovaneData = [
   { 
     id:1,
-    img: Project1image1,
+    img: Project1image8,
     images: project1,
-    title: 'ul. Sosnowiecka, Kraków ',
+    title: 'Os. 7- ŻYCZEŃ ul. Sosnowiecka, Kraków',
     color: 'orange',
     cols: 2,
     hint: 'Status: building',
 
     investor: 'EKOPARK',
-    localization: 'ul. Sosnowiecka, Kraków Osiedle "7 życzeń" : 5 etapów (14 bloków)',
+    localization: 'Os. 7- ŻYCZEŃ ul. Sosnowiecka, Kraków',
     firma: 'Brogan Group Sp. z o.o.',   
      
     notename :[{
-      name: 'Sosnowiecka 1 - 3, część nadziemna',
-      PUM: '2.825.96 m2',
-      PC: '3.999,84 m2',
-      KUB: ''
+      name: 'Os. 7 Życzeń” Sosnowiecka 1-3',
+      PUM: '2.825 m2',
+      PC: '5.596 m2'
     },
     {
-      name: 'Sosnowiecka 1 - 3, część podziemna',
-      PUM:'',
-      PC: '596,37 m2',
-      KUB:''
+      name: 'Os. 7 Życzeń” Sosnowiecka 4-7',
+      PUM:'3.769 m2',
+      PC: '7.521 m2'
     },
     {
-      name: 'Sosnowiecka 4 - 7, część nadziemna',
-      PUM: '3.768,49 m2',
-      PC: '5.333,12 m2',
-      KUB: ''
+      name: 'Os. 7 Życzeń” Sosnowiecka 1-4',
+      PUM: '1.965 m2',
+      PC: '2.942 m2'
     },
     {
-      name: 'Sosnowiecka 4 - 7, część podziemna',
-      PUM: '',
-      PC: '2.188,85 m2',
-      KUB: ''
+      name: 'Os. 7 Życzeń” Sosnowiecka 6-7',
+      PUM: '2.101 m2',
+      PC: '4.118 m2'
     },
     {
-      name: 'Sosnowiecka 1 - 4:',
-      PUM: '1.965,92 m2',
-      PC: '2.942,1 m2',
-      KUB: ''
+      name: 'Os. 7 Życzeń” Sosnowiecka 18-19',
+      PUM: '2.101 m2',
+      PC: '4.039 m2'
+    },
+    {
+      name: 'Os. 7 Życzeń” Sosnowiecka 21-23',
+      PUM: '3.189 m2',
+      PC: '6.214 m2'
+    },
+    {
+      name: 'Razem całe Osiedle 7 Życzeń',
+      PUM: '15.950 m2',
+      PC: '30.430 m2'
     },
     ]
    },
@@ -220,32 +242,27 @@ const ZrealizovaneData = [
     notename :[{
       name: 'Fabryczna P1',
       PUM: '4.868 m2 ',
-      PC: '10.668 m2',
-      KUB: ''
+      PC: '10.668 m2'
     },
     {
       name: 'Fabryczna L1 ',
       PUM:'7.534 m2',
-      PC: '15.710 m2',
-      KUB:''
+      PC: '15.710 m2'
     },
     {
       name: 'Fabryczna P2-P3',
-      PUM: '0.387 m2',
-      PC: '23.892 m2',
-      KUB: ''
+      PUM: '387 m2',
+      PC: '23.892 m2'
     },
     {
       name: 'Fabryczna P4',
       PUM: '5.161 m2 ',
-      PC: '11.369 m2',
-      KUB: ''
+      PC: '11.369 m2'
     },
     {
       name: 'Sumarycznie całe osiedle: ',
       PUM: '27.950 m2',
-      PC: '61.639 m2',
-      KUB: ''
+      PC: '61.639 m2'
     },
     ]
    },
@@ -264,9 +281,8 @@ const ZrealizovaneData = [
      
     notename :[{
       name: 'Przybyszewskiego Etap I',
-      PUM: '4440.62 m2',
-      PC: '10505.88 m2',
-      KUB: ''
+      PUM: '4.440 m2',
+      PC: '10.505 m2'
     }
     ]
    },
@@ -286,8 +302,7 @@ const ZrealizovaneData = [
     notename :[{
       name: 'Ilość mieszkań: 178 na 16 kondygnacjach',
       PUM: '9.068 m2',
-      PC: '19.714 m2',
-      KUB: '57.280 m3'
+      PC: '19.714 m2'
     }
     ]
    },
@@ -295,7 +310,7 @@ const ZrealizovaneData = [
     id:5,
     img: Project5image1,
     images: project5,
-    title: 'ul. Lipska',
+    title: 'LIPSKA – budynek biurowy',
     color: 'orange',
     cols: 2,
     hint: 'Status: building',
@@ -307,16 +322,15 @@ const ZrealizovaneData = [
     notename :[{
       name: 'budynek biurowo - usługowy ',
       PUM: '793 m2',
-      PC: '2.457 m2',
-      KUB: '9.461 m3'
+      PC: '2.457 m2'
     }
     ]
    },
    { 
     id:6,
-    img: Project6image1,
+    img: Project6image10,
     images: project6,
-    title: 'ul. Bunscha Kraków ',
+    title: 'BUNSCHA – budynek biurowy',
     color: 'orange',
     cols: 2,
     hint: 'Status: building',
@@ -328,14 +342,13 @@ const ZrealizovaneData = [
     notename :[{
       name: 'budynek biurowo- usługowy',
       PUM: '10.565 m2',
-      PC: '3.957 m2',
-      KUB: '18.269 m3'
+      PC: '3.957 m2'
     }
     ]},
 
    { 
     id:7,
-    img: Project7image1,
+    img: Project7image4,
     images: project7,
     title: 'Osiedle SENSITY, ul. Wielicka Kraków, Bud. B,C,D',
     color: 'orange',
@@ -348,21 +361,21 @@ const ZrealizovaneData = [
      
     notename :[{
       name: 'Bud. B ',
-      PUM: '3693.13 m2',
-      PC: '9803.41 m2',
-      KUB: ''
+      PUM: '3.693 m2',
+      PC: '9.803 m2',
+
     },
     {
       name: 'Bud. C',
-      PUM: '2367.99 m2',
-      PC: '4238.56 m2',
-      KUB: ''
+      PUM: '2.367 m2',
+      PC: '4.238 m2',
+
     },
     {
       name: 'Bud. D',
-      PUM: '2010.79 m2',
-      PC: '4295.58 m2',
-      KUB: ''
+      PUM: '2.010 m2',
+      PC: '4.295 m2',
+ 
     },
     ]
   },
@@ -382,15 +395,12 @@ const ZrealizovaneData = [
        
       notename :[{
         name: 'liczba kondygnacji podziemnych: 1',
-        PUM: '1018.27 m2',
-        PC: '2453.86 m2',
-        KUB: ''
+        PUM: '1.018 m2',
+        PC: '2.453 m2'
         },
         {
          name: 'liczba kondygnacji nadziemnych: 5',
-         PUM: '',
-         PC: '',
-         KUB: ''
+         PUM: ''
         }
       ]
     },
@@ -409,9 +419,8 @@ const ZrealizovaneData = [
        
       notename :[{
         name: 'Tetmajera, budynki I, II, III, IV:',
-        PUM: '628.88 m2',
-        PC: '1080.52 m2',
-        KUB: ''
+        PUM: '628 m2',
+        PC: '1.080 m2'
         }
       ]
     },
@@ -419,20 +428,40 @@ const ZrealizovaneData = [
       id:10,
       img: Project10image1,
       images: project10,
-      title: 'ul. Tyniecka, Kraków',
+      title: 'BUDOWA BUDYNKU KOŚCIOŁA PARAFIALNEGO wraz Z BUDYNKIEM PLEBANII',
       color: 'orange',
       cols: 2,
       hint: 'Status: building',
   
-      investor: 'Kościół ',
+      investor: 'TOWARZYSTWO SALEZJAŃSKIE',
       localization: 'ul. Tyniecka, Kraków',
       firma: 'Brogan Group Sp. z o.o.',   
        
       notename :[{
         name: '',
         PUM: '',
-        PC: '',
-        KUB: ''
+
+        }
+      ]
+    },
+    { 
+      id:11,
+      img: Project11image1,
+      images: project11,
+      title: 'SENTO BANACHA bud. B1',
+      color: 'orange',
+      cols: 2,
+      hint: 'Status: building',
+  
+      investor: '',
+      localization: '',
+      firma: 'Brogan Group Sp. z o.o.',   
+       
+      notename :[{
+        name: '',
+        PUM: '7.249 m2',
+        PC: '14.043 m2',
+
         }
       ]
     },

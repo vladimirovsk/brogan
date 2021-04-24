@@ -28,12 +28,11 @@ function GaleriaDialog(props) {
   try{
     notename = project.notename.map((item, key)=>(
         //console.log("NOTENAME "+key, item)
-        <div key={key}>
-          <hr />
-          <h6 >{Boolean(item.name) ? `${item.name}`:null}</h6>
+        <div key={key} style={{padding:"0", margin:0}}>
+          {/* <hr style={{padding:"0", margin:0}} /> */}
+          <h7 style={{fontWeight: "bold", padding:"0", margin:0}}>{Boolean(item.name) ? `${item.name}`:null}</h7>
           <div>{Boolean(item.PUM) ? `PUM: ${item.PUM}`:null}</div>
           <div>{Boolean(item.PC) ? `PC: ${item.PC}`:null}</div>
-          <div>{Boolean(item.KUB) ? `KUB: ${item.KUB}`:null}</div>
         </div>  
        
     ))
@@ -52,7 +51,7 @@ function GaleriaDialog(props) {
         className='dialogGalery'
         show={openDialog}
         onHide={handleClose}
-        backdrop="static"
+        //backdrop="static"
         keyboard={true}
         animation={true}
         size="xl"

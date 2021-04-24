@@ -1,10 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+*.png
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
-
+/src/component/galeria/img
+*.pnp
+*.pnp.js
 # testing
 /coverage
 

@@ -27,8 +27,9 @@
     "ComponentFirst":{
       "title":"Brogan Group Sp. z o.o. - General contracting of construction investments",
       "text1":"Brogan Group sp. z o. o. is a general contractor for construction projects specializing in complex construction projects.",
-      "text2":"Our main purpose is to deliver consistently excellent service to an investor. As a general contractor, we have a highly qualified management staff and well-knit, permanent brigades of carpenters, armourers, bricklayers and plasterers. ",
-      "text3":"We also have our own equipment including tower cranes. Based on it’s experience and knowledge, Brogan Group sp. z o. o. provides professional service at every stage of the investment and is responsible for the tasks entrusted to it",
+      "text2":"Our main purpose is to deliver consistently excellent service to an investor. As the general contractor of investments, we have qualified management supervision the process of construction and welded, permanent construction and finishing brigades.",
+      "text3":"We also have our own equipment including tower cranes.",
+      "text4":"Based on it’s experience and knowledge, Brogan Group sp. z o. o. provides professional service at every stage of the investment and is responsible for the tasks entrusted to it.",
       "textPhone":"Call and ask for details."
     },
 
@@ -89,7 +90,7 @@
   "footer":{
     "titleFirm":"Brogan Group Sp. z o.o.",
     "addres1":"biura: ul. Kobierzyńska 211 lok. nr 3, 30-383 Kraków",
-    "addres2":"siedziby: ul. Adama Doboszyńskiego 9, 32-031 Chorowice gm. Mogilany",
+    "addres2":"siedziba: ul. Adama Doboszyńskiego 9, 32-031 Chorowice gm. Mogilany",
     "titleKontact":"Kontact:",
     "copyright1":"by Brogan Group Sp. z o.o. Wszelkie prawa zastrzeżone.",
     "copyright2":"Nasza strona wykorzystuje pliki cookie."
@@ -120,7 +121,7 @@
     }
   },
   "about": {
-    "text1": "The company's business profile includes general contracting of construction investments and comprehensive project implementation. The company was founded in response to market needs, to provide services at the highest level. We attach great importance to solid enterprise development. We provide our services with the utmost care, in accordance with technology and construction art, using materials whose quality is confirmed certification certificates. We are characterized by an individual approach to implemented projects, and we treat each order as a new challenge",
-    "text2": "The fact that we cooperate only with certified specialists and use high-quality materials ensures the highest standard of our projects. The use of innovative solutions, attention to safety and every detail of the project every time guarantee us success."
+    "text1": "The company's business profile includes the execution of raw materials and the general execution of construction investments and the comprehensive implementation of projects.",
+    "text2": "The fact that we cooperate only with proven specialists and use high-quality materials ensures the highest standard of our projects. The use of innovative solutions, attention to safety and every detail of the project every time guarantee us success."
   } 
 }

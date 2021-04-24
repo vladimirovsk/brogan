@@ -5,7 +5,7 @@ import CardClip from '../CardClip/CardClip'
 import bud1 from '../../img/home/bud1_new.jpg'
 import bud2 from '../../img/home/slide5.jpg'
 import bud3 from '../../img/home/bud2.jpg'  //paste crane
-import bud4 from '../../img/home/bud_4.jpg'
+import bud4 from '../../img/home/bud_4p.jpg'
 
 
 import {translate} from 'react-switch-lang';

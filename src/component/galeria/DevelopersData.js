@@ -31,8 +31,7 @@ const DevelopersData = [
   notename :[{
     name: 'STRUMYK 1 to kameralny czterokondygnacyjny apartamentowiec z trzynastoma nowoczesnymi mieszkaniami, wyposażony w windę pomieszczenie do przechowywania rowerów oraz parkingiem na poziomie "0".',
     PUM: '',
-    PC: '',
-    KUB: ''
+    PC: ''
   }]
 
  },
@@ -52,8 +51,7 @@ const DevelopersData = [
   notename :[{
     name: 'Trzy budynki mieszkalne wielorodzinne z garażami podziemnymi wraz z instalacjami wewnętrznymi. ',
     PUM: '',
-    PC: '',
-    KUB: ''
+    PC: ''
   }]
 
  }

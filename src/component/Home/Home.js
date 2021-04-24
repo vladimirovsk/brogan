@@ -16,16 +16,8 @@ import image3 from '../../img/home/slide3.jpg'
 import crane from '../../img/background-crane-1.jpg';
 import {translate} from 'react-switch-lang';
 
-
-
-
-
-
 function Home(props) {
-
-
   const [{t}] = React.useState(props);
-
   return (
   <Container fluid={true} className='Home' style={{
         backgroundImage: `url(${crane})`,

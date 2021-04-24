@@ -3,7 +3,7 @@ import {Navbar, Nav, NavDropdown, Form} from 'react-bootstrap';
 import './Header.css'
 
 import {NavLink} from 'react-router-dom';
-import logo from '../../img/brogan-logo-top.png'
+import logo from '../../img/brogan-logo-old.png'
 import { makeStyles} from "@material-ui/core/styles";
 import {Button,  Menu, MenuItem, } from '@material-ui/core';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';

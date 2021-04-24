@@ -4,7 +4,8 @@ import {translate} from 'react-switch-lang';
 
 import Footer from '../footer/Footer';
 import './Contact.css';
-import logo from '../../img/brogan-logo-top.png';
+import logo from '../../img/brogan-logo.png';
+//import logo from '../../img/brogan-logo-top.png';
 import crane from '../../img/banner-crane.jpg';
 
 
@@ -59,7 +60,8 @@ function Contact(props) {
           fontFamily: "'Fredoka One', cursive",
           fontSize: '3em',
           color: 'red'
-        }}> {t("header.title")}
+        }}> 
+        {/* {t("header.title")} */}
 
           </div>
           </Col>
@@ -74,17 +76,13 @@ function Contact(props) {
             <Card.Text style={{
               textAlign: 'left', fontFamily:'Roboto Condensed', fontSize:'1em'
               }}>
-
               {building}{t("footer.addres1")}<br />
               {building}{t("footer.addres2")}<br />
               {telephone}<a href="tel: +48600347050">+48 600 347 050, </a><a href="tel:666182182" style={{color:'black'}}>666 182 182</a><br />
               {mail}<a href="mailto: jakub.smulski@brogan.pl">jakub.smulski@brogan.pl,</a><br />
               {mail}<a href="mailto: biuro@brogan.pl">biuro@brogan.pl</a>
-              
               <br />NIP: 9442248440
-              <br />REGON: 36147140600000
-              
-
+              <br />REGON: 361471406
             </Card.Text>
             </Card.Body>
           </Card>
