@@ -37,12 +37,12 @@
     "ComponentCard":{
 
       "Card1":{
-        "title":"Budownictwo mieszkaniowe wielorodzinne.",
+        "title":"Budownictwo Mieszkaniowe",
         "prof1":" ",
         "prof2":" ",
         "body":" ",
         "backTitle":" ",
-        "backText":"Brogan Group Sp. z o.o. w profilu swojej działalności posiada zrealizowane inwestycje w zakresie budownictwa mieszkaniowego. Spółka świadczy usługi w zakresie budownictwa budynków mieszkalnych. W szczególności specjalizujemy się w budownictwie wielorodzinnym. Doświadczenie i kwalifikacje naszych pracowników pozwala wykonać powierzone prace profesjonalnie i w ustalonym terminie."
+        "backText":"Brogan Group Sp. z o.o. w profilu swojej działalności posiada zrealizowane inwestycje w zakresie budownictwa mieszkaniowego. W szczególności specjalizujemy się w budownictwie wielorodzinnym. Doświadczenie i kwalifikacje naszych pracowników pozwala wykonać powierzone prace profesjonalnie i w ustalonym terminie."
       },
 
       "Card2":{
@@ -65,11 +65,11 @@
 
       "Card4":{
         "title":"Inwestycje deweloperskie",
-        "prof1":"Naszą ambicją jest tworzenie wyjątkowych inwestycji deweloperskich w najlepszych lokalizacjach.",
+        "prof1":" ",
         "prof2":" ",
         "body":" ",
         "backTitle":" ",
-        "backText":"Specjalizujemy się w nowoczesnym budownictwie kameralnych nieruchomości mieszkaniowych. Zdobyte doświadczenie oparte jest na zrealizowanych z sukcesem inwestycjach mieszkaniowych dla dużych deweloperów. Fakt, że współpracujemy tylko ze sprawdzonymi specjalistami i wykorzystujemy wysokiej jakości materiały, zapewnia wysoki standard realizowanych projektów. Stosowanie innowacyjnych rozwiązań, dbałość o bezpieczeństwo i o każdy szczegół wykonania projektu każdorazowo zbliżają nas do sukcesu."
+        "backText":"Specjalizujemy się w nowoczesnym budownictwie kameralnych nieruchomości mieszkaniowych. Zdobyte doświadczenie oparte jest na zrealizowanych z sukcesem inwestycjach mieszkaniowych dla dużych deweloperów. Fakt, że współpracujemy tylko ze sprawdzonymi specjalistami i wykorzystujemy wysokiej jakości materiały, zapewnia wysoki standard realizowanych projektów."
       }
     },
 
@@ -90,9 +90,9 @@
 
   "footer":{
     "titleFirm":"Brogan Group Sp. z o.o.",
-    "addres1":"biura: ul. Kobierzyńska 211 lok. nr 3, 30-383 Kraków",
+    "addres1":"biura: ul. Kobierzyńska 211 lok. 3, 30-383 Kraków",
     "addres2":"siedziba: ul. Adama Doboszyńskiego 9, 32-031 Chorowice gm. Mogilany",
-    "titleKontact":"Kontact:",
+    "titleKontact":"Kontakt:",
     "copyright1":"by Brogan Group Sp. z o.o. Wszelkie prawa zastrzeżone.",
     "copyright2":"Nasza strona wykorzystuje pliki cookie."
 
@@ -118,13 +118,22 @@
     "title":"Brogan Group Sp. z o.o.",
     "card":{
       "title":"Adres biura:",
-      "addres":"ul. Kobierzyńska 211 lok. nr 3  30-383 Kraków"  
+      "addres":"ul. Kobierzyńska 211 lok. 3  30-383 Kraków"  
     }
   },
 
   "about": {
+    "title": "Brogan Group Sp. z o.o.",
     "text1": "Brogan Group Sp. z o.o. jest intensywnie rozwijającą się firmą sektora budowlanego. Profil działalności spółki obejmuje generalne wykonawstwo inwestycji budowlanych oraz kompleksową realizację projektów. Firma powstała w odpowiedzi na potrzeby rynku, aby świadczyć usługi na najwyższym poziomie. Dużą wagę przywiązujemy do stałego rozwoju przedsiębiorstwa.",
     "text2": "Fakt, że współpracujemy tylko ze sprawdzonymi specjalistami i wykorzystujemy materiały o wysokiej jakości, zapewnia najwyższy standard realizowanych projektów. Stosowanie innowacyjnych rozwiązań, dbałość o bezpieczeństwo i o każdy szczegół wykonania projektu każdorazowo gwarantują nam sukces."
-  }   
+  },
+  
+  "galeria": {
+    "developers": {
+      "TitleCard": {
+        "text": "HK Group jest firmą powiązaną  osobowo i kapitałowo z firmą Brogan Group. Powstała w odpowiedzi na zapotrzebowanie rynku na nieruchomości o podwyższonym standardzie w kameralnych lokalizacjach. Doświadczenie deweloperskie zdobywaliśmy podczas realizacji inwestycji w systemie generalnego wykonawstwa dla dużych krakowskich deweloperów."
+      }
+    }
+  }  
 
 }

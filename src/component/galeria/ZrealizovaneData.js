@@ -33,23 +33,14 @@ import Project3image6 from './img/Zrealizovane/Project3/image6.jpg';
 import Project4image1 from './img/Zrealizovane/Project4/image1.jpg';
 import Project4image2 from './img/Zrealizovane/Project4/image2.jpg';
 import Project4image3 from './img/Zrealizovane/Project4/image3.jpg';
-import Project4image4 from './img/Zrealizovane/Project4/image4.jpg';
-import Project4image5 from './img/Zrealizovane/Project4/image5.jpg';
-import Project4image6 from './img/Zrealizovane/Project4/image6.jpg';
-import Project4image7 from './img/Zrealizovane/Project4/image7.jpg';
 import Project4image8 from './img/Zrealizovane/Project4/image8.jpg';
-import Project4image9 from './img/Zrealizovane/Project4/image9.jpg';
-import Project4image10 from './img/Zrealizovane/Project4/image10.jpg';
 import Project4image11 from './img/Zrealizovane/Project4/image11.jpg';
 import Project4image12 from './img/Zrealizovane/Project4/image12.jpg';
 import Project4image13 from './img/Zrealizovane/Project4/image13.jpg';
 import Project4image14 from './img/Zrealizovane/Project4/image14.jpg';
 import Project4image15 from './img/Zrealizovane/Project4/image15.jpg';
 import Project4image16 from './img/Zrealizovane/Project4/image16.jpg';
-import Project4image17 from './img/Zrealizovane/Project4/image17.jpg';
-import Project4image18 from './img/Zrealizovane/Project4/image18.jpg';
 import Project4image19 from './img/Zrealizovane/Project4/image19.jpg';
-import Project4image20 from './img/Zrealizovane/Project4/image20.jpg';
 
 import Project5image1 from './img/Zrealizovane/Project5/image1.jpg';
 import Project5image2 from './img/Zrealizovane/Project5/image2.jpg';
@@ -57,7 +48,6 @@ import Project5image3 from './img/Zrealizovane/Project5/image3.jpg';
 import Project5image4 from './img/Zrealizovane/Project5/image4.jpg';
 import Project5image5 from './img/Zrealizovane/Project5/image5.jpg';
 import Project5image6 from './img/Zrealizovane/Project5/image6.jpg';
-import Project5image7 from './img/Zrealizovane/Project5/image7.jpg';
 import Project5image8 from './img/Zrealizovane/Project5/image8.jpg';
 import Project5image9 from './img/Zrealizovane/Project5/image9.jpg';
 
@@ -67,9 +57,6 @@ import Project6image3 from './img/Zrealizovane/Project6/image3.jpg';
 import Project6image4 from './img/Zrealizovane/Project6/image4.jpg';
 import Project6image5 from './img/Zrealizovane/Project6/image5.jpg';
 import Project6image6 from './img/Zrealizovane/Project6/image6.jpg';
-import Project6image7 from './img/Zrealizovane/Project6/image7.jpg';
-import Project6image8 from './img/Zrealizovane/Project6/image8.jpg';
-import Project6image9 from './img/Zrealizovane/Project6/image9.jpg';
 import Project6image10 from './img/Zrealizovane/Project6/image10.jpg';
 
 import Project7image1 from './img/Zrealizovane/Project7/image1.jpg';
@@ -107,7 +94,7 @@ import Project11image3 from './img/Zrealizovane/Project11/image3.jpg';
 const project1 = [
   Project1image1, Project1image2, Project1image3, 
   Project1image4, Project1image5, 
-  //Project1image6, Project1image7,  
+
   Project1image8,  Project1image9,
   Project1image10, Project1image11
 ]
@@ -126,26 +113,21 @@ const project3 = [
 ]
 
 const project4 = [
-   
-  Project4image4, Project4image5, Project4image6, 
-  Project4image7, Project4image8, Project4image9, 
-  Project4image10, Project4image11, Project4image12, Project4image20,
-  Project4image13, Project4image14, Project4image15, Project4image17, 
-  Project4image16, Project4image18, 
-  Project4image19, 
-  Project4image1, Project4image2, Project4image3 
+  Project4image8,  Project4image11, Project4image12,
+  Project4image13, Project4image14, Project4image15, 
+  Project4image16, Project4image19,  Project4image1, 
+  Project4image2, Project4image3 
 ]
 
 const project5 = [
   Project5image1, Project5image2, Project5image3, 
   Project5image4, Project5image5, Project5image6, 
-  Project5image7, Project5image8, Project5image9
+  Project5image8, Project5image9
 ]
 
 const project6 = [
   Project6image1, Project6image2, Project6image3, 
   Project6image4, Project6image5, Project6image6, 
-  Project6image7, Project6image8, Project6image9,
   Project6image10
 ]
 
@@ -175,179 +157,27 @@ const project11 = [
 ]
 
 const ZrealizovaneData = [
-  { 
-    id:1,
-    img: Project1image8,
-    images: project1,
-    title: 'Os. 7- ŻYCZEŃ ul. Sosnowiecka, Kraków',
-    color: 'orange',
-    cols: 2,
-    hint: 'Status: building',
-
-    investor: 'EKOPARK',
-    localization: 'Os. 7- ŻYCZEŃ ul. Sosnowiecka, Kraków',
-    firma: 'Brogan Group Sp. z o.o.',   
-     
+{id:1,
+  img: Project11image1,
+  images: project11,
+  title: 'SENTO BANACHA bud. B1',
+  color: 'orange',
+  cols: 2,
+  hint: 'Status: building',
+  
+    investor: 'SENTO',
+    localization: '',
+    firma: 'Brogan Group Sp. z o.o.', 
+      
     notename :[{
-      name: 'Os. 7 Życzeń” Sosnowiecka 1-3',
-      PUM: '2.825 m2',
-      PC: '5.596 m2'
-    },
-    {
-      name: 'Os. 7 Życzeń” Sosnowiecka 4-7',
-      PUM:'3.769 m2',
-      PC: '7.521 m2'
-    },
-    {
-      name: 'Os. 7 Życzeń” Sosnowiecka 1-4',
-      PUM: '1.965 m2',
-      PC: '2.942 m2'
-    },
-    {
-      name: 'Os. 7 Życzeń” Sosnowiecka 6-7',
-      PUM: '2.101 m2',
-      PC: '4.118 m2'
-    },
-    {
-      name: 'Os. 7 Życzeń” Sosnowiecka 18-19',
-      PUM: '2.101 m2',
-      PC: '4.039 m2'
-    },
-    {
-      name: 'Os. 7 Życzeń” Sosnowiecka 21-23',
-      PUM: '3.189 m2',
-      PC: '6.214 m2'
-    },
-    {
-      name: 'Razem całe Osiedle 7 Życzeń',
-      PUM: '15.950 m2',
-      PC: '30.430 m2'
-    },
+      name: '',
+      PUM: '7.249 m2',
+      PC: '14.043 m2',
+  
+      }
     ]
-   },
-
-   { 
-    id:2,
-    img: Project2image1,
-    images: project2,
-    title: 'ul. Fabryczna osiedla " Art City"  ',
-    color: 'orange',
-    cols: 2,
-    hint: 'Status: building',
-
-    investor: 'EKOPARK',
-    localization: 'ul. Fabryczna osiedla " Art City" ',
-    firma: 'Brogan Group Sp. z o.o.',   
-     
-    notename :[{
-      name: 'Fabryczna P1',
-      PUM: '4.868 m2 ',
-      PC: '10.668 m2'
-    },
-    {
-      name: 'Fabryczna L1 ',
-      PUM:'7.534 m2',
-      PC: '15.710 m2'
-    },
-    {
-      name: 'Fabryczna P2-P3',
-      PUM: '387 m2',
-      PC: '23.892 m2'
-    },
-    {
-      name: 'Fabryczna P4',
-      PUM: '5.161 m2 ',
-      PC: '11.369 m2'
-    },
-    {
-      name: 'Sumarycznie całe osiedle: ',
-      PUM: '27.950 m2',
-      PC: '61.639 m2'
-    },
-    ]
-   },
-   { 
-    id:3,
-    img: Project3image1,
-    images: project3,
-    title: 'Apartamenty "U Przybyszewskiego"',
-    color: 'orange',
-    cols: 2,
-    hint: 'Status: building',
-
-    investor: 'EKOPARK',
-    localization: 'Apartamenty " U Przybyszewskiego"',
-    firma: 'Brogan Group Sp. z o.o.',   
-     
-    notename :[{
-      name: 'Przybyszewskiego Etap I',
-      PUM: '4.440 m2',
-      PC: '10.505 m2'
-    }
-    ]
-   },
-   { 
-    id:4,
-    img: Project4image8,
-    images: project4,
-    title: 'AVIA Budynek 10',
-    color: 'orange',
-    cols: 2,
-    hint: 'Status: building',
-
-    investor: 'BUDIMEX',
-    localization: 'AVIA Budynek 10',
-    firma: 'Brogan Group Sp. z o.o.',   
-     
-    notename :[{
-      name: 'Ilość mieszkań: 178 na 16 kondygnacjach',
-      PUM: '9.068 m2',
-      PC: '19.714 m2'
-    }
-    ]
-   },
-   { 
-    id:5,
-    img: Project5image1,
-    images: project5,
-    title: 'LIPSKA – budynek biurowy',
-    color: 'orange',
-    cols: 2,
-    hint: 'Status: building',
-
-    investor: 'BRYKSY',
-    localization: 'ul. Lipska',
-    firma: 'Brogan Group Sp. z o.o.',   
-     
-    notename :[{
-      name: 'budynek biurowo - usługowy ',
-      PUM: '793 m2',
-      PC: '2.457 m2'
-    }
-    ]
-   },
-   { 
-    id:6,
-    img: Project6image10,
-    images: project6,
-    title: 'BUNSCHA – budynek biurowy',
-    color: 'orange',
-    cols: 2,
-    hint: 'Status: building',
-
-    investor: 'WAKSMUNDZKI GRUPA INWESTYCYJNA',
-    localization: 'ul. Bunscha Kraków ',
-    firma: 'Brogan Group Sp. z o.o.',   
-     
-    notename :[{
-      name: 'budynek biurowo- usługowy',
-      PUM: '10.565 m2',
-      PC: '3.957 m2'
-    }
-    ]},
-
-   { 
-    id:7,
+  },
+{id:2,
     img: Project7image4,
     images: project7,
     title: 'Osiedle SENSITY, ul. Wielicka Kraków, Bud. B,C,D',
@@ -378,93 +208,242 @@ const ZrealizovaneData = [
  
     },
     ]
+},
+
+{id:3,
+  img: Project3image1,
+  images: project3,
+  title: 'Apartamenty "U Przybyszewskiego"',
+  color: 'orange',
+  cols: 2,
+  hint: 'Status: building',
+  
+  investor: 'EKOPARK',
+  localization: 'Apartamenty " U Przybyszewskiego"',
+  firma: 'Brogan Group Sp. z o.o.',   
+    
+  notename :[{
+    name: 'Przybyszewskiego Etap I',
+    PUM: '4.440 m2',
+    PC: '10.505 m2'
+  }
+  ]
   },
 
-    { 
-      id:8,
-      img: Project8image1,
-      images: project8,
-      title: 'ul. Kątowa 10',
-      color: 'orange',
-      cols: 2,
-      hint: 'Status: building',
+  {id:4,
+    img: Project8image1,
+    images: project8,
+    title: 'ul. Kątowa 10',
+    color: 'orange',
+    cols: 2,
+    hint: 'Status: building',
   
-      investor: 'Apartamenty inwestycyjne IRON STREET',
-      localization: 'ul. Kątowa 10',
-      firma: 'Brogan Group Sp. z o.o.',   
-       
-      notename :[{
-        name: 'liczba kondygnacji podziemnych: 1',
-        PUM: '1.018 m2',
-        PC: '2.453 m2'
-        },
-        {
-         name: 'liczba kondygnacji nadziemnych: 5',
-         PUM: ''
-        }
-      ]
-    },
-    { 
-      id:9,
-      img: Project9image1,
-      images: project9,
-      title: 'Apartamenty Tetmajera 65B',
-      color: 'orange',
-      cols: 2,
-      hint: 'Status: building',
-  
-      investor: 'Apartamenty Tetmajera 65B',
-      localization: 'Apartamenty Tetmajera 65B',
-      firma: 'Brogan Group Sp. z o.o.',   
-       
-      notename :[{
-        name: 'Tetmajera, budynki I, II, III, IV:',
-        PUM: '628 m2',
-        PC: '1.080 m2'
-        }
-      ]
-    },
-    { 
-      id:10,
-      img: Project10image1,
-      images: project10,
-      title: 'BUDOWA BUDYNKU KOŚCIOŁA PARAFIALNEGO wraz Z BUDYNKIEM PLEBANII',
-      color: 'orange',
-      cols: 2,
-      hint: 'Status: building',
-  
-      investor: 'TOWARZYSTWO SALEZJAŃSKIE',
-      localization: 'ul. Tyniecka, Kraków',
-      firma: 'Brogan Group Sp. z o.o.',   
-       
-      notename :[{
-        name: '',
-        PUM: '',
+    investor: 'Apartamenty inwestycyjne IRON STREET',
+    localization: 'ul. Kątowa 10',
+    firma: 'Brogan Group Sp. z o.o.',   
+         
+    notename :[{
+      name: 'liczba kondygnacji podziemnych: 1',
+      PUM: '1.018 m2',
+      PC: '2.453 m2'
+      },
+      {
+        name: 'liczba kondygnacji nadziemnych: 5',
+        PUM: ''
+      }
+    ]
+  },
 
-        }
-      ]
-    },
-    { 
-      id:11,
-      img: Project11image1,
-      images: project11,
-      title: 'SENTO BANACHA bud. B1',
-      color: 'orange',
-      cols: 2,
-      hint: 'Status: building',
-  
-      investor: '',
-      localization: '',
-      firma: 'Brogan Group Sp. z o.o.',   
-       
-      notename :[{
-        name: '',
-        PUM: '7.249 m2',
-        PC: '14.043 m2',
 
-        }
-      ]
+
+  {id:5,
+    img: Project2image1,
+    images: project2,
+    title: 'ul. Fabryczna Osiedle " Art City"  ',
+    color: 'orange',
+    cols: 2,
+    hint: 'Status: building',
+  
+    investor: 'EKOPARK',
+    localization: 'ul. Fabryczna Osiedle " Art City" ',
+    firma: 'Brogan Group Sp. z o.o.',   
+    notename :[{
+      name: 'Fabryczna P1',
+      PUM: '4.868 m2 ',
+      PC: '10.668 m2'
     },
+    {
+      name: 'Fabryczna L1 ',
+      PUM:'7.534 m2',
+      PC: '15.710 m2'
+    },
+    {
+      name: 'Fabryczna P2-P3',
+      PUM: '10.387 m2',
+      PC: '23.892 m2'
+    },
+    {
+      name: 'Fabryczna P4',
+      PUM: '5.161 m2 ',
+      PC: '11.369 m2'
+    },
+    {
+      name: 'Sumarycznie całe osiedle: ',
+      PUM: '27.950 m2',
+      PC: '61.639 m2'
+    },
+    ]
+  },
+  {id:6,
+    img: Project1image8,
+    images: project1,
+    title: 'Os. 7- ŻYCZEŃ ul. Sosnowiecka, Kraków',
+    color: 'orange',
+    cols: 2,
+    hint: 'Status: building',
+  
+    investor: 'EKOPARK',
+    localization: 'Os. 7- ŻYCZEŃ ul. Sosnowiecka, Kraków',
+    firma: 'Brogan Group Sp. z o.o.',   
+      
+    notename :[{
+      name: 'Sosnowiecka 1-3',
+      PUM: '2.825 m2',
+      PC: '5.596 m2'
+    },
+    {
+      name: 'Sosnowiecka 4-7',
+      PUM:'3.769 m2',
+      PC: '7.521 m2'
+    },
+    {
+      name: 'Sosnowiecka 1-4',
+      PUM: '1.965 m2',
+      PC: '2.942 m2'
+    },
+    {
+      name: 'Sosnowiecka 6-7',
+      PUM: '2.101 m2',
+      PC: '4.118 m2'
+    },
+    {
+      name: 'Sosnowiecka 18-19',
+      PUM: '2.101 m2',
+      PC: '4.039 m2'
+    },
+    {
+      name: 'Sosnowiecka 21-23',
+      PUM: '3.189 m2',
+      PC: '6.214 m2'
+    },
+    {
+      name: 'Razem całe Osiedle 7 Życzeń',
+      PUM: '15.950 m2',
+      PC: '30.430 m2'
+    },
+    ]
+  },
+  
+  {id:7,
+    img: Project6image10,
+    images: project6,
+    title: 'BUNSCHA – budynek biurowy',
+    color: 'orange',
+    cols: 2,
+    hint: 'Status: building',
+
+    investor: 'WAKSMUNDZKI GRUPA INWESTYCYJNA',
+    localization: 'ul. Bunscha Kraków ',
+    firma: 'Brogan Group Sp. z o.o.',   
+     
+    notename :[{
+      name: 'budynek biurowo- usługowy',
+      PUM: '10.565 m2',
+      PC: '3.957 m2'
+    }]
+},  
+{id:8,
+    img: Project5image1,
+    images: project5,
+    title: 'LIPSKA – budynek biurowy',
+    color: 'orange',
+    cols: 2,
+    hint: 'Status: building',
+
+    investor: 'BRYKSY',
+    localization: 'ul. Lipska',
+    firma: 'Brogan Group Sp. z o.o.',   
+     
+    notename :[{
+      name: 'budynek biurowo - usługowy ',
+      PUM: '793 m2',
+      PC: '2.457 m2'
+    }
+    ]
+},
+{id:9,
+  img: Project9image1,
+  images: project9,
+  title: 'Apartamenty Tetmajera 65B',
+  color: 'orange',
+  cols: 2,
+  hint: 'Status: building',
+
+  investor: 'Apartamenty Tetmajera 65B',
+  localization: 'Apartamenty Tetmajera 65B',
+  firma: 'Brogan Group Sp. z o.o.',   
+    
+  notename :[{
+    name: 'Tetmajera, budynki I, II, III, IV:',
+    PUM: '628 m2',
+    PC: '1.080 m2'
+    }
+  ]
+},
+
+{ 
+  id:10,
+  img: Project10image1,
+  images: project10,
+  title: 'BUDOWA BUDYNKU KOŚCIOŁA PARAFIALNEGO WRAZ Z BUDYNKIEM PLEBANII',
+  color: 'orange',
+  cols: 2,
+  hint: 'Status: building',
+
+  investor: 'TOWARZYSTWO SALEZJAŃSKIE',
+  localization: 'ul. Tyniecka, Kraków',
+  firma: 'Brogan Group Sp. z o.o.',   
+   
+  notename :[{
+    name: '',
+    PUM: '',
+    PC: '',
+    KUB: ''
+    }
+  ]
+},
+
+{id:11,
+  img: Project4image8,
+  images: project4,
+  title: 'AVIA Budynek 10',
+  color: 'orange',
+  cols: 2,
+  hint: 'Status: building',
+  
+  investor: 'BUDIMEX',
+  localization: 'AVIA Budynek 10',
+  firma: 'Brogan Group Sp. z o.o.',   
+    
+  notename :[{
+    name: 'Ilość mieszkań: 178 na 16 kondygnacjach',
+    PUM: '9.068 m2',
+    PC: '19.714 m2'
+  }
+  ]
+  },
+
+
 ]
 
 export default ZrealizovaneData;

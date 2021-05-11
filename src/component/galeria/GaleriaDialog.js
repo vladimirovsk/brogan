@@ -28,11 +28,12 @@ function GaleriaDialog(props) {
   try{
     notename = project.notename.map((item, key)=>(
         //console.log("NOTENAME "+key, item)
-        <div key={key} style={{padding:"0", margin:0}}>
-          {/* <hr style={{padding:"0", margin:0}} /> */}
-          <h7 style={{fontWeight: "bold", padding:"0", margin:0}}>{Boolean(item.name) ? `${item.name}`:null}</h7>
+          <div key={key} style={{padding:"0", margin:0}}>
+          <hr style={{padding:"0", margin:0}} />
+          <h7 style={{padding:"0", margin:0}}>{Boolean(item.name) ? `${item.name}`:null}</h7>
           <div>{Boolean(item.PUM) ? `PUM: ${item.PUM}`:null}</div>
           <div>{Boolean(item.PC) ? `PC: ${item.PC}`:null}</div>
+          <div>{Boolean(item.url) ? <a target="_blank" rel="noopener noreferrer" style={{color:'blue'}} href={item.url}>{item.url}</a>:null}</div>
         </div>  
        
     ))
@@ -60,16 +61,16 @@ function GaleriaDialog(props) {
         centered={true}
       >
        <Modal.Header closeButton>
-          <Modal.Title>
-            {project.title}<br />
+          <Modal.Title style={{height: '20px'}}>
+            {project.title}
         </Modal.Title> 
 
         </Modal.Header>
-        <Modal.Body className="modal-content">
+        <Modal.Body className="modal-content" style={{margin:'0px', padding:'0px'}}>
         <Container>
           <Row style={{margin:0, padding:0 }}>
             <Col sm={12} lg={3}  style={{margin:'0px', padding:'0px'}}>
-              <Card bg='white' className='imageCard' style={{ }} >
+              <Card bg='white' className='imageCard' style={{ left:'0px'}} >
                 <Card.Header>INWESTOR: {project.investor}</Card.Header>
                 <Card.Body>
                 <Card.Title>{project.firma}</Card.Title>
@@ -84,9 +85,9 @@ function GaleriaDialog(props) {
             </Card.Body>
           </Card>
             </Col>
-            <Col sm={12} lg={9} style={{margin:0, padding:0}}>
-              <ImageGallery style={{height: '100vh'}}
-                lazyLoad={false} 
+            <Col sm={12} lg={9} style={{margin:'0px', padding:0}}>
+              <ImageGallery style={{height: '90v'}}
+                lazyLoad={true} 
                 items={images} />   
             </Col>
           </Row>
@@ -94,7 +95,7 @@ function GaleriaDialog(props) {
 
 
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer style={{margin:'0px', padding:'0px'}}>
           <div style={{alignItems:'left', margin:'auto'}}>
           {project.localization}
           </div>  

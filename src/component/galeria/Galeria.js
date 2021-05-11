@@ -10,7 +10,7 @@ import ZrealizovaneData from './ZrealizovaneData'
 import RealizaciaData from './RealizaciaData'
 import DevelopersData from './DevelopersData'
 
-import {Row, Container} from 'react-bootstrap';
+import {Row, Col, Container} from 'react-bootstrap';
 import {useParams} from 'react-router-dom';
 
 import crane from '../../img/banner-crane.jpg';
@@ -40,6 +40,7 @@ function Galeria(props) {
   const [project, setProject] = useState(1);
   const [selectGaleria, setSelectGaleria] = useState(tipe);
   const [title, setTitle] = useState('');
+  const [titleCard, setTitleCard] = useState('');
 
   const handleClickOpen = (project) => {
     setOpenDialog(true)
@@ -57,7 +58,7 @@ function Galeria(props) {
   }));
 
   //relizaziya
-  const Relizaziya = () => {
+  const Relizaziya = (props) => {
     return(
       <GridList cellHeight={220} className={classes.gridList} cols={3}>
         <GridListTile key="Subheader" cols={3} style={{ height: 'auto',  }}>
@@ -86,15 +87,17 @@ function Galeria(props) {
   }
 
   //menu zrealizovane
-  const Zrealizovane = () => {
+  const Zrealizovane = (props) => {
     return(
       <GridList cellHeight={220} className={classes.gridList} cols={2}>
-        <GridListTile key="Subheader" cols={3} style={{ height: 'auto',  }}>
-        <ListSubheader component="div" style={{color: 'black', fontSize: '2em', fontFamily:"'Fredoka One', cursive" }}>
-      </ListSubheader>
+        <GridListTile key="Subheader" cols={2} style={{ height: 'auto',  }}>
+        <ListSubheader component="div" style={{color: 'black', fontSize: '1em' }}>
+        </ListSubheader>
       </GridListTile>
+
       {ZrealizovaneData.map((project) => (
-        <GridListTile key={project.id} cols={1} onClick={(e)=>handleClickOpen(project)}>
+        <GridListTile
+            key={project.id} cols={1} onClick={(e)=>handleClickOpen(project)}>
           <img className={'imageGalerey'} src={project.img} alt={project.title}/>
           <GridListTileBar
             title={project.title}
@@ -115,7 +118,7 @@ function Galeria(props) {
   } 
 
   //menu developers
-  const Developers = () => {
+  const Developers = (props) => {
     return(
       <GridList cellHeight={220} className={classes.gridList} cols={2}>
         <GridListTile key="Subheader" cols={3} style={{ height: 'auto',  }}>
@@ -144,19 +147,31 @@ function Galeria(props) {
   } 
 
 
-  React.useEffect(()=>{
+  React.useEffect((props)=>{
     switch(tipe){
       case 'relizaziya'  : {
         setSelectGaleria(Relizaziya); 
-        setTitle(t("header.menu.DropMenu1.Menu1")); 
+        setTitle(t("header.menu.DropMenu1.Menu1"));  
+        setTitleCard("");
         break;
       }
-      case 'zrealizovane' :{setSelectGaleria(Zrealizovane); setTitle(t("header.menu.DropMenu1.Menu2")); break;}
-      case 'developers' :  {setSelectGaleria(Developers); setTitle(t("header.menu.DropMenu1.Menu3")); break;}
-      default: {setSelectGaleria(Relizaziya); setTitle(t("header.menu.DropMenu1.Menu1"));}
+      case 'zrealizovane' :{
+        setSelectGaleria(Zrealizovane); 
+        setTitle(t("header.menu.DropMenu1.Menu2")); 
+        setTitleCard(t(""));
+       
+        break;
+      }
+      case 'developers' :  {
+        setSelectGaleria(Developers); 
+        setTitle(t("header.menu.DropMenu1.Menu3")); 
+        setTitleCard(t("galeria.developers.TitleCard.text"));
+        break;}
+      default: {setSelectGaleria(Relizaziya); setTitle(t("header.menu.DropMenu1.Menu1")); setTitleCard(""); 
+    }
     }  
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tipe])
+  }, [tipe, props])
 
   function  BootstrapTooltip(props) {
     const classes = useStylesBootstrap();
@@ -178,7 +193,13 @@ function Galeria(props) {
       <div style={{textAlign: 'center', fontFamily:'Roboto Condensed', fontSize:'2em'}}>{title}</div>
 
       <Row className="justify-content-center mx-auto">
-      
+        <Container hidden={!Boolean(titleCard>'')} fluid={'md'} style={{padding: '2em',  borderWidth: '1px', borderRadius: '10px', boxShadow: '2px 2px 5px #545454', marginTop: '2em', marginBottom: '2em', textAlign: 'justify'}}>
+          <Row className='cardFirma'>  
+
+          <Col sm={12}>{titleCard}
+          </Col>
+          </Row>
+        </Container>    
       {selectGaleria} 
 
       </Row>

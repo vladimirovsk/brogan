@@ -73,7 +73,7 @@ return(
               prof2={t("home.ComponentCard.Card4.prof2")}
               body={t("home.ComponentCard.Card4.body")}
               backTitle={t("home.ComponentCard.Card4.backTitle")}
-              fontBackText={"13px"}
+              fontBackText={"14px"}
               backText={t("home.ComponentCard.Card4.backText")}
             />
       </Col>

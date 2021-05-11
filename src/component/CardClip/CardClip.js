@@ -41,9 +41,9 @@ class CardClip extends Component {
                         <div className="flip-card-front row_white">
                             <img className={"p-0 bg-white"} src={this.props.img} alt="Avatar" style={{width:"100%"}}/>
                             <div className={"name bg-white"}>{this.props.name}</div>
-                            <div className={"prof1"}>{this.props.prof1}</div>
+                            {/* <div className={"prof1"}>{this.props.prof1}</div>
                             <div className={"prof2"}>{this.props.prof2}</div>
-                            <div className={"body"}>{this.props.body}</div>
+                            <div className={"body"}>{this.props.body}</div> */}
                         </div>
                         <div className="flip-card-back">
                             <div className={"backTitle"}>{this.props.backTitle}</div>

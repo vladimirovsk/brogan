@@ -97,7 +97,7 @@ const lngButton = (
       <Navbar.Brand href="#home" style={{
           fontFamily: "'Fredoka One', cursive",
           fontSize: '50',
-          color: 'red'
+          color: '#545454'
         }}>
          
           <img src={logo} height='50' alt='logo' />  

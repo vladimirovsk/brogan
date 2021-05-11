@@ -61,12 +61,12 @@ const RealizaciaData = [
     id: 2,
     img: Project2image1,
     images: project2,
-    title: 'Osiedla SLOW CITY ul. Piaszczysta Kraków',
+    title: 'Osiedle SLOW CITY ul. Piaszczysta Kraków',
     color: 'orange',
     cols: 2,
     hint: 'Status: W realizacji',
     investor: 'EKOPARK',
-    localization: 'Osiedla SLOW CITY ul. Piaszczysta Kraków',
+    localization: 'Osiedle SLOW CITY ul. Piaszczysta Kraków',
     firma: 'Brogan Group Sp. z o.o.',   
     notename :[
       {
@@ -85,15 +85,15 @@ const RealizaciaData = [
 
    {
     id: 3,
-    img: Project3image1,
+    img: Project3image7,
     images: project3,
-    title: 'Osiedla SenTOTU ul. Górka Narodowa Kraków, budynki B1.1, B1.2',
+    title: 'Osiedle SenTOTU ul. Górka Narodowa Kraków, budynki B1.1, B1.2',
     color: 'orange',
     cols: 2,
     hint: 'Status: W realizacji',
   
     investor: 'SENTO',
-    localization: 'Osiedla SenTOTU ul. Górka Narodowa Kraków, budynki B1.1, B1.2',
+    localization: 'Osiedle SenTOTU ul. Górka Narodowa Kraków, budynki B1.1, B1.2',
     firma: 'Brogan Group Sp. z o.o. ', 
     notename :[
       {

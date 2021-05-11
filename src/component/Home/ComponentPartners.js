@@ -36,6 +36,9 @@ function ComponentPartners(props) {
             <ScrollAnimation animateIn="animate__fadeInTopLeft" animateOut="animate__fadeOutTopLeft" animatePreScroll={false} delay={3}>
             <Col><img className='MyImage' src={partner3} alt=''/></Col>
             </ScrollAnimation>   
+            <ScrollAnimation animateIn="animate__fadeInTopLeft" animateOut="animate__fadeOutTopLeft" animatePreScroll={false} delay={3}>
+            <Col><Image className='MyImage' src={partner7} alt=''/></Col>
+            </ScrollAnimation>  
         </Col>
        
         <Col sm={12} md={6}>
@@ -50,10 +53,8 @@ function ComponentPartners(props) {
           </ScrollAnimation>   
         </Col>
 
-        <Col sm={12}>
-        <ScrollAnimation animateIn="animate__fadeInUo" animateOut="animate__fadeOutUp" animatePreScroll={false}>
-          <Col><Image className='MyImage' src={partner7} alt=''/></Col>
-        </ScrollAnimation>  
+        <Col sm={12} md={6}>
+
         </Col>  
       </Row>
       </Container>  

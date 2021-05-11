@@ -15,8 +15,7 @@ const project2 = [
 ]
 
 const DevelopersData = [
-{ 
-  id:1,
+{ id:1,
   img: Project1image1,
   images: project1,
   title: 'Apartamenty Strumyk1',
@@ -24,19 +23,20 @@ const DevelopersData = [
   cols: 2,
   hint: 'Status: building',
 
-  investor: '',
+  investor: 'HK Group sp. z o.o. sp.k.',
   localization: 'Termin zakończenia : wrzesień 2021',
   firma: 'Brogan Group Sp. z o.o.',   
    
   notename :[{
+    
     name: 'STRUMYK 1 to kameralny czterokondygnacyjny apartamentowiec z trzynastoma nowoczesnymi mieszkaniami, wyposażony w windę pomieszczenie do przechowywania rowerów oraz parkingiem na poziomie "0".',
-    PUM: '',
+    url: 'https://www.strumyk1.pl',
+    PUM: '800 m2',
     PC: ''
   }]
 
  },
- { 
-  id:2,
+ {id:2,
   img: Project2image1,
   images: project2,
   title: 'Apartamenty Poleska 5',
@@ -44,13 +44,13 @@ const DevelopersData = [
   cols: 2,
   hint: 'Status: building',
 
-  investor: 'Już w sprzedaży !',
-  localization: 'Przewidywany termin zakończenia: I/II kwartał 2023.',
+  investor: 'HK Group sp. z o.o. sp.k.',
+  localization: 'Już w sprzedaży !',
   firma: 'Brogan Group Sp. z o.o.',   
    
   notename :[{
-    name: 'Trzy budynki mieszkalne wielorodzinne z garażami podziemnymi wraz z instalacjami wewnętrznymi. ',
-    PUM: '',
+    name: 'Poleska 5 to kameralny, pięciokondygnacyjny budynek mieszkalny wraz z garażem podziemnym. Na 27 mieszkań o zróżnicowanym metrażu przypadają trzy windy w trzech klatkach.',
+    PUM: '1.670 m2',
     PC: ''
   }]
 

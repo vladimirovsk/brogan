@@ -17,8 +17,11 @@
 }
 
 .name{
-    text-align: center;
-    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 25px;
     font-weight: bold;
     background: white;
 }
