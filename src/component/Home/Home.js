@@ -65,12 +65,6 @@ function Home(props) {
         </Carousel.Item>
       </Carousel>
       </div>
-      {/* <Parallax strength={500} bgImage={crane}> */}
-      
-      {/* <Background className="custom-bg" style={{widows: '100vh'}}>
-        <img src = {crane} alt='' />
-      </Background>  */}
-
           <ComponetFirst />
           <ComponentCard />
           <ComponentCheck />
