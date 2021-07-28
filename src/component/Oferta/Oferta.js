@@ -7,9 +7,9 @@ import './Oferta.css';
 import crane from '../../img/banner-crane.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import oferta1 from './oferta-1.jpg';
-import oferta2 from './oferta-2.jpg';
-import oferta3 from './oferta-3.jpg';
+ import oferta1 from './oferta-1.jpg';
+ import oferta2 from './oferta-2.jpg';
+ import oferta3 from './oferta-3.jpg';
 
 import {translate} from 'react-switch-lang';
 

@@ -93,8 +93,7 @@ import Project11image3 from './img/Zrealizovane/Project11/image3.jpg';
 
 const project1 = [
   Project1image1, Project1image2, Project1image3, 
-  Project1image4, Project1image5, 
-
+  Project1image4, Project1image5,
   Project1image8,  Project1image9,
   Project1image10, Project1image11
 ]
@@ -157,18 +156,17 @@ const project11 = [
 ]
 
 const ZrealizovaneData = [
-{id:1,
+{
+  id:1,
   img: Project11image1,
   images: project11,
   title: 'SENTO BANACHA bud. B1',
   color: 'orange',
   cols: 2,
   hint: 'Status: building',
-  
     investor: 'SENTO',
     localization: '',
-    firma: 'Brogan Group Sp. z o.o.', 
-      
+    firma: 'Brogan Group Sp. z o.o.',
     notename :[{
       name: '',
       PUM: '7.249 m2',
@@ -254,8 +252,6 @@ const ZrealizovaneData = [
     ]
   },
 
-
-
   {id:5,
     img: Project2image1,
     images: project2,
@@ -294,6 +290,7 @@ const ZrealizovaneData = [
     },
     ]
   },
+
   {id:6,
     img: Project1image8,
     images: project1,
