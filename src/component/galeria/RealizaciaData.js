@@ -5,16 +5,6 @@ import Project1image4 from './img/Realizaciya/Project1/image4.jpg';
 import Project1image5 from './img/Realizaciya/Project1/image5.jpg';
 import Project1image6 from './img/Realizaciya/Project1/image6.jpg';
 
-import Project2image1 from './img/Realizaciya/Project2/image1.jpg';
-import Project2image2 from './img/Realizaciya/Project2/image2.jpg';
-import Project2image3 from './img/Realizaciya/Project2/image3.jpg';
-import Project2image4 from './img/Realizaciya/Project2/image4.jpg';
-import Project2image5 from './img/Realizaciya/Project2/image5.jpg';
-import Project2image6 from './img/Realizaciya/Project2/image6.jpg';
-import Project2image7 from './img/Realizaciya/Project2/image7.jpg';
-import Project2image8 from './img/Realizaciya/Project2/image8.jpg';
-import Project2image9 from './img/Realizaciya/Project2/image9.jpg';
-
 import Project3image1 from './img/Realizaciya/Project3/image1.jpg';
 import Project3image2 from './img/Realizaciya/Project3/image2.jpg';
 import Project3image5 from './img/Realizaciya/Project3/image5.jpg';
@@ -25,11 +15,6 @@ import Project3image7 from './img/Realizaciya/Project3/image7.jpg';
 const project1 = [
   Project1image1, Project1image2, Project1image3, 
   Project1image4, Project1image5, Project1image6
-]
-const project2 = [
-  Project2image1, Project2image2, Project2image3, 
-  Project2image4, Project2image5, Project2image6, 
-  Project2image7, Project2image8, Project2image9 
 ]
 
 const project3 = [
@@ -55,32 +40,6 @@ const RealizaciaData = [
       PC: '6.550 m2',
       PUM: '2.754 m2'
     }]
-   },
-
-   {
-    id: 2,
-    img: Project2image1,
-    images: project2,
-    title: 'Osiedle SLOW CITY ul. Piaszczysta Kraków',
-    color: 'orange',
-    cols: 2,
-    hint: 'Status: W realizacji',
-    investor: 'EKOPARK',
-    localization: 'Osiedle SLOW CITY ul. Piaszczysta Kraków',
-    firma: 'Brogan Group Sp. z o.o.',   
-    notename :[
-      {
-      name: 'liczba kondygnacji podziemnych 1',
-      PC: '13.634 m2',
-      PUM: '7.434 m2'
-    },
-    {
-      name: 'liczba kondygnacji nadziemnych 4',
-      PC: '',
-      PUM: ''
-    }
-  ] 
-
    },
 
    {

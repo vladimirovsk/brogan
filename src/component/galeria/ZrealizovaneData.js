@@ -91,6 +91,18 @@ import Project11image1 from './img/Zrealizovane/Project11/image1.jpg';
 import Project11image2 from './img/Zrealizovane/Project11/image2.jpg';
 import Project11image3 from './img/Zrealizovane/Project11/image3.jpg';
 
+import Project12image1 from './img/Zrealizovane/Project12/image1.jpg';
+import Project12image2 from './img/Zrealizovane/Project12/image2.jpg';
+import Project12image3 from './img/Zrealizovane/Project12/image3.jpg';
+import Project12image4 from './img/Zrealizovane/Project12/image4.jpg';
+import Project12image5 from './img/Zrealizovane/Project12/image5.jpg';
+import Project12image6 from './img/Zrealizovane/Project12/image6.jpg';
+import Project12image7 from './img/Zrealizovane/Project12/image7.jpg';
+import Project12image8 from './img/Zrealizovane/Project12/image8.jpg';
+import Project12image9 from './img/Zrealizovane/Project12/image9.jpg';
+
+
+
 const project1 = [
   Project1image1, Project1image2, Project1image3, 
   Project1image4, Project1image5,
@@ -155,8 +167,14 @@ const project11 = [
   Project11image1, Project11image2, Project11image3
 ]
 
+const project12 = [
+  Project12image1, Project12image2, Project12image3,
+  Project12image4, Project12image5, Project12image6,
+  Project12image7, Project12image8, Project12image9
+]
+
 const ZrealizovaneData = [
-{
+  {
   id:1,
   img: Project11image1,
   images: project11,
@@ -175,7 +193,7 @@ const ZrealizovaneData = [
       }
     ]
   },
-{id:2,
+  {id:2,
     img: Project7image4,
     images: project7,
     title: 'Osiedle SENSITY, ul. Wielicka Kraków, Bud. B,C,D',
@@ -207,8 +225,7 @@ const ZrealizovaneData = [
     },
     ]
 },
-
-{id:3,
+  {id:3,
   img: Project3image1,
   images: project3,
   title: 'Apartamenty "U Przybyszewskiego"',
@@ -227,7 +244,6 @@ const ZrealizovaneData = [
   }
   ]
   },
-
   {id:4,
     img: Project8image1,
     images: project8,
@@ -251,7 +267,6 @@ const ZrealizovaneData = [
       }
     ]
   },
-
   {id:5,
     img: Project2image1,
     images: project2,
@@ -290,7 +305,6 @@ const ZrealizovaneData = [
     },
     ]
   },
-
   {id:6,
     img: Project1image8,
     images: project1,
@@ -340,7 +354,6 @@ const ZrealizovaneData = [
     },
     ]
   },
-  
   {id:7,
     img: Project6image10,
     images: project6,
@@ -358,8 +371,8 @@ const ZrealizovaneData = [
       PUM: '10.565 m2',
       PC: '3.957 m2'
     }]
-},  
-{id:8,
+},
+  {id:8,
     img: Project5image1,
     images: project5,
     title: 'LIPSKA – budynek biurowy',
@@ -378,7 +391,7 @@ const ZrealizovaneData = [
     }
     ]
 },
-{id:9,
+  {id:9,
   img: Project9image1,
   images: project9,
   title: 'Apartamenty Tetmajera 65B',
@@ -397,8 +410,7 @@ const ZrealizovaneData = [
     }
   ]
 },
-
-{ 
+  {
   id:10,
   img: Project10image1,
   images: project10,
@@ -419,8 +431,7 @@ const ZrealizovaneData = [
     }
   ]
 },
-
-{id:11,
+  {id:11,
   img: Project4image8,
   images: project4,
   title: 'AVIA Budynek 10',
@@ -440,6 +451,30 @@ const ZrealizovaneData = [
   ]
   },
 
+  {
+    id: 12,
+    img: Project12image1,
+    images: project12,
+    title: 'Osiedle SLOW CITY ul. Piaszczysta Kraków',
+    color: 'orange',
+    cols: 2,
+    hint: 'Status: W realizacji',
+    investor: 'EKOPARK',
+    localization: 'Osiedle SLOW CITY ul. Piaszczysta Kraków',
+    firma: 'Brogan Group Sp. z o.o.',
+    notename :[
+      {
+        name: 'liczba kondygnacji podziemnych 1',
+        PC: '13.634 m2',
+        PUM: '7.434 m2'
+      },
+      {
+        name: 'liczba kondygnacji nadziemnych 4',
+        PC: '',
+        PUM: ''
+      }
+    ]
+  }
 
 ]
 

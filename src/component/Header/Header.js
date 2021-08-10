@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {Navbar, Nav, NavDropdown, Form} from 'react-bootstrap';
 import './Header.css'
-
 import {NavLink} from 'react-router-dom';
 import logo from '../../img/brogan-logo-old.png'
 import { makeStyles} from "@material-ui/core/styles";
@@ -126,8 +125,7 @@ const lngButton = (
         <Form inline>
         {lngButton}          
           </Form>
-          
-      </Nav>
+        </Nav>
           </Navbar.Collapse>
         </Navbar>
     </React.Fragment>  

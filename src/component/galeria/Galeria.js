@@ -60,8 +60,8 @@ function Galeria(props) {
   //relizaziya
   const Relizaziya = (props) => {
     return(
-      <GridList cellHeight={220} className={classes.gridList} cols={3}>
-        <GridListTile key="Subheader" cols={3} style={{ height: 'auto',  }}>
+      <GridList cellHeight={220} className={classes.gridList} cols={2}>
+        <GridListTile key="Subheader" cols={2} style={{ height: 'auto',  }}>
         <ListSubheader component="div" style={{color: 'black', fontSize: '2em', fontFamily:"'Fredoka One', cursive" }}>
       </ListSubheader>
       </GridListTile>
