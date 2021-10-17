@@ -26,10 +26,11 @@ function GaleriaDialog(props) {
   }
 
   try{
+
     notename = project.notename.map((item, key)=>(
-        //console.log("NOTENAME "+key, item)
           <div key={key} style={{padding:"0", margin:0}}>
           <hr style={{padding:"0", margin:0}} />
+
           <h7 style={{padding:"0", margin:0}}>{Boolean(item.name) ? `${item.name}`:null}</h7>
           <div>{Boolean(item.PUM) ? `PUM: ${item.PUM}`:null}</div>
           <div>{Boolean(item.PC) ? `PC: ${item.PC}`:null}</div>
@@ -74,14 +75,19 @@ function GaleriaDialog(props) {
                 <Card.Header>INWESTOR: {project.investor}</Card.Header>
                 <Card.Body>
                 <Card.Title>{project.firma}</Card.Title>
-                  {/* <Card.Text 
+                  <Card.Text
                     style={{textAlign: 'left', fontFamily:'Roboto Condensed', fontSize:'1em'}}>
-                  {/* <br />investor: {project.investor} 
-                  <br />localization: {project.localization}
-                  <hr /> */}
-                   {/* {notename} 
-                </Card.Text> */}
-                {notename}
+                      {Boolean(project.investor === 'HK Group sp. z o.o. sp.k.')
+                          ?<div style={{color:'blue', textDecoration:'underline'}}><p><a href="https://hkgroup.pl" style={{color:'blue'}}>HK Group</a></p>
+                           <p><a href="https://poleska.hkgroup.pl" style={{color:'blue'}}>Poleska 5</a></p></div>
+                          :null
+                      }
+                  {/*<br />investor: {project.investor}*/}
+                  {/*<br />localization: {project.localization}*/}
+                  {/*<hr />*/}
+                   {notename}
+                </Card.Text>
+                {/*{notename}*/}
             </Card.Body>
           </Card>
             </Col>
