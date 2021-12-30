@@ -1,11 +1,12 @@
 import React from 'react';
-import {Row, Col, Container} from 'react-bootstrap';
+import {Row, Col, Container, Image} from 'react-bootstrap';
 
 import Footer from '../footer/Footer';
 import './Firma.css';
 //import logo from '../../img/brogan-logo.png';
 import crane from '../../img/banner-crane.jpg';
 import {translate} from 'react-switch-lang';
+import SBrogan  from '../../img/SBrogan.png';
 
 function Firma(props) {
   const [{t}] = React.useState(props);
@@ -37,6 +38,11 @@ function Firma(props) {
             </div>
           </Col>
         </Row>
+          <Row>
+            <Col>
+              <Image src={SBrogan} alt={'Sertificat'}/>
+            </Col>
+          </Row>
         </Container>
       </Container>
       <Footer />

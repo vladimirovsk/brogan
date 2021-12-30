@@ -25,14 +25,14 @@ const useStyles = makeStyles((theme) => ({
     //color:"black",
     // },
    },
- 
+
    menuItem:{
      color  : theme.typography.caption,
     //...theme.typography.tab,
     opacity: 1,
     borderRadius:'0px',
    },
- 
+
   }));
 
 function Header(props){
@@ -59,7 +59,7 @@ const handleChangeLg = (event, lng) => {
 
 const lngButton = (
   <React.Fragment>
-    <Button 
+    <Button
       border = {0}
       hidden = {false}
       variant="contained"
@@ -85,7 +85,7 @@ const lngButton = (
   >
           <MenuItem onClick={(event) => {handleChangeLg(event, 'pl'); setOpenMenu(false)}} className={classes.menuItem} >PL</MenuItem>
           <MenuItem onClick={(event) => {handleChangeLg(event, 'en'); setOpenMenu(false)}} className={classes.menuItem} >EN</MenuItem>
-    </Menu>	
+    </Menu>
   </React.Fragment>
 )
 
@@ -98,8 +98,8 @@ const lngButton = (
           fontSize: '50',
           color: '#545454'
         }}>
-         
-          <img src={logo} height='50' alt='logo' />  
+
+          <img src={logo} height='50' alt='logo' />
           {t("header.title")}
 
         </Navbar.Brand>
@@ -114,21 +114,22 @@ const lngButton = (
             <NavDropdown title={t("header.menu.DropMenu1.Title")} id="basic-nav-dropdown" >
                 <NavDropdown.Item as='div' href='/'><Nav.Link as='div' href='/'><NavLink exact to='/galeria/relizaziya' className='linkMenu' activeClassName="selected">{t("header.menu.DropMenu1.Menu1")}</NavLink></Nav.Link></NavDropdown.Item>
                 <NavDropdown.Item as='div' href='/'><Nav.Link as='div' href='/'><NavLink exact to='/galeria/zrealizovane' className='linkMenu' activeClassName="selected">{t("header.menu.DropMenu1.Menu2")}</NavLink></Nav.Link></NavDropdown.Item>
-                <NavDropdown.Item as='div' href='/'><Nav.Link as='div' href='/'><NavLink exact to='/galeria/developers' className='linkMenu' activeClassName="selected">{t("header.menu.DropMenu1.Menu3")}</NavLink></Nav.Link></NavDropdown.Item>
+                {/*<NavDropdown.Item as='div' href='/'><Nav.Link as='div' href='/'><NavLink exact to='/galeria/developers' className='linkMenu' activeClassName="selected">{t("header.menu.DropMenu1.Menu3")}</NavLink></Nav.Link></NavDropdown.Item>*/}
                 {/* <NavDropdown.Divider />
                 <NavDropdown.Item as='div' href='/'><Nav.Link as='div'><NavLink exact to='/project3' className='linkMenu' activeClassName="selected">PLANING PROJECT</NavLink></Nav.Link></NavDropdown.Item> */}
             </NavDropdown>
-            {/* <Nav.Link as='div' href='/'><NavLink to="/galeria" className='linkMenu'>INWESTYCJE DEWELOPERSKIE </NavLink></Nav.Link> */}
+              <Nav.Link as='div' href='/'><NavLink exact to='/galeria/developers' className='linkMenu' activeClassName="selected">{t("header.menu.DropMenu1.Menu3")}</NavLink></Nav.Link>
+              {/* <Nav.Link as='div' href='/'><NavLink to="/galeria" className='linkMenu'>INWESTYCJE DEWELOPERSKIE </NavLink></Nav.Link> */}
             <Nav.Link as='div' href='/'><NavLink to="/contact" className='linkMenu'>{t("header.menu.Contact")}</NavLink></Nav.Link>
           </Nav>
           <Nav>
         <Form inline>
-        {lngButton}          
+        {lngButton}
           </Form>
         </Nav>
           </Navbar.Collapse>
         </Navbar>
-    </React.Fragment>  
+    </React.Fragment>
   )
 
 }
