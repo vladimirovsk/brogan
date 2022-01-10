@@ -101,6 +101,11 @@ import Project12image7 from './img/Zrealizovane/Project12/image7.jpg';
 import Project12image8 from './img/Zrealizovane/Project12/image8.jpg';
 import Project12image9 from './img/Zrealizovane/Project12/image9.jpg';
 
+import Project13image1 from './img/Zrealizovane/Project13/image1.jpg';
+import Project13image2 from './img/Zrealizovane/Project13/image2.jpg';
+import Project13image5 from './img/Zrealizovane/Project13/image5.jpg';
+import Project13image6 from './img/Zrealizovane/Project13/image6.jpg';
+import Project13image7 from './img/Zrealizovane/Project13/image7.jpg';
 
 
 const project1 = [
@@ -172,6 +177,12 @@ const project12 = [
   Project12image4, Project12image5, Project12image6,
   Project12image7, Project12image8, Project12image9
 ]
+
+const project13 = [
+  Project13image1, Project13image2, Project13image5,
+  Project13image6,  Project13image7
+]
+
 
 const ZrealizovaneData = [
   {
@@ -450,7 +461,6 @@ const ZrealizovaneData = [
   }
   ]
   },
-
   {
     id: 12,
     img: Project12image1,
@@ -474,7 +484,36 @@ const ZrealizovaneData = [
         PUM: ''
       }
     ]
-  }
+  },
+
+  {
+    id: 13,
+    img: Project13image1,
+    images: project13,
+    title: 'Osiedle SenTOTU ul. Górka Narodowa Kraków, budynki B1.1, B1.2',
+    color: 'orange',
+    cols: 2,
+    hint: 'Status: Zrealizowane',
+
+    investor: 'SENTO',
+    localization: 'Osiedle SenTOTU ul. Górka Narodowa Kraków, budynki B1.1, B1.2',
+    firma: 'Brogan Group Sp. z o.o. ',
+    notename :[
+      {
+        name: 'Bud.B2',
+        PUM: '5.479 m2',
+        PC: '11.161 m2'
+      },
+      {
+        name: 'Bud.B3',
+        PUM: '4.704 m2',
+        PC: '9.790 m2'
+      }
+
+    ]
+
+  },
+
 
 ]
 
