@@ -103,9 +103,10 @@ import Project12image9 from './img/Zrealizovane/Project12/image9.jpg';
 
 import Project13image1 from './img/Zrealizovane/Project13/image1.jpg';
 import Project13image2 from './img/Zrealizovane/Project13/image2.jpg';
+import Project13image3 from './img/Zrealizovane/Project13/image3.jpg';
+import Project13image4 from './img/Zrealizovane/Project13/image4.jpg';
 import Project13image5 from './img/Zrealizovane/Project13/image5.jpg';
 import Project13image6 from './img/Zrealizovane/Project13/image6.jpg';
-import Project13image7 from './img/Zrealizovane/Project13/image7.jpg';
 
 
 const project1 = [
@@ -179,8 +180,8 @@ const project12 = [
 ]
 
 const project13 = [
-  Project13image1, Project13image2, Project13image5,
-  Project13image6,  Project13image7
+  Project13image1, Project13image2, Project13image3,
+  Project13image4, Project13image5, Project13image6,
 ]
 
 
@@ -488,28 +489,22 @@ const ZrealizovaneData = [
 
   {
     id: 13,
-    img: Project13image1,
+    img: Project13image2,
     images: project13,
-    title: 'Osiedle SenTOTU ul. Górka Narodowa Kraków, budynki B1.1, B1.2',
+    title: 'Apartamenty u Przybyszewskiego',
     color: 'orange',
     cols: 2,
-    hint: 'Status: Zrealizowane',
+    hint: '',
 
     investor: 'SENTO',
-    localization: 'Osiedle SenTOTU ul. Górka Narodowa Kraków, budynki B1.1, B1.2',
+    localization: 'Apartamenty u Przybyszewskiego',
     firma: 'Brogan Group Sp. z o.o. ',
     notename :[
       {
-        name: 'Bud.B2',
-        PUM: '5.479 m2',
-        PC: '11.161 m2'
-      },
-      {
-        name: 'Bud.B3',
-        PUM: '4.704 m2',
-        PC: '9.790 m2'
+        name: 'Przybyszewskiego Etap II',
+        PUM: '2.754 m2',
+        PC: '6.550 m2'
       }
-
     ]
 
   },
