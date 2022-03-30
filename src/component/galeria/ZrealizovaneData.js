@@ -86,6 +86,10 @@ import Project10image11 from './img/Zrealizovane/Project10/image11.jpg';
 import Project10image12 from './img/Zrealizovane/Project10/image12.jpg';
 import Project10image13 from './img/Zrealizovane/Project10/image13.jpg';
 import Project10image14 from './img/Zrealizovane/Project10/image14.jpg';
+import Project10image15 from './img/Zrealizovane/Project10/image15.jpg';
+import Project10image16 from './img/Zrealizovane/Project10/image16.jpg';
+
+
 
 import Project11image1 from './img/Zrealizovane/Project11/image1.jpg';
 import Project11image2 from './img/Zrealizovane/Project11/image2.jpg';
@@ -166,7 +170,9 @@ const project10 = [
   Project10image4, Project10image5, Project10image6, 
   Project10image7, Project10image8, Project10image9,
   Project10image10, Project10image11, Project10image12,
-  Project10image13, Project10image14
+  Project10image13, Project10image14, Project10image15,
+  Project10image16
+
 ]
 
 const project11 = [

@@ -2,7 +2,7 @@
 #https://animate.style/
 #https://dbramwell.github.io/react-animate-on-scroll/#initiallyVisible
 #https://github.com/dbramwell/react-animate-on-scroll
-
+node -v = 
 …or create a new repository on the command line
  echo "# brogan" >> README.md
 git init
