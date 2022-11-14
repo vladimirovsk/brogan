@@ -89,12 +89,11 @@
 
   "footer":{
     "titleFirm":"Brogan Group Sp. z o.o.",
-    "addres1":"office: Kobierzyńska str. no 211/3, 30-383 Krakow",
+    "addres1":"office: str. Tadeusza Kosciuszki 28/39, 30-105 Krakow",
     "addres2":"head office: Adama Doboszyńskiego str. no 9, 32-031 Chorowice gm. Mogilany",
     "titleKontact":"Contact:",
     "copyright1":"by Brogan Group Sp. z o.o. All rights reserved.",
     "copyright2":"Our website uses cookies."
-
   },
 
   "oferta":{
@@ -117,7 +116,7 @@
     "title":"Brogan Group Sp. z o.o.",
     "card":{
       "title":"Adres biura:",
-      "addres":"str. Kobierzyńska 211 lok. 3  30-383 Kraków"  
+      "addres":"ul. Tadeusza Kosciuszki 28/39, 30-105 Krakow"
     }
   },
   "about": {

@@ -90,10 +90,14 @@ function Contact(props) {
         </Row>
         <Row>
           <Col sm={12} md={12}>
-              {/* <iframe title="BROGAN" src="https://www.google.pl/maps/embed?pb=!1m18!1m12!1m3!1d1282.0354722990157!2d19.895862063477338!3d50.010025471376494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165cfa81a3ffff%3A0x3f80456edafdcba!2sKobierzynska%20211!5e0!3m2!1sru!2spl!4v1611910526186!5m2!1sru!2spl"  */}
-              <iframe title="BROGAN" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.0709975207487!2d19.894291115483927!3d50.01002447941701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165cfa81a6defb%3A0xbf291a08f1431949!2sKobierzy%C5%84ska%20211%2C%2030-382%20Krak%C3%B3w%2C%20Polska!5e0!3m2!1spl!2sua!4v1620132433659!5m2!1spl!2sua" loading="lazy"
-              width="100%" height="300" style={{border:0}}
-              aria-hidden="false">
+              {/*<iframe title="BROGAN" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.0709975207487!2d19.894291115483927!3d50.01002447941701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165cfa81a6defb%3A0xbf291a08f1431949!2sKobierzy%C5%84ska%20211%2C%2030-382%20Krak%C3%B3w%2C%20Polska!5e0!3m2!1spl!2sua!4v1620132433659!5m2!1spl!2sua" loading="lazy"*/}
+              {/*<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.7311304316604!2d19.922073315933638!3d50.05386782374141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b7407958217%3A0x6e24bf91dec47cca!2sTadeusza%20Ko%C5%9Bciuszki%2028%2C%2030-105%20Krak%C3%B3w%2C%20Polska!5e0!3m2!1spl!2sua!4v1668302100162!5m2!1spl!2sua" loading="lazy"*/}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1792.6844236678871!2d19.922635703750746!3d50.05379172720968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b7407915555%3A0x9341766f5f7af2d!2sTadeusza%20Ko%C5%9Bciuszki%2028%2F39%2C%2030-105%20Krak%C3%B3w%2C%20Polska!5e0!3m2!1spl!2sua!4v1668302247968!5m2!1spl!2sua"
+                loading="lazy"
+                title="BROGAN"
+                width="100%" height="300" style={{border:0}}
+                aria-hidden="false">
               </iframe>
           </Col>
         </Row>  
