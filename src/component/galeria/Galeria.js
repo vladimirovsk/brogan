@@ -10,11 +10,13 @@ import ZrealizovaneData from './ZrealizovaneData'
 import RealizaciaData from './RealizaciaData'
 import DevelopersData from './DevelopersData'
 
-import {Row, Col, Container} from 'react-bootstrap';
+import { Row, Col, Container, Image } from "react-bootstrap";
 import {useParams} from 'react-router-dom';
 
 import crane from '../../img/banner-crane.jpg';
 import {translate} from 'react-switch-lang';
+
+import HKGroupImage from './img/Developers/HKGroup.jpg';
 
 import './Galeria.css'
 
@@ -121,7 +123,7 @@ function Galeria(props) {
   const Developers = (props) => {
     return(
       <GridList cellHeight={220} className={classes.gridList} cols={2}>
-        <GridListTile key="Subheader" cols={3} style={{ height: 'auto',  }}>
+        <GridListTile key="Subheader" cols={2} style={{ height: 'auto',  }}>
         <ListSubheader component="div" style={{color: 'black', fontSize: '2em', fontFamily:"'Fredoka One', cursive" }}>
       </ListSubheader>
       </GridListTile>
@@ -193,15 +195,27 @@ function Galeria(props) {
       <div style={{textAlign: 'center', fontFamily:'Roboto Condensed', fontSize:'2em'}}>{title}</div>
 
       <Row className="justify-content-center mx-auto">
-        <Container hidden={!Boolean(titleCard>'')} fluid={'md'} style={{padding: '2em',  borderWidth: '1px', borderRadius: '10px', boxShadow: '2px 2px 5px #545454', marginTop: '2em', marginBottom: '2em', textAlign: 'justify'}}>
-          <Row className='cardFirma'>  
-
-          <Col sm={12}>{titleCard}
-          </Col>
+        <Container hidden={!Boolean(titleCard>'')} fluid={'md'} style={{
+          padding: '2em',
+          borderWidth: '1px',
+          borderRadius: '10px',
+          boxShadow: '2px 2px 5px #545454',
+          marginTop: '2em',
+          marginBottom: '2em',
+          textAlign: 'justify'}}>
+          <Row>
+            <Col style={{ textAlign: "center", margin: "2em" }} sm={12}>
+              <a target="_blank" rel="noopener noreferrer" style={{ color: "blue" }} href='https://hkgroup.pl'>
+                <Image src={HKGroupImage} alt={"HKGroupImage"}/>
+              </a>
+            </Col>
+          </Row>
+          <Row className="cardFirma">
+            <Col sm={12}>{titleCard}
+            </Col>
           </Row>
         </Container>    
-      {selectGaleria} 
-
+      {selectGaleria}
       </Row>
       <Footer /> 
         <GaleriaDialog openDialog={openDialog} setOpenDialog={setOpenDialog} project={project}/>

@@ -9,6 +9,7 @@ import partner4 from '../../img/home/partner/mostostal-logo.jpg'
 import partner5 from '../../img/home/partner/budimex-dromex-logo.jpg'
 import partner6 from '../../img/home/partner/zasada-logo.jpg'
 import partner7 from '../../img/home/partner/sento.jpg'
+import partner8 from '../../img/home/partner/domconstruction.jpg'
 
 import ScrollAnimation from 'react-animate-on-scroll';
 //import crane from '../../img/background-crane-1.jpg';
@@ -38,7 +39,7 @@ function ComponentPartners(props) {
             </ScrollAnimation>   
             <ScrollAnimation animateIn="animate__fadeInTopLeft" animateOut="animate__fadeOutTopLeft" animatePreScroll={false} delay={3}>
             <Col><Image className='MyImage' src={partner7} alt=''/></Col>
-            </ScrollAnimation>  
+            </ScrollAnimation>
         </Col>
        
         <Col sm={12} md={6}>
@@ -50,7 +51,10 @@ function ComponentPartners(props) {
           </ScrollAnimation>   
           <ScrollAnimation animateIn="animate__fadeInTopRight" animateOut="animate__fadeOutTopRight" animatePreScroll={false}>
             <Col><Image className='MyImage' src={partner6} alt=''/></Col>
-          </ScrollAnimation>   
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="animate__fadeInTopRight" animateOut="animate__fadeOutTopRight" animatePreScroll={false}>
+            <Col><Image className='MyImage' src={partner8} alt=''/></Col>
+          </ScrollAnimation>
         </Col>
 
         <Col sm={12} md={6}>

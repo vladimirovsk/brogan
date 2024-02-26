@@ -112,6 +112,38 @@ import Project13image4 from './img/Zrealizovane/Project13/image4.jpg';
 import Project13image5 from './img/Zrealizovane/Project13/image5.jpg';
 import Project13image6 from './img/Zrealizovane/Project13/image6.jpg';
 
+import Project14image1 from './img/Zrealizovane/Project14/image1.jpg';
+import Project14image2 from './img/Zrealizovane/Project14/image2.jpg';
+import Project14image5 from './img/Zrealizovane/Project14/image5.jpg';
+import Project14image6 from './img/Zrealizovane/Project14/image6.jpg';
+import Project14image7 from './img/Zrealizovane/Project14/image7.jpg';
+import Project14image8 from './img/Zrealizovane/Project14/image8.jpg';
+import Project14image9 from './img/Zrealizovane/Project14/image9.jpg';
+import Project14image10 from './img/Zrealizovane/Project14/image10.jpg';
+import Project14image11 from './img/Zrealizovane/Project14/image11.jpg';
+import Project14image12 from './img/Zrealizovane/Project14/image12.jpg';
+import Project14image13 from './img/Zrealizovane/Project14/image13.jpg';
+import Project14image14 from './img/Zrealizovane/Project14/image14.jpg';
+import Project14image15 from './img/Zrealizovane/Project14/image15.jpg';
+import Project14image16 from './img/Zrealizovane/Project14/image16.jpg';
+
+
+// import Project15image1 from './img/Zrealizovane/Project15/Image1.jpg';
+// import Project15image2 from './img/Zrealizovane/Project15/Image2.jpg';
+// import Project15image3 from './img/Zrealizovane/Project15/Image3.jpg';
+// import Project15image4 from './img/Zrealizovane/Project15/Image4.jpg';
+// import Project15image5 from './img/Zrealizovane/Project15/Image5.jpg';
+// import Project15image6 from './img/Zrealizovane/Project15/Image6.jpg';
+// import Project15image7 from './img/Zrealizovane/Project15/Image7.jpg';
+// import Project15image8 from './img/Zrealizovane/Project15/Image8.jpg';
+// import Project15image9 from './img/Zrealizovane/Project15/Image9.jpg';
+// import Project15image10 from './img/Zrealizovane/Project15/Image10.jpg';
+// import Project15image11 from './img/Zrealizovane/Project15/Image11.jpg';
+// import Project15image12 from './img/Zrealizovane/Project15/Image12.jpg';
+// import Project15image13 from './img/Zrealizovane/Project15/Image13.jpg';
+
+
+
 
 const project1 = [
   Project1image1, Project1image2, Project1image3, 
@@ -172,7 +204,6 @@ const project10 = [
   Project10image10, Project10image11, Project10image12,
   Project10image13, Project10image14, Project10image15,
   Project10image16
-
 ]
 
 const project11 = [
@@ -190,6 +221,21 @@ const project13 = [
   Project13image4, Project13image5, Project13image6,
 ]
 
+const project14 = [
+  Project14image1, Project14image2, Project14image5,
+  Project14image6, Project14image7, Project14image8, Project14image9,
+  Project14image10, Project14image11, Project14image12, Project14image13,
+  Project14image14, Project14image15, Project14image16
+
+]
+
+// const project15 = [
+//   Project15image1, Project15image2, Project15image3,
+//   Project15image4, Project15image5, Project15image6,
+//   Project15image7, Project15image8, Project15image9,
+//   Project15image10, Project15image11, Project15image12,
+//   Project15image13
+// ]
 
 const ZrealizovaneData = [
   {
@@ -492,17 +538,16 @@ const ZrealizovaneData = [
       }
     ]
   },
-
   {
     id: 13,
     img: Project13image2,
     images: project13,
     title: 'Apartamenty u Przybyszewskiego',
-    color: 'orange',
+    color: 'green',
     cols: 2,
-    hint: '',
+    hint: 'status',
 
-    investor: 'SENTO',
+    investor: 'EKOPARK',
     localization: 'Apartamenty u Przybyszewskiego',
     firma: 'Brogan Group Sp. z o.o. ',
     notename :[
@@ -514,6 +559,51 @@ const ZrealizovaneData = [
     ]
 
   },
+  {
+    id: 14, //Kod
+    img: Project14image7, //Kod Image
+    images: project14, //Array image project
+    title: 'Osiedle SenTOTU ul. Górka Narodowa Kraków, budynki B1.1, B1.2', //Title
+    color: 'green', //Color home
+    cols: 2, // counts column in road
+    hint: '', //Hint for home
+    investor: 'SENTO', //Investor
+    localization: 'Osiedle SenTOTU ul. Górka Narodowa Kraków, budynki B1.1, B1.2', //Address
+    firma: 'Brogan Group Sp. z o.o.',     //
+    notename: [
+      {
+        name: 'Bud.B2',
+        PUM: '5.479 m2',
+        PC: '11.161 m2'
+      },
+      {
+        name: 'Bud.B3',
+        PUM: '4.704 m2',
+        PC: '9.790 m2'
+      }
+
+    ]
+  },
+  // {
+  //   id: 15,
+  //   img: Project15image1,
+  //   images: project15,
+  //   title: 'Apartamenty u Przybyszewskiego',
+  //   color: 'green',
+  //   cols: 2,
+  //   hint: 'Status: ',
+  //
+  //   investor: 'EKOPARK',
+  //   localization: 'Apartamenty u Przybyszewskiego',
+  //   firma: 'Brogan Group Sp. z o.o. ',
+  //   notename: [
+  //     {
+  //       name: 'Przybyszewskiego etap III',
+  //       PUM: '7.888 m2',
+  //     }
+  //   ]
+  //
+  // },
 
 
 ]
